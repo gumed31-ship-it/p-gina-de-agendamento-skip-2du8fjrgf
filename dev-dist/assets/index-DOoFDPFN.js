@@ -24684,10 +24684,6 @@ var TESTIMONIALS = [
 ];
 var FAQS = [
 	{
-		q: "Quais planos de saúde a UltraCenter atende?",
-		a: "Atendemos os principais planos de saúde do mercado, incluindo Unimed, Bradesco Saúde, SulAmérica e Amil. Entre em contato para verificar a cobertura específica do seu plano."
-	},
-	{
 		q: "Como devo me preparar para exames de imagem?",
 		a: "O preparo varia de acordo com o exame. Ao agendar, nossa equipe enviará todas as instruções necessárias por WhatsApp ou e-mail, incluindo jejum e medicações."
 	},
@@ -37003,4 +36999,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-X6mw-A9g.js.map
+//# sourceMappingURL=index-DOoFDPFN.js.map
