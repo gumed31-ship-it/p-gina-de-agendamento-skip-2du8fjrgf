@@ -35916,30 +35916,23 @@ function LocationSection() {
 										"data-prohibitions": "[]",
 										className: "font-bold text-ultra-blue mb-1",
 										children: "Horário"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										"data-uid": "src/components/home/LocationSection.tsx:64:19",
 										"data-prohibitions": "[]",
 										className: "text-slate-600 text-sm",
-										children: [
-											"Seg a Sex: 07h às 19h",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-												"data-uid": "src/components/home/LocationSection.tsx:66:21",
-												"data-prohibitions": "[editContent]"
-											}),
-											"Sábados: 07h às 13h"
-										]
+										children: "Segunda a sexta feira das 7:30 às 17:30"
 									})]
 								})]
 							})
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
-					"data-uid": "src/components/home/LocationSection.tsx:74:11",
+					"data-uid": "src/components/home/LocationSection.tsx:70:11",
 					"data-prohibitions": "[editContent]",
 					delay: 200,
 					className: "lg:col-span-2 rounded-2xl overflow-hidden shadow-lg h-[400px] lg:h-auto border border-slate-100 relative",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
-						"data-uid": "src/components/home/LocationSection.tsx:79:13",
+						"data-uid": "src/components/home/LocationSection.tsx:75:13",
 						"data-prohibitions": "[editContent]",
 						src: "https://maps.google.com/maps?q=Rua%20Lu%C3%ADs%20Pascoal%20Borges,%20219,%20Centro,%20Mutum,%20MG&t=&z=15&ie=UTF8&iwloc=&output=embed",
 						width: "100%",
@@ -36839,11 +36832,11 @@ function Footer() {
 							"data-prohibitions": "[]",
 							className: "text-white font-semibold text-lg mb-4 font-serif",
 							children: "Horário de Funcionamento"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 							"data-uid": "src/components/layout/Footer.tsx:93:13",
 							"data-prohibitions": "[]",
 							className: "space-y-3 text-sm",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 								"data-uid": "src/components/layout/Footer.tsx:94:15",
 								"data-prohibitions": "[]",
 								className: "flex items-start gap-3",
@@ -36851,52 +36844,26 @@ function Footer() {
 									"data-uid": "src/components/layout/Footer.tsx:95:17",
 									"data-prohibitions": "[editContent]",
 									className: "h-5 w-5 text-ultra-gold shrink-0 mt-0.5"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									"data-uid": "src/components/layout/Footer.tsx:96:17",
 									"data-prohibitions": "[]",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										"data-uid": "src/components/layout/Footer.tsx:97:19",
 										"data-prohibitions": "[]",
 										className: "text-white",
-										children: "Segunda a Sexta"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/layout/Footer.tsx:98:19",
-										"data-prohibitions": "[]",
-										children: "07:00 às 19:00"
-									})]
+										children: "Segunda a sexta feira das 7:30 às 17:30"
+									})
 								})]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-								"data-uid": "src/components/layout/Footer.tsx:101:15",
-								"data-prohibitions": "[]",
-								className: "flex items-start gap-3",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/layout/Footer.tsx:102:17",
-									"data-prohibitions": "[editContent]",
-									className: "w-5 shrink-0"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/layout/Footer.tsx:103:17",
-									"data-prohibitions": "[]",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/layout/Footer.tsx:104:19",
-										"data-prohibitions": "[]",
-										className: "text-white",
-										children: "Sábados"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/layout/Footer.tsx:105:19",
-										"data-prohibitions": "[]",
-										children: "07:00 às 13:00"
-									})]
-								})]
-							})]
+							})
 						})]
 					})
 				]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/layout/Footer.tsx:112:9",
+				"data-uid": "src/components/layout/Footer.tsx:104:9",
 				"data-prohibitions": "[editContent]",
 				className: "border-t border-slate-700/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-					"data-uid": "src/components/layout/Footer.tsx:113:11",
+					"data-uid": "src/components/layout/Footer.tsx:105:11",
 					"data-prohibitions": "[editContent]",
 					children: [
 						"© ",
@@ -36904,17 +36871,17 @@ function Footer() {
 						" UltraCenter. Todos os direitos reservados."
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/layout/Footer.tsx:114:11",
+					"data-uid": "src/components/layout/Footer.tsx:106:11",
 					"data-prohibitions": "[]",
 					className: "flex gap-4",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						"data-uid": "src/components/layout/Footer.tsx:115:13",
+						"data-uid": "src/components/layout/Footer.tsx:107:13",
 						"data-prohibitions": "[]",
 						href: "#",
 						className: "hover:text-white transition-colors",
 						children: "Política de Privacidade"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						"data-uid": "src/components/layout/Footer.tsx:118:13",
+						"data-uid": "src/components/layout/Footer.tsx:110:13",
 						"data-prohibitions": "[]",
 						href: "#",
 						className: "hover:text-white transition-colors",
@@ -37036,4 +37003,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-DJuW_mp4.js.map
+//# sourceMappingURL=index-X6mw-A9g.js.map

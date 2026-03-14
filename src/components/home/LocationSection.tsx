@@ -61,11 +61,7 @@ export function LocationSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-ultra-blue mb-1">Horário</h4>
-                  <p className="text-slate-600 text-sm">
-                    Seg a Sex: 07h às 19h
-                    <br />
-                    Sábados: 07h às 13h
-                  </p>
+                  <p className="text-slate-600 text-sm">Segunda a sexta feira das 7:30 às 17:30</p>
                 </div>
               </CardContent>
             </Card>
