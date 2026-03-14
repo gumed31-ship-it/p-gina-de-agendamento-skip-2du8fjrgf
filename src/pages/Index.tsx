@@ -8,7 +8,6 @@ import { Ultrasound4DSection } from '@/components/home/Ultrasound4DSection'
 import { JointUltrasoundSection } from '@/components/home/JointUltrasoundSection'
 import { VaricoseVeinsSection } from '@/components/home/VaricoseVeinsSection'
 import { InfrastructureSection } from '@/components/home/InfrastructureSection'
-import { TeamSection } from '@/components/home/TeamSection'
 import { TestimonialsSection } from '@/components/home/TestimonialsSection'
 import { FAQSection } from '@/components/home/FAQSection'
 import { LocationSection } from '@/components/home/LocationSection'
@@ -28,7 +27,6 @@ export default function Index() {
       <JointUltrasoundSection />
       <VaricoseVeinsSection />
       <InfrastructureSection />
-      <TeamSection />
       <TestimonialsSection />
       <FAQSection />
       <LocationSection />

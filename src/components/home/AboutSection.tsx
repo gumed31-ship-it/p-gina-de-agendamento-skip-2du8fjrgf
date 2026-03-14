@@ -60,7 +60,7 @@ export function AboutSection() {
             </ul>
 
             <Button asChild className="btn-gold rounded-full px-8 h-12">
-              <a href="#equipe">Conheça Nossa Equipe</a>
+              <a href="#especialidades">Nossas Especialidades</a>
             </Button>
           </ScrollReveal>
         </div>

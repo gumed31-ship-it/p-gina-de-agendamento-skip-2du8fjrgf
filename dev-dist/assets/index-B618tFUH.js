@@ -24717,8 +24717,8 @@ function AboutSection() {
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 								"data-uid": "src/components/home/AboutSection.tsx:63:15",
 								"data-prohibitions": "[]",
-								href: "#equipe",
-								children: "Conheça Nossa Equipe"
+								href: "#especialidades",
+								children: "Nossas Especialidades"
 							})
 						})
 					]
@@ -24866,36 +24866,6 @@ var SPECIALTIES = [
 		name: "Exames de Imagem",
 		icon: Microscope,
 		desc: "Ultrassonografia, Endoscopia, Eletrocardiograma e mais procedimentos diagnósticos."
-	}
-];
-var DOCTORS = [
-	{
-		id: 1,
-		name: "Dra. Helena Costa",
-		specialty: "Cardiologista",
-		crm: "CRM-MG 45892",
-		image: "https://img.usecurling.com/ppl/medium?gender=female&seed=10"
-	},
-	{
-		id: 2,
-		name: "Dr. Roberto Almeida",
-		specialty: "Ortopedista",
-		crm: "CRM-MG 39102",
-		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=22"
-	},
-	{
-		id: 3,
-		name: "Dra. Marina Silva",
-		specialty: "Neurologista",
-		crm: "CRM-MG 51204",
-		image: "https://img.usecurling.com/ppl/medium?gender=female&seed=33"
-	},
-	{
-		id: 4,
-		name: "Dr. Carlos Mendes",
-		specialty: "Diretor Clínico",
-		crm: "CRM-MG 28441",
-		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=44"
 	}
 ];
 var TESTIMONIALS = [
@@ -25863,100 +25833,6 @@ function InfrastructureSection() {
 						})
 					]
 				}, index))
-			})]
-		})
-	});
-}
-//#endregion
-//#region src/components/home/TeamSection.tsx
-function TeamSection() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		"data-uid": "src/components/home/TeamSection.tsx:7:5",
-		"data-prohibitions": "[editContent]",
-		id: "equipe",
-		className: "py-24 bg-slate-50",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/home/TeamSection.tsx:8:7",
-			"data-prohibitions": "[editContent]",
-			className: "container mx-auto px-4 md:px-6",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
-				"data-uid": "src/components/home/TeamSection.tsx:9:9",
-				"data-prohibitions": "[]",
-				className: "text-center max-w-3xl mx-auto mb-16",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						"data-uid": "src/components/home/TeamSection.tsx:10:11",
-						"data-prohibitions": "[]",
-						className: "text-ultra-gold font-semibold uppercase tracking-wider mb-2 text-sm",
-						children: "Corpo Clínico"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-						"data-uid": "src/components/home/TeamSection.tsx:13:11",
-						"data-prohibitions": "[]",
-						className: "text-3xl md:text-4xl font-serif font-bold text-ultra-blue mb-4",
-						children: "Especialistas de Referência"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						"data-uid": "src/components/home/TeamSection.tsx:16:11",
-						"data-prohibitions": "[]",
-						className: "text-slate-600 text-lg",
-						children: "Profissionais altamente capacitados e em constante atualização para oferecer a você o melhor diagnóstico e tratamento."
-					})
-				]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				"data-uid": "src/components/home/TeamSection.tsx:22:9",
-				"data-prohibitions": "[editContent]",
-				className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8",
-				children: DOCTORS.map((doc, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
-					"data-uid": "src/components/home/TeamSection.tsx:24:13",
-					"data-prohibitions": "[editContent]",
-					delay: idx * 100,
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Card, {
-						"data-uid": "src/components/home/TeamSection.tsx:25:15",
-						"data-prohibitions": "[editContent]",
-						className: "border-none shadow-md overflow-hidden group hover:shadow-xl transition-all duration-300",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							"data-uid": "src/components/home/TeamSection.tsx:26:17",
-							"data-prohibitions": "[]",
-							className: "relative aspect-[3/4] overflow-hidden",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-								"data-uid": "src/components/home/TeamSection.tsx:27:19",
-								"data-prohibitions": "[editContent]",
-								src: doc.image,
-								alt: doc.name,
-								className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								"data-uid": "src/components/home/TeamSection.tsx:32:19",
-								"data-prohibitions": "[editContent]",
-								className: "absolute inset-0 bg-ultra-blue/20 group-hover:bg-transparent transition-colors duration-300"
-							})]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
-							"data-uid": "src/components/home/TeamSection.tsx:34:17",
-							"data-prohibitions": "[editContent]",
-							className: "p-6 text-center bg-white",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-									"data-uid": "src/components/home/TeamSection.tsx:35:19",
-									"data-prohibitions": "[editContent]",
-									className: "text-lg font-bold text-ultra-blue mb-1 font-serif",
-									children: doc.name
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									"data-uid": "src/components/home/TeamSection.tsx:36:19",
-									"data-prohibitions": "[editContent]",
-									className: "text-ultra-gold font-medium text-sm mb-2",
-									children: doc.specialty
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									"data-uid": "src/components/home/TeamSection.tsx:37:19",
-									"data-prohibitions": "[editContent]",
-									className: "text-slate-400 text-xs",
-									children: doc.crm
-								})
-							]
-						})]
-					})
-				}, doc.id))
 			})]
 		})
 	});
@@ -28759,72 +28635,68 @@ function FinalCTASection() {
 //#region src/pages/Index.tsx
 function Index() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
-		"data-uid": "src/pages/Index.tsx:20:5",
+		"data-uid": "src/pages/Index.tsx:19:5",
 		"data-prohibitions": "[]",
 		className: "flex min-h-screen flex-col bg-background",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroSection, {
-				"data-uid": "src/pages/Index.tsx:21:7",
+				"data-uid": "src/pages/Index.tsx:20:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DifferentialsSection, {
-				"data-uid": "src/pages/Index.tsx:22:7",
+				"data-uid": "src/pages/Index.tsx:21:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutSection, {
-				"data-uid": "src/pages/Index.tsx:23:7",
+				"data-uid": "src/pages/Index.tsx:22:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SpecialtiesSection, {
-				"data-uid": "src/pages/Index.tsx:24:7",
+				"data-uid": "src/pages/Index.tsx:23:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProceduresSection, {
-				"data-uid": "src/pages/Index.tsx:25:7",
+				"data-uid": "src/pages/Index.tsx:24:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExamsSection, {
-				"data-uid": "src/pages/Index.tsx:26:7",
+				"data-uid": "src/pages/Index.tsx:25:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Ultrasound4DSection, {
-				"data-uid": "src/pages/Index.tsx:27:7",
+				"data-uid": "src/pages/Index.tsx:26:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(JointUltrasoundSection, {
-				"data-uid": "src/pages/Index.tsx:28:7",
+				"data-uid": "src/pages/Index.tsx:27:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(VaricoseVeinsSection, {
-				"data-uid": "src/pages/Index.tsx:29:7",
+				"data-uid": "src/pages/Index.tsx:28:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfrastructureSection, {
-				"data-uid": "src/pages/Index.tsx:30:7",
-				"data-prohibitions": "[editContent]"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TeamSection, {
-				"data-uid": "src/pages/Index.tsx:31:7",
+				"data-uid": "src/pages/Index.tsx:29:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TestimonialsSection, {
-				"data-uid": "src/pages/Index.tsx:32:7",
+				"data-uid": "src/pages/Index.tsx:30:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FAQSection, {
-				"data-uid": "src/pages/Index.tsx:33:7",
+				"data-uid": "src/pages/Index.tsx:31:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LocationSection, {
-				"data-uid": "src/pages/Index.tsx:34:7",
+				"data-uid": "src/pages/Index.tsx:32:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AppointmentSection, {
-				"data-uid": "src/pages/Index.tsx:35:7",
+				"data-uid": "src/pages/Index.tsx:33:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FinalCTASection, {
-				"data-uid": "src/pages/Index.tsx:36:7",
+				"data-uid": "src/pages/Index.tsx:34:7",
 				"data-prohibitions": "[editContent]"
 			})
 		]
@@ -31987,4 +31859,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-DcoohTOc.js.map
+//# sourceMappingURL=index-B618tFUH.js.map

@@ -16,7 +16,6 @@ export const NAVIGATION = [
   { name: 'Exames', href: '#exames' },
   { name: 'Sobre', href: '#sobre' },
   { name: 'Estrutura', href: '#estrutura' },
-  { name: 'Equipe', href: '#equipe' },
   { name: 'Depoimentos', href: '#depoimentos' },
   { name: 'Contato', href: '#contato' },
 ]
@@ -60,37 +59,6 @@ export const SPECIALTIES = [
     name: 'Exames de Imagem',
     icon: Microscope,
     desc: 'Ultrassonografia, Endoscopia, Eletrocardiograma e mais procedimentos diagnósticos.',
-  },
-]
-
-export const DOCTORS = [
-  {
-    id: 1,
-    name: 'Dra. Helena Costa',
-    specialty: 'Cardiologista',
-    crm: 'CRM-MG 45892',
-    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=10',
-  },
-  {
-    id: 2,
-    name: 'Dr. Roberto Almeida',
-    specialty: 'Ortopedista',
-    crm: 'CRM-MG 39102',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=22',
-  },
-  {
-    id: 3,
-    name: 'Dra. Marina Silva',
-    specialty: 'Neurologista',
-    crm: 'CRM-MG 51204',
-    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=33',
-  },
-  {
-    id: 4,
-    name: 'Dr. Carlos Mendes',
-    specialty: 'Diretor Clínico',
-    crm: 'CRM-MG 28441',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=44',
   },
 ]
 
