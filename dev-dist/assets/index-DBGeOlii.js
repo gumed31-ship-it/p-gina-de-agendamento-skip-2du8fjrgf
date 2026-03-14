@@ -25881,6 +25881,13 @@ function InfrastructureSection() {
 //#region src/components/home/MedicalTeamSection.tsx
 var medicalTeam = [
 	{
+		id: "dr-gustavo-teixeira",
+		name: "Dr. Gustavo Teixeira Gomes",
+		specialty: "Ultrassonografia, Angiologia e Geriatria",
+		image: "https://img.usecurling.com/ppl/large?gender=male&seed=42",
+		description: "Profissional dedicado ao diagnóstico preciso por imagem e cuidado integral com foco no bem-estar e na longevidade."
+	},
+	{
 		id: "dr-jose-guilherme",
 		name: "Dr. José Guilherme Gonçalves",
 		specialty: "Ortopedia e Traumatologia",
@@ -25893,13 +25900,6 @@ var medicalTeam = [
 		specialty: "Clínica Geral",
 		image: "https://img.usecurling.com/ppl/large?gender=female&seed=12",
 		description: "Atendimento humanizado com foco na prevenção e cuidado integral da saúde do paciente."
-	},
-	{
-		id: "dr-marcos-silva",
-		name: "Dr. Marcos Silva",
-		specialty: "Cardiologia",
-		image: "https://img.usecurling.com/ppl/large?gender=male&seed=45",
-		description: "Dedicação completa à saúde do seu coração, com avaliações precisas e acompanhamento contínuo."
 	},
 	{
 		id: "dra-beatriz-alves",
@@ -25930,13 +25930,13 @@ function MedicalTeamSection() {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 							"data-uid": "src/components/home/MedicalTeamSection.tsx:47:13",
 							"data-prohibitions": "[]",
-							className: "text-3xl md:text-4xl font-bold text-blue-950 mb-4",
+							className: "text-3xl md:text-4xl font-bold text-ultra-blue mb-4",
 							children: "Nosso Corpo Clínico"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							"data-uid": "src/components/home/MedicalTeamSection.tsx:50:13",
 							"data-prohibitions": "[]",
-							className: "w-24 h-1.5 bg-yellow-500 mx-auto mb-6 rounded-full"
+							className: "w-24 h-1.5 bg-ultra-gold mx-auto mb-6 rounded-full"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							"data-uid": "src/components/home/MedicalTeamSection.tsx:51:13",
@@ -25971,11 +25971,11 @@ function MedicalTeamSection() {
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								"data-uid": "src/components/home/MedicalTeamSection.tsx:68:19",
 								"data-prohibitions": "[]",
-								className: "absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6",
+								className: "absolute inset-0 bg-gradient-to-t from-ultra-blue/90 via-ultra-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6",
 								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
 									"data-uid": "src/components/home/MedicalTeamSection.tsx:69:21",
 									"data-prohibitions": "[]",
-									className: "w-full bg-yellow-500 hover:bg-yellow-600 text-blue-950 font-bold transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100 delay-100",
+									className: "w-full bg-ultra-gold hover:bg-ultra-goldDark text-ultra-blue font-bold transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100 delay-100",
 									onClick: () => document.getElementById("agendamento")?.scrollIntoView({ behavior: "smooth" }),
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CalendarDays, {
 										"data-uid": "src/components/home/MedicalTeamSection.tsx:77:23",
@@ -25992,13 +25992,13 @@ function MedicalTeamSection() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 									"data-uid": "src/components/home/MedicalTeamSection.tsx:83:19",
 									"data-prohibitions": "[editContent]",
-									className: "text-xl font-bold text-blue-950 mb-2",
+									className: "text-xl font-bold text-ultra-blue mb-2",
 									children: doctor.name
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									"data-uid": "src/components/home/MedicalTeamSection.tsx:84:19",
 									"data-prohibitions": "[editContent]",
-									className: "text-yellow-600 font-semibold mb-4",
+									className: "text-ultra-goldDark font-semibold mb-4",
 									children: doctor.specialty
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -30119,4 +30119,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-ImXVFahl.js.map
+//# sourceMappingURL=index-DBGeOlii.js.map

@@ -6,6 +6,14 @@ import drJoseGuilherme from '@/assets/dr-jose-guilherme-509d0.jpeg'
 
 const medicalTeam = [
   {
+    id: 'dr-gustavo-teixeira',
+    name: 'Dr. Gustavo Teixeira Gomes',
+    specialty: 'Ultrassonografia, Angiologia e Geriatria',
+    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=42',
+    description:
+      'Profissional dedicado ao diagnóstico preciso por imagem e cuidado integral com foco no bem-estar e na longevidade.',
+  },
+  {
     id: 'dr-jose-guilherme',
     name: 'Dr. José Guilherme Gonçalves',
     specialty: 'Ortopedia e Traumatologia',
@@ -22,14 +30,6 @@ const medicalTeam = [
       'Atendimento humanizado com foco na prevenção e cuidado integral da saúde do paciente.',
   },
   {
-    id: 'dr-marcos-silva',
-    name: 'Dr. Marcos Silva',
-    specialty: 'Cardiologia',
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=45',
-    description:
-      'Dedicação completa à saúde do seu coração, com avaliações precisas e acompanhamento contínuo.',
-  },
-  {
     id: 'dra-beatriz-alves',
     name: 'Dra. Beatriz Alves',
     specialty: 'Pediatria',
@@ -44,10 +44,10 @@ export function MedicalTeamSection() {
       <div className="container mx-auto px-4 md:px-6">
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-ultra-blue mb-4">
               Nosso Corpo Clínico
             </h2>
-            <div className="w-24 h-1.5 bg-yellow-500 mx-auto mb-6 rounded-full"></div>
+            <div className="w-24 h-1.5 bg-ultra-gold mx-auto mb-6 rounded-full"></div>
             <p className="text-slate-600 text-lg">
               Conheça nossa equipe de especialistas altamente qualificados, prontos para oferecer o
               melhor atendimento para a sua saúde com excelência e dedicação.
@@ -65,9 +65,9 @@ export function MedicalTeamSection() {
                     alt={doctor.name}
                     className="object-cover w-full h-full object-top group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                  <div className="absolute inset-0 bg-gradient-to-t from-ultra-blue/90 via-ultra-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <Button
-                      className="w-full bg-yellow-500 hover:bg-yellow-600 text-blue-950 font-bold transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100 delay-100"
+                      className="w-full bg-ultra-gold hover:bg-ultra-goldDark text-ultra-blue font-bold transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100 delay-100"
                       onClick={() =>
                         document
                           .getElementById('agendamento')
@@ -80,8 +80,8 @@ export function MedicalTeamSection() {
                   </div>
                 </div>
                 <CardContent className="p-6 flex-grow flex flex-col items-center text-center">
-                  <h3 className="text-xl font-bold text-blue-950 mb-2">{doctor.name}</h3>
-                  <p className="text-yellow-600 font-semibold mb-4">{doctor.specialty}</p>
+                  <h3 className="text-xl font-bold text-ultra-blue mb-2">{doctor.name}</h3>
+                  <p className="text-ultra-goldDark font-semibold mb-4">{doctor.specialty}</p>
                   <p className="text-slate-500 text-sm mt-auto line-clamp-3">
                     {doctor.description}
                   </p>
