@@ -1,61 +1,65 @@
+import { ScrollReveal } from '@/components/ui/scroll-reveal'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ScrollReveal } from '@/components/ui/scroll-reveal'
 
-import drGustavoImg from '@/assets/whatsapp-image-2026-01-19-at-08.28.50-1-8dfe6.jpeg'
+import drJoseImg from '@/assets/dr-jose-guilherme-0608b.jpeg'
 
-const medicalTeam = [
+const teamMembers = [
   {
     name: 'Dr. Gustavo Teixeira Gomes',
-    specialties: ['Ultrassonografia', 'Angiologia', 'Geriatria'],
-    image: drGustavoImg,
+    specialty: 'Ultrassonografia, Angiologia e Geriatria',
+    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=1',
   },
   {
     name: 'Dr. José Guilherme Gonçalves',
-    specialties: ['Ortopedia e Traumatologia'],
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=42',
+    specialty: 'Ortopedia e Traumatologia',
+    image: drJoseImg,
   },
 ]
 
 export function MedicalTeamSection() {
   return (
-    <section id="corpo-clinico" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="corpo-clinico" className="py-24 bg-slate-50">
+      <div className="container px-4 md:px-6 mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Corpo Clínico</h2>
-            <div className="w-24 h-1 bg-secondary mx-auto mb-6 rounded-full"></div>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Conheça os especialistas dedicados a oferecer o melhor atendimento para você e sua
-              família.
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <Badge className="bg-[#D4AF37]/10 text-[#D4AF37] hover:bg-[#D4AF37]/20 mb-4 border-none px-4 py-1.5 text-sm font-medium transition-colors">
+              Corpo Clínico
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0A2540] mb-4">
+              Nossa Equipe Médica
+            </h2>
+            <p className="text-lg text-slate-600">
+              Profissionais altamente qualificados e dedicados a oferecer o melhor atendimento para
+              você e sua família.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {medicalTeam.map((doctor, index) => (
-            <ScrollReveal key={index} delay={index * 150}>
-              <Card className="overflow-hidden group h-full border-none shadow-md hover:shadow-xl transition-all duration-300">
-                <div className="aspect-[4/5] relative overflow-hidden bg-muted rounded-xl">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {teamMembers.map((doctor, index) => (
+            <ScrollReveal key={doctor.name} delay={index * 100}>
+              <Card className="overflow-hidden h-full flex flex-col group border-0 shadow-lg hover:shadow-xl transition-all duration-500 bg-white rounded-xl">
+                <div className="aspect-[3/4] md:aspect-[4/5] relative overflow-hidden bg-slate-100">
                   <img
                     src={doctor.image}
                     alt={doctor.name}
-                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    className="object-cover w-full h-full object-top transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent opacity-90 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540]/90 via-[#0A2540]/30 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
-                  <div className="absolute bottom-0 left-0 w-full p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-2xl font-bold text-primary-foreground mb-3 drop-shadow-sm">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                    <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-sm">
                       {doctor.name}
                     </h3>
                     <div className="flex flex-wrap gap-2">
-                      {doctor.specialties.map((specialty, idx) => (
+                      {doctor.specialty.split(', ').map((spec) => (
                         <Badge
-                          key={idx}
+                          key={spec}
                           variant="secondary"
-                          className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold border-none shadow-sm"
+                          className="bg-[#D4AF37] text-white hover:bg-[#C5A028] border-none font-medium shadow-sm"
                         >
-                          {specialty}
+                          {spec}
                         </Badge>
                       ))}
                     </div>
