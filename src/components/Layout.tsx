@@ -1,17 +1,19 @@
 import { Outlet } from 'react-router-dom'
-import { Header } from './layout/Header'
-import { Footer } from './layout/Footer'
-import { FloatingWhatsApp } from './layout/FloatingWhatsApp'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
+import { FloatingWhatsApp } from '@/components/layout/FloatingWhatsApp'
 
-export default function Layout() {
+export function Layout() {
   return (
-    <main className="flex flex-col min-h-screen bg-ultra-light selection:bg-ultra-gold/30 selection:text-ultra-blue">
+    <div className="flex min-h-screen flex-col bg-slate-50">
       <Header />
-      <div className="flex-1">
+      <main className="flex-1 pt-20">
+        {' '}
+        {/* Added pt-20 to account for the fixed header */}
         <Outlet />
-      </div>
+      </main>
       <Footer />
       <FloatingWhatsApp />
-    </main>
+    </div>
   )
 }

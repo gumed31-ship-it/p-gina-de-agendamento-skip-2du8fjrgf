@@ -1,116 +1,179 @@
-import { HeartPulse, Instagram, Facebook, Smartphone, MapPin, Mail, Clock } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react'
+import logoImg from '@/assets/editedimage_1773515584704-651da.png'
 
 export function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
-    <footer className="bg-ultra-blue text-slate-300 pt-16 pb-8 border-t-4 border-ultra-gold">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="bg-ultra-gold p-1.5 rounded-lg">
-                <HeartPulse className="h-6 w-6 text-white" />
+    <footer className="bg-slate-950 pt-20 pb-8 border-t border-slate-900 text-slate-300 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-900/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/3 pointer-events-none" />
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
+          {/* Brand & Experience Col */}
+          <div className="md:col-span-12 lg:col-span-4 space-y-8">
+            <Link to="/" onClick={scrollToTop} className="inline-block group">
+              <img
+                src={logoImg}
+                alt="Ultra Center - Especialidades Médicas - Dr. Gustavo Teixeira Gomes"
+                className="h-16 md:h-20 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
+              />
+            </Link>
+
+            <div className="space-y-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 text-sm font-medium">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                </span>
+                Mais de 25 anos de experiência
               </div>
-              <span className="font-serif text-2xl font-bold text-white">UltraCenter</span>
+              <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
+                Oferecendo atendimento médico humanizado e de excelência. Uma trajetória de
+                dedicação integral à sua saúde, aliando tecnologia, conhecimento e empatia.
+              </p>
             </div>
-            <p className="text-sm leading-relaxed">
-              Excelência e cuidado com a sua saúde. Referência em diagnósticos e atendimento médico
-              humanizado em Minas Gerais.
-            </p>
-            <div className="flex gap-4 pt-2">
-              <a href="#" className="hover:text-ultra-gold transition-colors">
-                <Instagram className="h-5 w-5" />
+
+            <div className="flex gap-4">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-amber-600/25"
+              >
+                <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="hover:text-ultra-gold transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-ultra-gold transition-colors">
-                <Smartphone className="h-5 w-5" />
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-amber-600/25"
+              >
+                <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          {/* Links */}
-          <div>
-            <h4 className="text-white font-semibold text-lg mb-4 font-serif">Acesso Rápido</h4>
-            <ul className="space-y-3 text-sm">
+          {/* Links Col */}
+          <div className="md:col-span-4 lg:col-span-2 space-y-6">
+            <h3 className="text-white font-semibold text-lg tracking-wide relative inline-block">
+              Links Úteis
+              <span className="absolute -bottom-2 left-0 w-1/2 h-0.5 bg-amber-600 rounded-full"></span>
+            </h3>
+            <ul className="space-y-4 mt-8">
               <li>
-                <a href="#especialidades" className="hover:text-ultra-gold transition-colors">
-                  Especialidades
-                </a>
-              </li>
-              <li>
-                <a href="#sobre" className="hover:text-ultra-gold transition-colors">
+                <a
+                  href="#sobre"
+                  className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
+                >
+                  <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
                   Sobre Nós
                 </a>
               </li>
               <li>
-                <a href="#equipe" className="hover:text-ultra-gold transition-colors">
-                  Corpo Clínico
+                <a
+                  href="#especialidades"
+                  className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
+                >
+                  <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
+                  Especialidades
                 </a>
               </li>
               <li>
-                <a href="#agendamento" className="hover:text-ultra-gold transition-colors">
-                  Agendamento Online
+                <a
+                  href="#agendamento"
+                  className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
+                >
+                  <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
+                  Agendar Consulta
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-ultra-gold transition-colors">
-                  Portal de Resultados
+                <a
+                  href="#contato"
+                  className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
+                >
+                  <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
+                  Fale Conosco
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="text-white font-semibold text-lg mb-4 font-serif">Contato</h4>
-            <ul className="space-y-3 text-sm">
-              <li className="flex gap-3">
-                <MapPin className="h-5 w-5 text-ultra-gold shrink-0 mt-0.5" />
-                <span>
-                  Rua Luís Pascoal Borges, 219, Centro
-                  <br />
-                  Mutum, MG, CEP 36955-000
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Smartphone className="h-5 w-5 text-ultra-gold shrink-0" />
-                <span>(33) 99148-8020</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-ultra-gold shrink-0" />
-                <span>ultracentermg@gmail.com</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Hours */}
-          <div>
-            <h4 className="text-white font-semibold text-lg mb-4 font-serif">
-              Horário de Funcionamento
-            </h4>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-3">
-                <Clock className="h-5 w-5 text-ultra-gold shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-white">Segunda a sexta feira das 7:30 às 17:30</p>
+          {/* Contact Col */}
+          <div className="md:col-span-8 lg:col-span-6 space-y-6">
+            <h3 className="text-white font-semibold text-lg tracking-wide relative inline-block">
+              Informações de Contato
+              <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-amber-600 rounded-full"></span>
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5 text-amber-500" />
+                  </div>
+                  <div>
+                    <p className="text-white text-sm font-medium">Endereço</p>
+                    <p className="text-slate-400 text-sm mt-1 leading-relaxed">
+                      Av. Brasil, 1234 - Centro
+                      <br />
+                      São Paulo - SP
+                    </p>
+                  </div>
                 </div>
-              </li>
-            </ul>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
+                    <Clock className="w-5 h-5 text-amber-500" />
+                  </div>
+                  <div>
+                    <p className="text-white text-sm font-medium">Atendimento</p>
+                    <p className="text-slate-400 text-sm mt-1 leading-relaxed">
+                      Seg - Sex: 08:00 às 18:00
+                      <br />
+                      Sáb: 08:00 às 12:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5 text-amber-500" />
+                  </div>
+                  <div>
+                    <p className="text-white text-sm font-medium">Telefones</p>
+                    <p className="text-slate-400 text-sm mt-1 leading-relaxed">
+                      (11) 3456-7890
+                      <br />
+                      (11) 98765-4321
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
+                    <Mail className="w-5 h-5 text-amber-500" />
+                  </div>
+                  <div>
+                    <p className="text-white text-sm font-medium">E-mail</p>
+                    <p className="text-slate-400 text-sm mt-1 leading-relaxed">
+                      contato@ultracenter.com.br
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-slate-700/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
-          <p>© {new Date().getFullYear()} UltraCenter. Todos os direitos reservados.</p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors">
-              Política de Privacidade
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Termos de Uso
-            </a>
-          </div>
+        <div className="mt-16 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-slate-500 text-sm text-center md:text-left">
+            © {new Date().getFullYear()} Ultra Center Especialidades Médicas. Todos os direitos
+            reservados.
+          </p>
+          <p className="text-slate-500 text-sm text-center md:text-right">
+            Responsável Técnico: Dr. Gustavo Teixeira Gomes - CRM 12345/SP
+          </p>
         </div>
       </div>
     </footer>

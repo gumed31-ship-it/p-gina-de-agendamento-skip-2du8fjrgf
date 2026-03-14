@@ -1,106 +1,146 @@
 import { useState, useEffect } from 'react'
-import { Menu, HeartPulse, MessageCircle } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
-import { NAVIGATION } from '@/lib/data'
+import { Menu, X, Calendar } from 'lucide-react'
+import logoImg from '@/assets/editedimage_1773515584704-651da.png'
 import { cn } from '@/lib/utils'
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false)
-  const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const Logo = () => (
-    <div className="flex items-center gap-2">
-      <div className="bg-ultra-gold p-1.5 rounded-lg">
-        <HeartPulse className="h-6 w-6 text-white" />
-      </div>
-      <span className="font-serif text-2xl font-bold text-ultra-blue">UltraCenter</span>
-    </div>
-  )
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    setMobileMenuOpen(false)
+  }
+
+  const handleNavClick = (id: string) => {
+    setMobileMenuOpen(false)
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <header
       className={cn(
-        'fixed top-0 w-full z-50 transition-all duration-300',
-        scrolled ? 'glass-header py-3' : 'bg-transparent py-5',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent',
+        isScrolled
+          ? 'bg-slate-950/95 backdrop-blur-md border-slate-800 shadow-md py-2'
+          : 'bg-slate-950 md:bg-slate-950/80 py-4',
       )}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <a href="#inicio" className="flex-shrink-0">
-          <Logo />
-        </a>
-
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {NAVIGATION.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-medium text-slate-700 hover:text-ultra-gold transition-colors"
-            >
-              {item.name}
-            </a>
-          ))}
-        </nav>
-
-        <div className="hidden lg:block">
-          <Button
-            asChild
-            className="btn-gold animate-pulse-gold rounded-full px-6 text-ultra-blue hover:text-ultra-blue flex items-center gap-2"
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
+          <Link
+            to="/"
+            onClick={scrollToTop}
+            className="flex-shrink-0 z-50 group"
+            aria-label="Página Inicial - Ultra Center"
           >
-            <a href="https://wa.me/5533991488020" target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="h-4 w-4" />
-              Agende pelo WhatsApp
-            </a>
-          </Button>
-        </div>
+            <img
+              src={logoImg}
+              alt="Ultra Center - Especialidades Médicas - Dr. Gustavo Teixeira Gomes"
+              className="h-10 md:h-14 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
+            />
+          </Link>
 
-        {/* Mobile Nav */}
-        <div className="lg:hidden">
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-ultra-blue">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] flex flex-col pt-12">
-              <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
-              <nav className="flex flex-col gap-6 mt-8">
-                {NAVIGATION.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-lg font-medium text-slate-800 hover:text-ultra-gold transition-colors"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-                <Button
-                  asChild
-                  className="btn-gold mt-4 w-full text-ultra-blue hover:text-ultra-blue flex items-center justify-center gap-2"
-                >
-                  <a
-                    href="https://wa.me/5533991488020"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    <MessageCircle className="h-5 w-5" />
-                    Agende pelo WhatsApp
-                  </a>
-                </Button>
-              </nav>
-            </SheetContent>
-          </Sheet>
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            <button
+              onClick={() => handleNavClick('sobre')}
+              className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
+            >
+              Sobre
+            </button>
+            <button
+              onClick={() => handleNavClick('especialidades')}
+              className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
+            >
+              Especialidades
+            </button>
+            <button
+              onClick={() => handleNavClick('depoimentos')}
+              className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
+            >
+              Depoimentos
+            </button>
+            <button
+              onClick={() => handleNavClick('contato')}
+              className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
+            >
+              Contato
+            </button>
+            <Button
+              onClick={() => handleNavClick('agendamento')}
+              className="bg-amber-600 hover:bg-amber-700 text-white gap-2 shadow-lg shadow-amber-900/20"
+            >
+              <Calendar className="w-4 h-4" />
+              Agendar Consulta
+            </Button>
+          </nav>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="md:hidden z-50 text-slate-300 hover:text-white p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
+      </div>
+
+      {/* Mobile Nav Overlay */}
+      <div
+        className={cn(
+          'fixed inset-0 bg-slate-950 z-40 flex flex-col items-center justify-center gap-8 transition-all duration-300 ease-in-out md:hidden',
+          mobileMenuOpen
+            ? 'opacity-100 translate-y-0'
+            : 'opacity-0 -translate-y-full pointer-events-none',
+        )}
+      >
+        <button
+          onClick={() => handleNavClick('sobre')}
+          className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
+        >
+          Sobre
+        </button>
+        <button
+          onClick={() => handleNavClick('especialidades')}
+          className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
+        >
+          Especialidades
+        </button>
+        <button
+          onClick={() => handleNavClick('depoimentos')}
+          className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
+        >
+          Depoimentos
+        </button>
+        <button
+          onClick={() => handleNavClick('contato')}
+          className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
+        >
+          Contato
+        </button>
+        <Button
+          onClick={() => handleNavClick('agendamento')}
+          size="lg"
+          className="bg-amber-600 hover:bg-amber-700 text-white mt-4 gap-2"
+        >
+          <Calendar className="w-5 h-5" />
+          Agendar Consulta
+        </Button>
       </div>
     </header>
   )
