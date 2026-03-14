@@ -737,10 +737,6 @@ section[aria-label='Notifications alt+T'] {
   left: 0.5rem;
 }
 
-.left-3{
-  left: 0.75rem;
-}
-
 .left-\[-5\%\]{
   left: -5%;
 }
@@ -795,10 +791,6 @@ section[aria-label='Notifications alt+T'] {
 
 .top-2{
   top: 0.5rem;
-}
-
-.top-3{
-  top: 0.75rem;
 }
 
 .top-3\.5{
@@ -1428,6 +1420,10 @@ section[aria-label='Notifications alt+T'] {
   max-width: max-content;
 }
 
+.max-w-sm{
+  max-width: 24rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1938,6 +1934,10 @@ section[aria-label='Notifications alt+T'] {
   background-color: rgb(37 211 102 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#25D366\]\/10{
+  background-color: rgb(37 211 102 / 0.1);
+}
+
 .bg-\[--color-bg\]{
   background-color: var(--color-bg);
 }
@@ -2328,10 +2328,6 @@ section[aria-label='Notifications alt+T'] {
   padding-bottom: 2rem;
 }
 
-.pl-10{
-  padding-left: 2.5rem;
-}
-
 .pl-2{
   padding-left: 0.5rem;
 }
@@ -2519,6 +2515,11 @@ section[aria-label='Notifications alt+T'] {
 
 .tracking-widest{
   letter-spacing: 0.1em;
+}
+
+.text-\[\#25D366\]{
+  --tw-text-opacity: 1;
+  color: rgb(37 211 102 / var(--tw-text-opacity, 1));
 }
 
 .text-accent-foreground{
@@ -4171,6 +4172,10 @@ section[aria-label='Notifications alt+T'] {
 
   .sm\:w-\[400px\]{
     width: 400px;
+  }
+
+  .sm\:w-auto{
+    width: auto;
   }
 
   .sm\:max-w-sm{

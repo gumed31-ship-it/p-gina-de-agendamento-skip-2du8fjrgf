@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, HeartPulse } from 'lucide-react'
+import { Menu, HeartPulse, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
 import { NAVIGATION } from '@/lib/data'
@@ -50,8 +50,14 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button asChild className="btn-gold animate-pulse-gold rounded-full px-6">
-            <a href="#agendamento">Agendar Agora</a>
+          <Button
+            asChild
+            className="btn-gold animate-pulse-gold rounded-full px-6 text-ultra-blue hover:text-ultra-blue flex items-center gap-2"
+          >
+            <a href="https://wa.me/5533991488020" target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="h-4 w-4" />
+              Agende pelo WhatsApp
+            </a>
           </Button>
         </div>
 
@@ -77,9 +83,18 @@ export function Header() {
                     {item.name}
                   </a>
                 ))}
-                <Button asChild className="btn-gold mt-4 w-full">
-                  <a href="#agendamento" onClick={() => setIsOpen(false)}>
-                    Agendar Agora
+                <Button
+                  asChild
+                  className="btn-gold mt-4 w-full text-ultra-blue hover:text-ultra-blue flex items-center justify-center gap-2"
+                >
+                  <a
+                    href="https://wa.me/5533991488020"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <MessageCircle className="h-5 w-5" />
+                    Agende pelo WhatsApp
                   </a>
                 </Button>
               </nav>

@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, MessageCircle } from 'lucide-react'
 
 export function HeroSection() {
   return (
@@ -29,8 +29,15 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="btn-gold rounded-full text-base px-8 h-14">
-              <a href="#agendamento">Agendar Consulta</a>
+            <Button
+              asChild
+              size="lg"
+              className="btn-gold rounded-full text-base px-8 h-14 text-ultra-blue hover:text-ultra-blue flex items-center justify-center gap-2"
+            >
+              <a href="https://wa.me/5533991488020" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5" />
+                Agende pelo WhatsApp
+              </a>
             </Button>
             <Button
               asChild
@@ -38,7 +45,7 @@ export function HeroSection() {
               variant="outline"
               className="rounded-full text-base px-8 h-14 border-white/30 text-white hover:bg-white hover:text-ultra-blue bg-transparent backdrop-blur-sm transition-all duration-300"
             >
-              <a href="#especialidades" className="flex items-center gap-2">
+              <a href="#especialidades" className="flex items-center justify-center gap-2">
                 Ver Especialidades <ChevronRight className="h-4 w-4" />
               </a>
             </Button>

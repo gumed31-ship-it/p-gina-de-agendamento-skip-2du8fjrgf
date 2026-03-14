@@ -1,4 +1,4 @@
-import { Smartphone } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 
 export function FloatingWhatsApp() {
   return (
@@ -9,7 +9,7 @@ export function FloatingWhatsApp() {
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300 animate-fade-in flex items-center justify-center"
       aria-label="Contato via WhatsApp"
     >
-      <Smartphone className="h-7 w-7" />
+      <MessageCircle className="h-7 w-7" />
     </a>
   )
 }
