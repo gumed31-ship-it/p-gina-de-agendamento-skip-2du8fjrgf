@@ -19272,6 +19272,26 @@ var Smartphone = createLucideIcon("smartphone", [["rect", {
 	d: "M12 18h.01",
 	key: "mhygvu"
 }]]);
+var Sparkles = createLucideIcon("sparkles", [
+	["path", {
+		d: "M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z",
+		key: "1s2grr"
+	}],
+	["path", {
+		d: "M20 2v4",
+		key: "1rf3ol"
+	}],
+	["path", {
+		d: "M22 4h-4",
+		key: "gwowj6"
+	}],
+	["circle", {
+		cx: "4",
+		cy: "20",
+		r: "2",
+		key: "6kqj1y"
+	}]
+]);
 var Star = createLucideIcon("star", [["path", {
 	d: "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",
 	key: "r04s7s"
@@ -25465,6 +25485,162 @@ function JointUltrasoundSection() {
 	});
 }
 //#endregion
+//#region src/components/home/VaricoseVeinsSection.tsx
+function VaricoseVeinsSection() {
+	const benefits = [
+		"Procedimento não cirúrgico",
+		"Minimamente invasivo",
+		"Rápida recuperação",
+		"Excelentes resultados estéticos"
+	];
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		"data-uid": "src/components/home/VaricoseVeinsSection.tsx:14:5",
+		"data-prohibitions": "[editContent]",
+		id: "tratamento-varizes",
+		className: "py-24 bg-ultra-blue relative overflow-hidden",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/VaricoseVeinsSection.tsx:16:7",
+				"data-prohibitions": "[editContent]",
+				className: "absolute top-0 right-0 w-full md:w-1/2 h-full bg-ultra-gold/5 skew-x-12 translate-x-1/4 pointer-events-none"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/VaricoseVeinsSection.tsx:17:7",
+				"data-prohibitions": "[editContent]",
+				className: "absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-ultra-gold/10 blur-3xl pointer-events-none"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/VaricoseVeinsSection.tsx:19:7",
+				"data-prohibitions": "[editContent]",
+				className: "container mx-auto px-4 md:px-6 relative z-10",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					"data-uid": "src/components/home/VaricoseVeinsSection.tsx:20:9",
+					"data-prohibitions": "[editContent]",
+					className: "grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
+						"data-uid": "src/components/home/VaricoseVeinsSection.tsx:21:11",
+						"data-prohibitions": "[editContent]",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								"data-uid": "src/components/home/VaricoseVeinsSection.tsx:22:13",
+								"data-prohibitions": "[]",
+								className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ultra-gold/10 border border-ultra-gold/30 text-ultra-gold text-sm font-semibold tracking-wide uppercase mb-6 shadow-[0_0_15px_rgba(212,175,55,0.15)]",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, {
+									"data-uid": "src/components/home/VaricoseVeinsSection.tsx:23:15",
+									"data-prohibitions": "[editContent]",
+									className: "w-4 h-4"
+								}), "Tratamento Premium"]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								"data-uid": "src/components/home/VaricoseVeinsSection.tsx:27:13",
+								"data-prohibitions": "[]",
+								className: "text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight",
+								children: [
+									"Tratamento de Varizes ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
+										"data-uid": "src/components/home/VaricoseVeinsSection.tsx:28:37",
+										"data-prohibitions": "[editContent]"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										"data-uid": "src/components/home/VaricoseVeinsSection.tsx:29:15",
+										"data-prohibitions": "[]",
+										className: "text-ultra-gold",
+										children: "com Espuma"
+									})
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								"data-uid": "src/components/home/VaricoseVeinsSection.tsx:32:13",
+								"data-prohibitions": "[]",
+								className: "text-lg text-slate-300 mb-8 leading-relaxed",
+								children: "Livre-se das varizes com um procedimento moderno, seguro e sem necessidade de cirurgia. A escleroterapia com espuma densa é uma alternativa minimamente invasiva que oferece excelentes resultados, permitindo uma rápida recuperação para você voltar à sua rotina com pernas mais saudáveis e bonitas."
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								"data-uid": "src/components/home/VaricoseVeinsSection.tsx:39:13",
+								"data-prohibitions": "[editContent]",
+								className: "grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10",
+								children: benefits.map((benefit, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									"data-uid": "src/components/home/VaricoseVeinsSection.tsx:41:17",
+									"data-prohibitions": "[editContent]",
+									className: "flex items-center gap-3 bg-white/5 p-3 rounded-lg border border-white/10",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, {
+										"data-uid": "src/components/home/VaricoseVeinsSection.tsx:45:19",
+										"data-prohibitions": "[editContent]",
+										className: "h-5 w-5 text-ultra-gold flex-shrink-0"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										"data-uid": "src/components/home/VaricoseVeinsSection.tsx:46:19",
+										"data-prohibitions": "[editContent]",
+										className: "text-slate-200 font-medium text-sm",
+										children: benefit
+									})]
+								}, idx))
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+								"data-uid": "src/components/home/VaricoseVeinsSection.tsx:51:13",
+								"data-prohibitions": "[]",
+								asChild: true,
+								size: "lg",
+								className: "btn-gold rounded-full text-base px-8 h-14 text-ultra-blue hover:text-ultra-blue flex items-center justify-center gap-2 w-full sm:w-auto shadow-gold-lg transition-transform hover:-translate-y-1",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+									"data-uid": "src/components/home/VaricoseVeinsSection.tsx:56:15",
+									"data-prohibitions": "[]",
+									href: "https://wa.me/5533991488020",
+									target: "_blank",
+									rel: "noopener noreferrer",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MessageCircle, {
+										"data-uid": "src/components/home/VaricoseVeinsSection.tsx:57:17",
+										"data-prohibitions": "[editContent]",
+										className: "h-5 w-5"
+									}), "Saber mais no WhatsApp"]
+								})
+							})
+						]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
+						"data-uid": "src/components/home/VaricoseVeinsSection.tsx:63:11",
+						"data-prohibitions": "[]",
+						delay: 200,
+						className: "relative mt-8 lg:mt-0",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/home/VaricoseVeinsSection.tsx:64:13",
+							"data-prohibitions": "[editContent]",
+							className: "absolute -inset-4 bg-gradient-to-tr from-ultra-gold/30 to-transparent rounded-[2rem] transform rotate-3"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							"data-uid": "src/components/home/VaricoseVeinsSection.tsx:65:13",
+							"data-prohibitions": "[]",
+							className: "relative rounded-[2rem] overflow-hidden shadow-2xl border border-ultra-gold/20 aspect-square md:aspect-[4/3] lg:aspect-square group bg-ultra-blueLight",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+									"data-uid": "src/components/home/VaricoseVeinsSection.tsx:66:15",
+									"data-prohibitions": "[editContent]",
+									src: "https://img.usecurling.com/p/800/800?q=healthy%20legs%20medical%20clinic&color=blue",
+									alt: "Tratamento de Varizes com Espuma",
+									className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									"data-uid": "src/components/home/VaricoseVeinsSection.tsx:71:15",
+									"data-prohibitions": "[editContent]",
+									className: "absolute inset-0 bg-gradient-to-t from-ultra-blue via-ultra-blue/20 to-transparent opacity-80"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									"data-uid": "src/components/home/VaricoseVeinsSection.tsx:72:15",
+									"data-prohibitions": "[]",
+									className: "absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										"data-uid": "src/components/home/VaricoseVeinsSection.tsx:73:17",
+										"data-prohibitions": "[]",
+										className: "text-white font-medium text-center italic",
+										children: "\"Pernas lindas e saudáveis sem internação ou repouso prolongado.\""
+									})
+								})
+							]
+						})]
+					})]
+				})
+			})
+		]
+	});
+}
+//#endregion
 //#region src/components/home/InfrastructureSection.tsx
 var infrastructureImages = [
 	{
@@ -28459,64 +28635,68 @@ function FinalCTASection() {
 //#region src/pages/Index.tsx
 function Index() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
-		"data-uid": "src/pages/Index.tsx:18:5",
+		"data-uid": "src/pages/Index.tsx:19:5",
 		"data-prohibitions": "[]",
 		className: "flex min-h-screen flex-col bg-background",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroSection, {
-				"data-uid": "src/pages/Index.tsx:19:7",
-				"data-prohibitions": "[editContent]"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DifferentialsSection, {
 				"data-uid": "src/pages/Index.tsx:20:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DifferentialsSection, {
 				"data-uid": "src/pages/Index.tsx:21:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SpecialtiesSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutSection, {
 				"data-uid": "src/pages/Index.tsx:22:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExamsSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SpecialtiesSection, {
 				"data-uid": "src/pages/Index.tsx:23:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Ultrasound4DSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExamsSection, {
 				"data-uid": "src/pages/Index.tsx:24:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(JointUltrasoundSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Ultrasound4DSection, {
 				"data-uid": "src/pages/Index.tsx:25:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfrastructureSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(JointUltrasoundSection, {
 				"data-uid": "src/pages/Index.tsx:26:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TeamSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(VaricoseVeinsSection, {
 				"data-uid": "src/pages/Index.tsx:27:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TestimonialsSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfrastructureSection, {
 				"data-uid": "src/pages/Index.tsx:28:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FAQSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TeamSection, {
 				"data-uid": "src/pages/Index.tsx:29:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LocationSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TestimonialsSection, {
 				"data-uid": "src/pages/Index.tsx:30:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AppointmentSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FAQSection, {
 				"data-uid": "src/pages/Index.tsx:31:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FinalCTASection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LocationSection, {
 				"data-uid": "src/pages/Index.tsx:32:7",
+				"data-prohibitions": "[editContent]"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AppointmentSection, {
+				"data-uid": "src/pages/Index.tsx:33:7",
+				"data-prohibitions": "[editContent]"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FinalCTASection, {
+				"data-uid": "src/pages/Index.tsx:34:7",
 				"data-prohibitions": "[editContent]"
 			})
 		]
@@ -30520,4 +30700,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-CpoXqOKo.js.map
+//# sourceMappingURL=index-BWG96d3p.js.map
