@@ -19020,40 +19020,6 @@ var ArrowRight = createLucideIcon("arrow-right", [["path", {
 	d: "m12 5 7 7-7 7",
 	key: "xquz4c"
 }]]);
-var Brain = createLucideIcon("brain", [
-	["path", {
-		d: "M12 18V5",
-		key: "adv99a"
-	}],
-	["path", {
-		d: "M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4",
-		key: "1e3is1"
-	}],
-	["path", {
-		d: "M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5",
-		key: "1gqd8o"
-	}],
-	["path", {
-		d: "M17.997 5.125a4 4 0 0 1 2.526 5.77",
-		key: "iwvgf7"
-	}],
-	["path", {
-		d: "M18 18a4 4 0 0 0 2-7.464",
-		key: "efp6ie"
-	}],
-	["path", {
-		d: "M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517",
-		key: "1gq6am"
-	}],
-	["path", {
-		d: "M6 18a4 4 0 0 1-2-7.464",
-		key: "k1g0md"
-	}],
-	["path", {
-		d: "M6.003 5.125a4 4 0 0 0-2.526 5.77",
-		key: "q97ue3"
-	}]
-]);
 var Calendar = createLucideIcon("calendar", [
 	["path", {
 		d: "M8 2v4",
@@ -19112,25 +19078,12 @@ var Clock = createLucideIcon("clock", [["circle", {
 	d: "M12 6v6l4 2",
 	key: "mmk7yg"
 }]]);
-var Eye = createLucideIcon("eye", [["path", {
-	d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0",
-	key: "1nclc0"
-}], ["circle", {
-	cx: "12",
-	cy: "12",
-	r: "3",
-	key: "1v7zrd"
-}]]);
 var HeartPulse = createLucideIcon("heart-pulse", [["path", {
 	d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
 	key: "mvr1a0"
 }], ["path", {
 	d: "M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27",
 	key: "auskq0"
-}]]);
-var Heart = createLucideIcon("heart", [["path", {
-	d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
-	key: "mvr1a0"
 }]]);
 var Instagram = createLucideIcon("instagram", [
 	["rect", {
@@ -24815,57 +24768,33 @@ function DifferentialsSection() {
 var SPECIALTIES = [
 	{
 		id: "1",
-		name: "Cardiologia",
-		icon: Heart,
-		desc: "Cuidado completo para o seu coração."
-	},
-	{
-		id: "2",
-		name: "Ortopedia",
-		icon: Activity,
-		desc: "Especialistas em ossos e articulações."
-	},
-	{
-		id: "3",
-		name: "Neurologia",
-		icon: Brain,
-		desc: "Diagnósticos precisos para o sistema nervoso."
-	},
-	{
-		id: "4",
-		name: "Oftalmologia",
-		icon: Eye,
-		desc: "Saúde ocular com tecnologia de ponta."
-	},
-	{
-		id: "5",
 		name: "Angiologia",
 		icon: HeartPulse,
 		desc: "Prevenção e tratamento especializado das doenças do sistema circulatório."
 	},
 	{
-		id: "6",
+		id: "2",
 		name: "Geriatria",
 		icon: UserCheck,
 		desc: "Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso."
 	},
 	{
-		id: "7",
+		id: "3",
 		name: "Clínica Médica",
 		icon: Stethoscope,
 		desc: "Atendimento global e integrativo para diagnóstico e tratamento de pacientes adultos."
 	},
 	{
-		id: "8",
+		id: "4",
 		name: "Anestesiologia",
 		icon: Syringe,
 		desc: "Excelência em segurança, monitoramento e controle da dor em procedimentos médicos."
 	},
 	{
-		id: "9",
-		name: "Exames de Imagem",
-		icon: Microscope,
-		desc: "Ultrassonografia, Endoscopia, Eletrocardiograma e mais procedimentos diagnósticos."
+		id: "5",
+		name: "Urologia",
+		icon: Activity,
+		desc: "Cuidado especializado do trato urinário e sistema reprodutor masculino."
 	}
 ];
 var TESTIMONIALS = [
@@ -24994,51 +24923,52 @@ function SpecialtiesSection() {
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				"data-uid": "src/components/home/SpecialtiesSection.tsx:23:9",
 				"data-prohibitions": "[editContent]",
-				className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+				className: "flex flex-wrap justify-center gap-6",
 				children: SPECIALTIES.map((spec, idx) => {
 					const Icon = spec.icon;
 					return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
 						"data-uid": "src/components/home/SpecialtiesSection.tsx:27:15",
 						"data-prohibitions": "[editContent]",
 						delay: idx * 100,
+						className: "w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Card, {
-							"data-uid": "src/components/home/SpecialtiesSection.tsx:28:17",
+							"data-uid": "src/components/home/SpecialtiesSection.tsx:32:17",
 							"data-prohibitions": "[editContent]",
-							className: "group border border-slate-100 hover:border-ultra-gold/30 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden bg-slate-50 hover:bg-white h-full",
+							className: "w-full group border border-slate-100 hover:border-ultra-gold/30 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden bg-slate-50 hover:bg-white flex flex-col",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
-								"data-uid": "src/components/home/SpecialtiesSection.tsx:29:19",
+								"data-uid": "src/components/home/SpecialtiesSection.tsx:33:19",
 								"data-prohibitions": "[editContent]",
-								className: "p-8 flex flex-col items-start h-full",
+								className: "p-8 flex flex-col items-start flex-grow",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										"data-uid": "src/components/home/SpecialtiesSection.tsx:30:21",
+										"data-uid": "src/components/home/SpecialtiesSection.tsx:34:21",
 										"data-prohibitions": "[]",
-										className: "w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-ultra-gold transition-all duration-500",
+										className: "w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-ultra-gold transition-all duration-500 shrink-0",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, {
-											"data-uid": "src/components/home/SpecialtiesSection.tsx:31:23",
+											"data-uid": "src/components/home/SpecialtiesSection.tsx:35:23",
 											"data-prohibitions": "[editContent]",
 											className: "h-7 w-7 text-ultra-blue group-hover:text-white transition-colors duration-500"
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-										"data-uid": "src/components/home/SpecialtiesSection.tsx:33:21",
+										"data-uid": "src/components/home/SpecialtiesSection.tsx:37:21",
 										"data-prohibitions": "[editContent]",
 										className: "text-xl font-bold text-ultra-blue mb-3 font-serif",
 										children: spec.name
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/home/SpecialtiesSection.tsx:36:21",
+										"data-uid": "src/components/home/SpecialtiesSection.tsx:40:21",
 										"data-prohibitions": "[editContent]",
 										className: "text-slate-600 mb-6 flex-grow",
 										children: spec.desc
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-										"data-uid": "src/components/home/SpecialtiesSection.tsx:37:21",
+										"data-uid": "src/components/home/SpecialtiesSection.tsx:41:21",
 										"data-prohibitions": "[]",
 										href: "#agendamento",
 										className: "inline-flex items-center text-sm font-semibold text-ultra-gold hover:text-ultra-blue transition-colors mt-auto",
 										children: ["Agendar ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, {
-											"data-uid": "src/components/home/SpecialtiesSection.tsx:41:31",
+											"data-uid": "src/components/home/SpecialtiesSection.tsx:45:31",
 											"data-prohibitions": "[editContent]",
 											className: "h-4 w-4 ml-1"
 										})]
@@ -31859,4 +31789,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-B618tFUH.js.map
+//# sourceMappingURL=index-CtOp9pvz.js.map

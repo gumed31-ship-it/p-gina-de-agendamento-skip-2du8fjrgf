@@ -20,14 +20,18 @@ export function SpecialtiesSection() {
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {SPECIALTIES.map((spec, idx) => {
             const Icon = spec.icon
             return (
-              <ScrollReveal key={spec.id} delay={idx * 100}>
-                <Card className="group border border-slate-100 hover:border-ultra-gold/30 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden bg-slate-50 hover:bg-white h-full">
-                  <CardContent className="p-8 flex flex-col items-start h-full">
-                    <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-ultra-gold transition-all duration-500">
+              <ScrollReveal
+                key={spec.id}
+                delay={idx * 100}
+                className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex"
+              >
+                <Card className="w-full group border border-slate-100 hover:border-ultra-gold/30 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden bg-slate-50 hover:bg-white flex flex-col">
+                  <CardContent className="p-8 flex flex-col items-start flex-grow">
+                    <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-ultra-gold transition-all duration-500 shrink-0">
                       <Icon className="h-7 w-7 text-ultra-blue group-hover:text-white transition-colors duration-500" />
                     </div>
                     <h4 className="text-xl font-bold text-ultra-blue mb-3 font-serif">

@@ -4418,6 +4418,10 @@ section[aria-label='Notifications alt+T'] {
     width: 60%;
   }
 
+  .md\:w-\[calc\(50\%-12px\)\]{
+    width: calc(50% - 12px);
+  }
+
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\]{
     width: var(--radix-navigation-menu-viewport-width);
   }
@@ -4584,6 +4588,10 @@ section[aria-label='Notifications alt+T'] {
 
   .lg\:h-auto{
     height: auto;
+  }
+
+  .lg\:w-\[calc\(33\.333\%-16px\)\]{
+    width: calc(33.333% - 16px);
   }
 
   .lg\:basis-full{

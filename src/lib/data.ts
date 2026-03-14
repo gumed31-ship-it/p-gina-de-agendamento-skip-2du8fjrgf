@@ -1,14 +1,4 @@
-import {
-  Activity,
-  Brain,
-  Eye,
-  Heart,
-  Stethoscope,
-  Syringe,
-  HeartPulse,
-  UserCheck,
-  Microscope,
-} from 'lucide-react'
+import { Activity, Stethoscope, Syringe, HeartPulse, UserCheck } from 'lucide-react'
 
 export const NAVIGATION = [
   { name: 'Especialidades', href: '#especialidades' },
@@ -21,44 +11,35 @@ export const NAVIGATION = [
 ]
 
 export const SPECIALTIES = [
-  { id: '1', name: 'Cardiologia', icon: Heart, desc: 'Cuidado completo para o seu coração.' },
-  { id: '2', name: 'Ortopedia', icon: Activity, desc: 'Especialistas em ossos e articulações.' },
   {
-    id: '3',
-    name: 'Neurologia',
-    icon: Brain,
-    desc: 'Diagnósticos precisos para o sistema nervoso.',
-  },
-  { id: '4', name: 'Oftalmologia', icon: Eye, desc: 'Saúde ocular com tecnologia de ponta.' },
-  {
-    id: '5',
+    id: '1',
     name: 'Angiologia',
     icon: HeartPulse,
     desc: 'Prevenção e tratamento especializado das doenças do sistema circulatório.',
   },
   {
-    id: '6',
+    id: '2',
     name: 'Geriatria',
     icon: UserCheck,
     desc: 'Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso.',
   },
   {
-    id: '7',
+    id: '3',
     name: 'Clínica Médica',
     icon: Stethoscope,
     desc: 'Atendimento global e integrativo para diagnóstico e tratamento de pacientes adultos.',
   },
   {
-    id: '8',
+    id: '4',
     name: 'Anestesiologia',
     icon: Syringe,
     desc: 'Excelência em segurança, monitoramento e controle da dor em procedimentos médicos.',
   },
   {
-    id: '9',
-    name: 'Exames de Imagem',
-    icon: Microscope,
-    desc: 'Ultrassonografia, Endoscopia, Eletrocardiograma e mais procedimentos diagnósticos.',
+    id: '5',
+    name: 'Urologia',
+    icon: Activity,
+    desc: 'Cuidado especializado do trato urinário e sistema reprodutor masculino.',
   },
 ]
 
