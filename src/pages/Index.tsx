@@ -2,6 +2,7 @@ import { HeroSection } from '@/components/home/HeroSection'
 import { AboutSection } from '@/components/home/AboutSection'
 import { DifferentialsSection } from '@/components/home/DifferentialsSection'
 import { SpecialtiesSection } from '@/components/home/SpecialtiesSection'
+import { ProceduresSection } from '@/components/home/ProceduresSection'
 import { ExamsSection } from '@/components/home/ExamsSection'
 import { Ultrasound4DSection } from '@/components/home/Ultrasound4DSection'
 import { JointUltrasoundSection } from '@/components/home/JointUltrasoundSection'
@@ -21,6 +22,7 @@ export default function Index() {
       <DifferentialsSection />
       <AboutSection />
       <SpecialtiesSection />
+      <ProceduresSection />
       <ExamsSection />
       <Ultrasound4DSection />
       <JointUltrasoundSection />

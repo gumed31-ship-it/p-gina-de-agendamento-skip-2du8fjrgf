@@ -12,6 +12,7 @@ import {
 
 export const NAVIGATION = [
   { name: 'Especialidades', href: '#especialidades' },
+  { name: 'Procedimentos', href: '#procedimentos' },
   { name: 'Exames', href: '#exames' },
   { name: 'Sobre', href: '#sobre' },
   { name: 'Estrutura', href: '#estrutura' },

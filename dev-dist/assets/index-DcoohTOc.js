@@ -19303,6 +19303,26 @@ var Syringe = createLucideIcon("syringe", [
 		key: "yqp9t2"
 	}]
 ]);
+var Target = createLucideIcon("target", [
+	["circle", {
+		cx: "12",
+		cy: "12",
+		r: "10",
+		key: "1mglay"
+	}],
+	["circle", {
+		cx: "12",
+		cy: "12",
+		r: "6",
+		key: "1vlfrh"
+	}],
+	["circle", {
+		cx: "12",
+		cy: "12",
+		r: "2",
+		key: "1c9p78"
+	}]
+]);
 var UserCheck = createLucideIcon("user-check", [
 	["path", {
 		d: "m16 11 2 2 4-4",
@@ -25063,6 +25083,123 @@ function SpecialtiesSection() {
 	});
 }
 //#endregion
+//#region src/components/home/ProceduresSection.tsx
+var PROCEDURES = [
+	{
+		id: "1",
+		name: "Biópsia de Próstata guiada por ultrassonografia",
+		desc: "Procedimento minimamente invasivo que utiliza imagens de ultrassom em tempo real para garantir a coleta precisa e segura de amostras da próstata.",
+		icon: Target
+	},
+	{
+		id: "2",
+		name: "Biópsia de Mama guiada por ultrassonografia",
+		desc: "Método altamente preciso e confortável para a paciente, guiado por ultrassom, fundamental no diagnóstico assertivo de alterações mamárias.",
+		icon: Activity
+	},
+	{
+		id: "3",
+		name: "Biópsia de Tireóide guiada por ultrassonografia",
+		desc: "Punção aspirativa guiada por ultrassom para avaliação detalhada de nódulos tireoidianos, proporcionando resultados confiáveis com máxima segurança.",
+		icon: Stethoscope
+	}
+];
+function ProceduresSection() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+		"data-uid": "src/components/home/ProceduresSection.tsx:28:5",
+		"data-prohibitions": "[editContent]",
+		id: "procedimentos",
+		className: "py-24 bg-slate-50 border-t border-slate-100",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			"data-uid": "src/components/home/ProceduresSection.tsx:29:7",
+			"data-prohibitions": "[editContent]",
+			className: "container mx-auto px-4 md:px-6",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
+				"data-uid": "src/components/home/ProceduresSection.tsx:30:9",
+				"data-prohibitions": "[]",
+				className: "text-center max-w-3xl mx-auto mb-16",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						"data-uid": "src/components/home/ProceduresSection.tsx:31:11",
+						"data-prohibitions": "[]",
+						className: "text-ultra-gold font-semibold uppercase tracking-wider mb-2 text-sm",
+						children: "Procedimentos"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+						"data-uid": "src/components/home/ProceduresSection.tsx:34:11",
+						"data-prohibitions": "[]",
+						className: "text-3xl md:text-4xl font-serif font-bold text-ultra-blue mb-4",
+						children: "Biópsias Guiadas por Ultrassom"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						"data-uid": "src/components/home/ProceduresSection.tsx:37:11",
+						"data-prohibitions": "[]",
+						className: "text-slate-600 text-lg",
+						children: "Realizamos procedimentos diagnósticos com o auxílio de ultrassonografia de alta resolução, garantindo a máxima segurança, conforto e precisão."
+					})
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/ProceduresSection.tsx:43:9",
+				"data-prohibitions": "[editContent]",
+				className: "grid grid-cols-1 md:grid-cols-3 gap-6",
+				children: PROCEDURES.map((proc, idx) => {
+					const Icon = proc.icon;
+					return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
+						"data-uid": "src/components/home/ProceduresSection.tsx:47:15",
+						"data-prohibitions": "[editContent]",
+						delay: idx * 100,
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Card, {
+							"data-uid": "src/components/home/ProceduresSection.tsx:48:17",
+							"data-prohibitions": "[editContent]",
+							className: "group border border-slate-200 hover:border-ultra-gold/30 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden bg-white h-full",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
+								"data-uid": "src/components/home/ProceduresSection.tsx:49:19",
+								"data-prohibitions": "[editContent]",
+								className: "p-8 flex flex-col items-start h-full",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										"data-uid": "src/components/home/ProceduresSection.tsx:50:21",
+										"data-prohibitions": "[]",
+										className: "w-14 h-14 rounded-2xl bg-slate-50 shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-ultra-gold transition-all duration-500",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, {
+											"data-uid": "src/components/home/ProceduresSection.tsx:51:23",
+											"data-prohibitions": "[editContent]",
+											className: "h-7 w-7 text-ultra-blue group-hover:text-white transition-colors duration-500"
+										})
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+										"data-uid": "src/components/home/ProceduresSection.tsx:53:21",
+										"data-prohibitions": "[editContent]",
+										className: "text-xl font-bold text-ultra-blue mb-3 font-serif leading-tight",
+										children: proc.name
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										"data-uid": "src/components/home/ProceduresSection.tsx:56:21",
+										"data-prohibitions": "[editContent]",
+										className: "text-slate-600 mb-6 flex-grow",
+										children: proc.desc
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+										"data-uid": "src/components/home/ProceduresSection.tsx:57:21",
+										"data-prohibitions": "[]",
+										href: "#agendamento",
+										className: "inline-flex items-center text-sm font-semibold text-ultra-gold hover:text-ultra-blue transition-colors mt-auto",
+										children: ["Agendar ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, {
+											"data-uid": "src/components/home/ProceduresSection.tsx:61:31",
+											"data-prohibitions": "[editContent]",
+											className: "h-4 w-4 ml-1"
+										})]
+									})
+								]
+							})
+						})
+					}, proc.id);
+				})
+			})]
+		})
+	});
+}
+//#endregion
 //#region src/components/home/ExamsSection.tsx
 var EXAMS_LIST = [
 	"Ultrassonografia Geral e Vascular com Doppler Colorido",
@@ -28622,68 +28759,72 @@ function FinalCTASection() {
 //#region src/pages/Index.tsx
 function Index() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
-		"data-uid": "src/pages/Index.tsx:19:5",
+		"data-uid": "src/pages/Index.tsx:20:5",
 		"data-prohibitions": "[]",
 		className: "flex min-h-screen flex-col bg-background",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroSection, {
-				"data-uid": "src/pages/Index.tsx:20:7",
-				"data-prohibitions": "[editContent]"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DifferentialsSection, {
 				"data-uid": "src/pages/Index.tsx:21:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DifferentialsSection, {
 				"data-uid": "src/pages/Index.tsx:22:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SpecialtiesSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutSection, {
 				"data-uid": "src/pages/Index.tsx:23:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExamsSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SpecialtiesSection, {
 				"data-uid": "src/pages/Index.tsx:24:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Ultrasound4DSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProceduresSection, {
 				"data-uid": "src/pages/Index.tsx:25:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(JointUltrasoundSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExamsSection, {
 				"data-uid": "src/pages/Index.tsx:26:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(VaricoseVeinsSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Ultrasound4DSection, {
 				"data-uid": "src/pages/Index.tsx:27:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfrastructureSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(JointUltrasoundSection, {
 				"data-uid": "src/pages/Index.tsx:28:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TeamSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(VaricoseVeinsSection, {
 				"data-uid": "src/pages/Index.tsx:29:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TestimonialsSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfrastructureSection, {
 				"data-uid": "src/pages/Index.tsx:30:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FAQSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TeamSection, {
 				"data-uid": "src/pages/Index.tsx:31:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LocationSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TestimonialsSection, {
 				"data-uid": "src/pages/Index.tsx:32:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AppointmentSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FAQSection, {
 				"data-uid": "src/pages/Index.tsx:33:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FinalCTASection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LocationSection, {
 				"data-uid": "src/pages/Index.tsx:34:7",
+				"data-prohibitions": "[editContent]"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AppointmentSection, {
+				"data-uid": "src/pages/Index.tsx:35:7",
+				"data-prohibitions": "[editContent]"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FinalCTASection, {
+				"data-uid": "src/pages/Index.tsx:36:7",
 				"data-prohibitions": "[editContent]"
 			})
 		]
@@ -31846,4 +31987,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-DQhW2aju.js.map
+//# sourceMappingURL=index-DcoohTOc.js.map
