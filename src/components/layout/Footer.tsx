@@ -177,7 +177,7 @@ export function Footer() {
             reservados.
           </p>
           <p className="text-slate-500 text-sm text-center md:text-right">
-            Responsável Técnico: Dr. Gustavo Teixeira Gomes - CRM 12345/SP
+            Responsável Técnico: Dr Gustavo Teixeira Gomes CRM MG 40372 / CRM ES 6915
           </p>
         </div>
       </div>

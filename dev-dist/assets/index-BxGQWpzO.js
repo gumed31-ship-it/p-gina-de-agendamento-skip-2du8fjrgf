@@ -31679,7 +31679,7 @@ function Footer() {
 						"data-uid": "src/components/layout/Footer.tsx:179:11",
 						"data-prohibitions": "[]",
 						className: "text-slate-500 text-sm text-center md:text-right",
-						children: "Responsável Técnico: Dr. Gustavo Teixeira Gomes - CRM 12345/SP"
+						children: "Responsável Técnico: Dr Gustavo Teixeira Gomes CRM MG 40372 / CRM ES 6915"
 					})]
 				})]
 			})
@@ -31797,4 +31797,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-BPn7UuZq.js.map
+//# sourceMappingURL=index-BxGQWpzO.js.map
