@@ -5,8 +5,8 @@ import drGustavoImg from '@/assets/whatsapp-image-2026-01-19-at-08.28.50-1-df56a
 const team = [
   {
     name: 'Dr. Gustavo Teixeira Gomes',
-    role: 'Diretor Clínico & Médico Ultrassonografista',
-    specialties: 'Angiologia, Ultrassonografia, Geriatria',
+    role: 'Diretor Clínico',
+    specialties: 'Angiologia, Geriatria',
     image: drGustavoImg,
     description:
       'Especialista em diagnóstico por imagem, dedicado a oferecer exames de excelência com precisão e atendimento humanizado.',
