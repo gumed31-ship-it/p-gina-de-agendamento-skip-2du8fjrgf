@@ -7,22 +7,22 @@ const doctors = [
   {
     name: 'Dr. Gustavo Teixeira Gomes',
     specialty: 'Angiologia, Ultrassonografia, Geriatria',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=gustavo',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=dr_gustavo_gomes',
   },
   {
     name: 'Dr. José Guilherme Gonçalves',
     specialty: 'Ortopedia e Traumatologia',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=jose',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=dr_jose_guilherme',
   },
   {
     name: 'Dr. Augusto Brinati',
     specialty: 'Anestesiologia',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=augusto',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=dr_augusto_brinati',
   },
   {
     name: 'Dr. Sérgio Paulo Motta',
     specialty: 'Oftalmologia',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=sergio',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=dr_sergio_motta',
   },
   {
     name: 'Dr. Rodrigo Bertani',
@@ -42,7 +42,7 @@ const doctors = [
   {
     name: 'Dr. Edney Gomes',
     specialty: 'Neurologia adulta e pediátrica',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=edney',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=dr_edney_gomes',
   },
 ]
 
