@@ -35812,12 +35812,12 @@ function LocationSection() {
 										"data-prohibitions": "[]",
 										className: "text-slate-600 text-sm",
 										children: [
-											"Rua Luís Pascoal Borges, 219 - Centro",
+											"Rua Luís Pascoal Borges, 219, Centro",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
 												"data-uid": "src/components/home/LocationSection.tsx:29:21",
 												"data-prohibitions": "[editContent]"
 											}),
-											"Mutum - MG, 36955-000"
+											"Mutum, MG, CEP 36955-000"
 										]
 									})]
 								})]
@@ -35848,49 +35848,42 @@ function LocationSection() {
 										"data-prohibitions": "[]",
 										className: "font-bold text-ultra-blue mb-1",
 										children: "Telefone / WhatsApp"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										"data-uid": "src/components/home/LocationSection.tsx:42:19",
 										"data-prohibitions": "[]",
 										className: "text-slate-600 text-sm",
-										children: [
-											"(31) 99999-0000",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-												"data-uid": "src/components/home/LocationSection.tsx:44:21",
-												"data-prohibitions": "[editContent]"
-											}),
-											"(31) 3222-0000"
-										]
+										children: "(33) 99148-8020"
 									})]
 								})]
 							})
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Card, {
-							"data-uid": "src/components/home/LocationSection.tsx:50:13",
+							"data-uid": "src/components/home/LocationSection.tsx:46:13",
 							"data-prohibitions": "[]",
 							className: "border-none shadow-md bg-slate-50",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
-								"data-uid": "src/components/home/LocationSection.tsx:51:15",
+								"data-uid": "src/components/home/LocationSection.tsx:47:15",
 								"data-prohibitions": "[]",
 								className: "p-6 flex items-start gap-4",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/home/LocationSection.tsx:52:17",
+									"data-uid": "src/components/home/LocationSection.tsx:48:17",
 									"data-prohibitions": "[]",
 									className: "bg-white p-3 rounded-full shadow-sm text-ultra-gold",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, {
-										"data-uid": "src/components/home/LocationSection.tsx:53:19",
+										"data-uid": "src/components/home/LocationSection.tsx:49:19",
 										"data-prohibitions": "[editContent]",
 										className: "h-6 w-6"
 									})
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/home/LocationSection.tsx:55:17",
+									"data-uid": "src/components/home/LocationSection.tsx:51:17",
 									"data-prohibitions": "[]",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-										"data-uid": "src/components/home/LocationSection.tsx:56:19",
+										"data-uid": "src/components/home/LocationSection.tsx:52:19",
 										"data-prohibitions": "[]",
 										className: "font-bold text-ultra-blue mb-1",
 										children: "E-mail"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/home/LocationSection.tsx:57:19",
+										"data-uid": "src/components/home/LocationSection.tsx:53:19",
 										"data-prohibitions": "[]",
 										className: "text-slate-600 text-sm",
 										children: "ultracentermg@gmail.com"
@@ -35899,38 +35892,38 @@ function LocationSection() {
 							})
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Card, {
-							"data-uid": "src/components/home/LocationSection.tsx:61:13",
+							"data-uid": "src/components/home/LocationSection.tsx:57:13",
 							"data-prohibitions": "[]",
 							className: "border-none shadow-md bg-slate-50",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
-								"data-uid": "src/components/home/LocationSection.tsx:62:15",
+								"data-uid": "src/components/home/LocationSection.tsx:58:15",
 								"data-prohibitions": "[]",
 								className: "p-6 flex items-start gap-4",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/home/LocationSection.tsx:63:17",
+									"data-uid": "src/components/home/LocationSection.tsx:59:17",
 									"data-prohibitions": "[]",
 									className: "bg-white p-3 rounded-full shadow-sm text-ultra-gold",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, {
-										"data-uid": "src/components/home/LocationSection.tsx:64:19",
+										"data-uid": "src/components/home/LocationSection.tsx:60:19",
 										"data-prohibitions": "[editContent]",
 										className: "h-6 w-6"
 									})
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/home/LocationSection.tsx:66:17",
+									"data-uid": "src/components/home/LocationSection.tsx:62:17",
 									"data-prohibitions": "[]",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-										"data-uid": "src/components/home/LocationSection.tsx:67:19",
+										"data-uid": "src/components/home/LocationSection.tsx:63:19",
 										"data-prohibitions": "[]",
 										className: "font-bold text-ultra-blue mb-1",
 										children: "Horário"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-										"data-uid": "src/components/home/LocationSection.tsx:68:19",
+										"data-uid": "src/components/home/LocationSection.tsx:64:19",
 										"data-prohibitions": "[]",
 										className: "text-slate-600 text-sm",
 										children: [
 											"Seg a Sex: 07h às 19h",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-												"data-uid": "src/components/home/LocationSection.tsx:70:21",
+												"data-uid": "src/components/home/LocationSection.tsx:66:21",
 												"data-prohibitions": "[editContent]"
 											}),
 											"Sábados: 07h às 13h"
@@ -35941,12 +35934,12 @@ function LocationSection() {
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
-					"data-uid": "src/components/home/LocationSection.tsx:78:11",
+					"data-uid": "src/components/home/LocationSection.tsx:74:11",
 					"data-prohibitions": "[editContent]",
 					delay: 200,
 					className: "lg:col-span-2 rounded-2xl overflow-hidden shadow-lg h-[400px] lg:h-auto border border-slate-100 relative",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
-						"data-uid": "src/components/home/LocationSection.tsx:83:13",
+						"data-uid": "src/components/home/LocationSection.tsx:79:13",
 						"data-prohibitions": "[editContent]",
 						src: "https://maps.google.com/maps?q=Rua%20Lu%C3%ADs%20Pascoal%20Borges,%20219,%20Centro,%20Mutum,%20MG&t=&z=15&ie=UTF8&iwloc=&output=embed",
 						width: "100%",
@@ -36798,12 +36791,12 @@ function Footer() {
 										"data-uid": "src/components/layout/Footer.tsx:71:17",
 										"data-prohibitions": "[]",
 										children: [
-											"Rua Luís Pascoal Borges, 219 - Centro",
+											"Rua Luís Pascoal Borges, 219, Centro",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
 												"data-uid": "src/components/layout/Footer.tsx:73:19",
 												"data-prohibitions": "[editContent]"
 											}),
-											"Mutum, MG, 36955-000"
+											"Mutum, MG, CEP 36955-000"
 										]
 									})]
 								}),
@@ -36818,7 +36811,7 @@ function Footer() {
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										"data-uid": "src/components/layout/Footer.tsx:79:17",
 										"data-prohibitions": "[]",
-										children: "(31) 99999-0000"
+										children: "(33) 99148-8020"
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
@@ -36938,7 +36931,7 @@ function FloatingWhatsApp() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 		"data-uid": "src/components/layout/FloatingWhatsApp.tsx:5:5",
 		"data-prohibitions": "[]",
-		href: "https://wa.me/5531999990000",
+		href: "https://wa.me/5533991488020",
 		target: "_blank",
 		rel: "noopener noreferrer",
 		className: "fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300 animate-fade-in flex items-center justify-center",
@@ -37043,4 +37036,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-DzVK3mDq.js.map
+//# sourceMappingURL=index-DJuW_mp4.js.map

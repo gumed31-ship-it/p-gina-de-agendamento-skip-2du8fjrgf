@@ -25,9 +25,9 @@ export function LocationSection() {
                 <div>
                   <h4 className="font-bold text-ultra-blue mb-1">Endereço</h4>
                   <p className="text-slate-600 text-sm">
-                    Rua Luís Pascoal Borges, 219 - Centro
+                    Rua Luís Pascoal Borges, 219, Centro
                     <br />
-                    Mutum - MG, 36955-000
+                    Mutum, MG, CEP 36955-000
                   </p>
                 </div>
               </CardContent>
@@ -39,11 +39,7 @@ export function LocationSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-ultra-blue mb-1">Telefone / WhatsApp</h4>
-                  <p className="text-slate-600 text-sm">
-                    (31) 99999-0000
-                    <br />
-                    (31) 3222-0000
-                  </p>
+                  <p className="text-slate-600 text-sm">(33) 99148-8020</p>
                 </div>
               </CardContent>
             </Card>

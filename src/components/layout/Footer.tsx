@@ -69,14 +69,14 @@ export function Footer() {
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 text-ultra-gold shrink-0 mt-0.5" />
                 <span>
-                  Rua Luís Pascoal Borges, 219 - Centro
+                  Rua Luís Pascoal Borges, 219, Centro
                   <br />
-                  Mutum, MG, 36955-000
+                  Mutum, MG, CEP 36955-000
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Smartphone className="h-5 w-5 text-ultra-gold shrink-0" />
-                <span>(31) 99999-0000</span>
+                <span>(33) 99148-8020</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-ultra-gold shrink-0" />
