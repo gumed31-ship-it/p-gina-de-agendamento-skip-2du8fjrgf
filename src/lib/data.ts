@@ -1,4 +1,14 @@
-import { Activity, Brain, Eye, Heart, Stethoscope, Baby } from 'lucide-react'
+import {
+  Activity,
+  Brain,
+  Eye,
+  Heart,
+  Stethoscope,
+  Syringe,
+  HeartPulse,
+  UserCheck,
+  Microscope,
+} from 'lucide-react'
 
 export const NAVIGATION = [
   { name: 'Especialidades', href: '#especialidades' },
@@ -20,11 +30,34 @@ export const SPECIALTIES = [
     desc: 'Diagnósticos precisos para o sistema nervoso.',
   },
   { id: '4', name: 'Oftalmologia', icon: Eye, desc: 'Saúde ocular com tecnologia de ponta.' },
-  { id: '5', name: 'Pediatria', icon: Baby, desc: 'Atenção e carinho para os pequenos.' },
+  {
+    id: '5',
+    name: 'Angiologia',
+    icon: HeartPulse,
+    desc: 'Prevenção e tratamento especializado das doenças do sistema circulatório.',
+  },
   {
     id: '6',
-    name: 'Exames de Imagem',
+    name: 'Geriatria',
+    icon: UserCheck,
+    desc: 'Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso.',
+  },
+  {
+    id: '7',
+    name: 'Clínica Médica',
     icon: Stethoscope,
+    desc: 'Atendimento global e integrativo para diagnóstico e tratamento de pacientes adultos.',
+  },
+  {
+    id: '8',
+    name: 'Anestesiologia',
+    icon: Syringe,
+    desc: 'Excelência em segurança, monitoramento e controle da dor em procedimentos médicos.',
+  },
+  {
+    id: '9',
+    name: 'Exames de Imagem',
+    icon: Microscope,
     desc: 'Ultrassonografia, Endoscopia, Eletrocardiograma e mais procedimentos diagnósticos.',
   },
 ]
@@ -78,7 +111,7 @@ export const TESTIMONIALS = [
   {
     id: 3,
     name: 'Juliana Paes',
-    text: 'Levei meu filho na pediatria e a médica foi um amor. O ambiente é acolhedor e passa muita segurança.',
+    text: 'Profissionais maravilhosos! O ambiente é acolhedor e passa muita segurança durante todo o atendimento.',
     rating: 5,
     image: 'https://img.usecurling.com/ppl/thumbnail?gender=female&seed=77',
   },

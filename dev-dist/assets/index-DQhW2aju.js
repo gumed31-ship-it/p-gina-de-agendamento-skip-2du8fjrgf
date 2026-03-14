@@ -19020,24 +19020,6 @@ var ArrowRight = createLucideIcon("arrow-right", [["path", {
 	d: "m12 5 7 7-7 7",
 	key: "xquz4c"
 }]]);
-var Baby = createLucideIcon("baby", [
-	["path", {
-		d: "M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5",
-		key: "1u7htd"
-	}],
-	["path", {
-		d: "M15 12h.01",
-		key: "1k8ypt"
-	}],
-	["path", {
-		d: "M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1",
-		key: "11xh7x"
-	}],
-	["path", {
-		d: "M9 12h.01",
-		key: "157uk2"
-	}]
-]);
 var Brain = createLucideIcon("brain", [
 	["path", {
 		d: "M12 18V5",
@@ -19138,6 +19120,13 @@ var Eye = createLucideIcon("eye", [["path", {
 	cy: "12",
 	r: "3",
 	key: "1v7zrd"
+}]]);
+var HeartPulse = createLucideIcon("heart-pulse", [["path", {
+	d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
+	key: "mvr1a0"
+}], ["path", {
+	d: "M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27",
+	key: "auskq0"
 }]]);
 var Heart = createLucideIcon("heart", [["path", {
 	d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
@@ -19286,6 +19275,48 @@ var Stethoscope = createLucideIcon("stethoscope", [
 		cy: "10",
 		r: "2",
 		key: "ts1r5v"
+	}]
+]);
+var Syringe = createLucideIcon("syringe", [
+	["path", {
+		d: "m18 2 4 4",
+		key: "22kx64"
+	}],
+	["path", {
+		d: "m17 7 3-3",
+		key: "1w1zoj"
+	}],
+	["path", {
+		d: "M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5",
+		key: "1exhtz"
+	}],
+	["path", {
+		d: "m9 11 4 4",
+		key: "rovt3i"
+	}],
+	["path", {
+		d: "m5 19-3 3",
+		key: "59f2uf"
+	}],
+	["path", {
+		d: "m14 4 6 6",
+		key: "yqp9t2"
+	}]
+]);
+var UserCheck = createLucideIcon("user-check", [
+	["path", {
+		d: "m16 11 2 2 4-4",
+		key: "9rsbq5"
+	}],
+	["path", {
+		d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",
+		key: "1yyitq"
+	}],
+	["circle", {
+		cx: "9",
+		cy: "7",
+		r: "4",
+		key: "nufk8"
 	}]
 ]);
 var Users = createLucideIcon("users", [
@@ -24788,14 +24819,32 @@ var SPECIALTIES = [
 	},
 	{
 		id: "5",
-		name: "Pediatria",
-		icon: Baby,
-		desc: "Atenção e carinho para os pequenos."
+		name: "Angiologia",
+		icon: HeartPulse,
+		desc: "Prevenção e tratamento especializado das doenças do sistema circulatório."
 	},
 	{
 		id: "6",
-		name: "Exames de Imagem",
+		name: "Geriatria",
+		icon: UserCheck,
+		desc: "Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso."
+	},
+	{
+		id: "7",
+		name: "Clínica Médica",
 		icon: Stethoscope,
+		desc: "Atendimento global e integrativo para diagnóstico e tratamento de pacientes adultos."
+	},
+	{
+		id: "8",
+		name: "Anestesiologia",
+		icon: Syringe,
+		desc: "Excelência em segurança, monitoramento e controle da dor em procedimentos médicos."
+	},
+	{
+		id: "9",
+		name: "Exames de Imagem",
+		icon: Microscope,
 		desc: "Ultrassonografia, Endoscopia, Eletrocardiograma e mais procedimentos diagnósticos."
 	}
 ];
@@ -24847,7 +24896,7 @@ var TESTIMONIALS = [
 	{
 		id: 3,
 		name: "Juliana Paes",
-		text: "Levei meu filho na pediatria e a médica foi um amor. O ambiente é acolhedor e passa muita segurança.",
+		text: "Profissionais maravilhosos! O ambiente é acolhedor e passa muita segurança durante todo o atendimento.",
 		rating: 5,
 		image: "https://img.usecurling.com/ppl/thumbnail?gender=female&seed=77"
 	}
@@ -31797,4 +31846,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-BxGQWpzO.js.map
+//# sourceMappingURL=index-DQhW2aju.js.map
