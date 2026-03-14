@@ -25854,7 +25854,7 @@ function Badge({ className, variant, ...props }) {
 //#region src/components/home/MedicalTeamSection.tsx
 var teamMembers = [{
 	name: "Dr. Gustavo Teixeira Gomes",
-	specialty: "Ultrassonografia, Angiologia e Geriatria",
+	specialty: "Angiologia, Ultrassonografia, Geriatria",
 	image: "https://img.usecurling.com/ppl/large?gender=male&seed=1"
 }, {
 	name: "Dr. José Guilherme Gonçalves",
@@ -25882,13 +25882,13 @@ function MedicalTeamSection() {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Badge, {
 							"data-uid": "src/components/home/MedicalTeamSection.tsx:26:13",
 							"data-prohibitions": "[]",
-							className: "bg-[#D4AF37]/10 text-[#D4AF37] hover:bg-[#D4AF37]/20 mb-4 border-none px-4 py-1.5 text-sm font-medium transition-colors",
+							className: "bg-ultra-gold/10 text-ultra-gold hover:bg-ultra-gold/20 mb-4 border-none px-4 py-1.5 text-sm font-medium transition-colors",
 							children: "Corpo Clínico"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 							"data-uid": "src/components/home/MedicalTeamSection.tsx:29:13",
 							"data-prohibitions": "[]",
-							className: "text-3xl md:text-4xl font-bold tracking-tight text-[#0A2540] mb-4",
+							className: "text-3xl md:text-4xl font-serif font-bold tracking-tight text-ultra-blue mb-4",
 							children: "Nossa Equipe Médica"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -25926,7 +25926,7 @@ function MedicalTeamSection() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									"data-uid": "src/components/home/MedicalTeamSection.tsx:49:19",
 									"data-prohibitions": "[editContent]",
-									className: "absolute inset-0 bg-gradient-to-t from-[#0A2540]/90 via-[#0A2540]/30 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100"
+									className: "absolute inset-0 bg-gradient-to-t from-ultra-blue/90 via-ultra-blue/30 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									"data-uid": "src/components/home/MedicalTeamSection.tsx:51:19",
@@ -25935,7 +25935,7 @@ function MedicalTeamSection() {
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										"data-uid": "src/components/home/MedicalTeamSection.tsx:52:21",
 										"data-prohibitions": "[editContent]",
-										className: "text-2xl font-bold text-white mb-3 drop-shadow-sm",
+										className: "text-2xl font-serif font-bold text-white mb-3 drop-shadow-sm",
 										children: doctor.name
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										"data-uid": "src/components/home/MedicalTeamSection.tsx:55:21",
@@ -25945,7 +25945,7 @@ function MedicalTeamSection() {
 											"data-uid": "src/components/home/MedicalTeamSection.tsx:57:25",
 											"data-prohibitions": "[editContent]",
 											variant: "secondary",
-											className: "bg-[#D4AF37] text-white hover:bg-[#C5A028] border-none font-medium shadow-sm",
+											className: "bg-ultra-gold text-white hover:bg-ultra-goldDark border-none font-medium shadow-sm",
 											children: spec
 										}, spec))
 									})]
@@ -30062,4 +30062,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-CpEC8xT_.js.map
+//# sourceMappingURL=index-BUfxT5Jw.js.map

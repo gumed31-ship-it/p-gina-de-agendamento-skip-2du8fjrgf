@@ -1976,15 +1976,6 @@ section[aria-label='Notifications alt+T'] {
   background-color: rgb(37 211 102 / 0.1);
 }
 
-.bg-\[\#D4AF37\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 175 55 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#D4AF37\]\/10{
-  background-color: rgb(212 175 55 / 0.1);
-}
-
 .bg-\[--color-bg\]{
   background-color: var(--color-bg);
 }
@@ -2197,12 +2188,6 @@ section[aria-label='Notifications alt+T'] {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
-.from-\[\#0A2540\]\/90{
-  --tw-gradient-from: rgb(10 37 64 / 0.9) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(10 37 64 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-blue-950\/95{
   --tw-gradient-from: rgb(23 37 84 / 0.95) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(23 37 84 / 0) var(--tw-gradient-to-position);
@@ -2221,15 +2206,16 @@ section[aria-label='Notifications alt+T'] {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-ultra-blue\/90{
+  --tw-gradient-from: rgb(0 31 63 / 0.9) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 31 63 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-ultra-gold\/30{
   --tw-gradient-from: rgb(212 175 55 / 0.3) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(212 175 55 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.via-\[\#0A2540\]\/30{
-  --tw-gradient-to: rgb(10 37 64 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(10 37 64 / 0.3) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .via-amber-500\/50{
@@ -2245,6 +2231,11 @@ section[aria-label='Notifications alt+T'] {
 .via-ultra-blue\/20{
   --tw-gradient-to: rgb(0 31 63 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(0 31 63 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-ultra-blue\/30{
+  --tw-gradient-to: rgb(0 31 63 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(0 31 63 / 0.3) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .to-transparent{
@@ -2615,19 +2606,9 @@ section[aria-label='Notifications alt+T'] {
   letter-spacing: 0.1em;
 }
 
-.text-\[\#0A2540\]{
-  --tw-text-opacity: 1;
-  color: rgb(10 37 64 / var(--tw-text-opacity, 1));
-}
-
 .text-\[\#25D366\]{
   --tw-text-opacity: 1;
   color: rgb(37 211 102 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#D4AF37\]{
-  --tw-text-opacity: 1;
-  color: rgb(212 175 55 / var(--tw-text-opacity, 1));
 }
 
 .text-accent-foreground{
@@ -3298,15 +3279,6 @@ section[aria-label='Notifications alt+T'] {
   border-color: rgb(212 175 55 / 0.5);
 }
 
-.hover\:bg-\[\#C5A028\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(197 160 40 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[\#D4AF37\]\/20:hover{
-  background-color: rgb(212 175 55 / 0.2);
-}
-
 .hover\:bg-accent:hover{
   background-color: hsl(var(--accent));
 }
@@ -3356,6 +3328,15 @@ section[aria-label='Notifications alt+T'] {
 .hover\:bg-slate-900:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-ultra-gold\/20:hover{
+  background-color: rgb(212 175 55 / 0.2);
+}
+
+.hover\:bg-ultra-goldDark:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(184 134 11 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-white:hover{

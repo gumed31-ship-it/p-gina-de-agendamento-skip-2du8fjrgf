@@ -7,7 +7,7 @@ import drJoseImg from '@/assets/dr-jose-guilherme-0608b.jpeg'
 const teamMembers = [
   {
     name: 'Dr. Gustavo Teixeira Gomes',
-    specialty: 'Ultrassonografia, Angiologia e Geriatria',
+    specialty: 'Angiologia, Ultrassonografia, Geriatria',
     image: 'https://img.usecurling.com/ppl/large?gender=male&seed=1',
   },
   {
@@ -23,10 +23,10 @@ export function MedicalTeamSection() {
       <div className="container px-4 md:px-6 mx-auto">
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <Badge className="bg-[#D4AF37]/10 text-[#D4AF37] hover:bg-[#D4AF37]/20 mb-4 border-none px-4 py-1.5 text-sm font-medium transition-colors">
+            <Badge className="bg-ultra-gold/10 text-ultra-gold hover:bg-ultra-gold/20 mb-4 border-none px-4 py-1.5 text-sm font-medium transition-colors">
               Corpo Clínico
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0A2540] mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold tracking-tight text-ultra-blue mb-4">
               Nossa Equipe Médica
             </h2>
             <p className="text-lg text-slate-600">
@@ -46,10 +46,10 @@ export function MedicalTeamSection() {
                     alt={doctor.name}
                     className="object-cover w-full h-full object-top transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540]/90 via-[#0A2540]/30 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ultra-blue/90 via-ultra-blue/30 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
                   <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                    <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-sm">
+                    <h3 className="text-2xl font-serif font-bold text-white mb-3 drop-shadow-sm">
                       {doctor.name}
                     </h3>
                     <div className="flex flex-wrap gap-2">
@@ -57,7 +57,7 @@ export function MedicalTeamSection() {
                         <Badge
                           key={spec}
                           variant="secondary"
-                          className="bg-[#D4AF37] text-white hover:bg-[#C5A028] border-none font-medium shadow-sm"
+                          className="bg-ultra-gold text-white hover:bg-ultra-goldDark border-none font-medium shadow-sm"
                         >
                           {spec}
                         </Badge>
