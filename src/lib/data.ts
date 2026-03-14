@@ -18,7 +18,7 @@ export const NAVIGATION = [
   { name: 'Exames', href: '#exames' },
   { name: 'Sobre', href: '#sobre' },
   { name: 'Estrutura', href: '#estrutura' },
-  { name: 'Depoimentos', href: '#depoimentos' },
+  { name: 'Equipe', href: '#equipe' },
   { name: 'Contato', href: '#contato' },
 ]
 
@@ -91,27 +91,42 @@ export const SPECIALTIES = [
   },
 ]
 
-export const TESTIMONIALS = [
+export const MEDICAL_TEAM = [
   {
     id: 1,
-    name: 'Ana Lúcia Ferreira',
-    text: 'Atendimento impecável desde a recepção até a consulta. A infraestrutura é realmente de primeiro mundo.',
-    rating: 5,
-    image: 'https://img.usecurling.com/ppl/thumbnail?gender=female&seed=55',
+    name: 'Dr. Roberto Almeida',
+    specialty: 'Radiologia e Diagnóstico por Imagem',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=101',
   },
   {
     id: 2,
-    name: 'Marcos Vinícius',
-    text: 'Fiz meus exames de imagem e o resultado saiu muito rápido. Equipe extremamente atenciosa e prestativa.',
-    rating: 5,
-    image: 'https://img.usecurling.com/ppl/thumbnail?gender=male&seed=66',
+    name: 'Dra. Camila Vasconcelos',
+    specialty: 'Ginecologia e Obstetrícia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=102',
   },
   {
     id: 3,
-    name: 'Juliana Paes',
-    text: 'Profissionais maravilhosos! O ambiente é acolhedor e passa muita segurança durante todo o atendimento.',
-    rating: 5,
-    image: 'https://img.usecurling.com/ppl/thumbnail?gender=female&seed=77',
+    name: 'Dr. Fernando Costa',
+    specialty: 'Cardiologia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=103',
+  },
+  {
+    id: 4,
+    name: 'Dra. Beatriz Santos',
+    specialty: 'Angiologia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=104',
+  },
+  {
+    id: 5,
+    name: 'Dr. Thiago Moraes',
+    specialty: 'Ortopedia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=105',
+  },
+  {
+    id: 6,
+    name: 'Dra. Juliana Mendes',
+    specialty: 'Neurologia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=106',
   },
 ]
 
