@@ -1,17 +1,28 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
-import { Menu, X, Calendar } from 'lucide-react'
+import { Menu, X, Calendar, Instagram, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
+
+const NAV_ITEMS = [
+  { id: 'sobre', label: 'Sobre' },
+  { id: 'especialidades', label: 'Especialidades' },
+  { id: 'depoimentos', label: 'Depoimentos' },
+  { id: 'contato', label: 'Contato' },
+]
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 10)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -23,10 +34,7 @@ export function Header() {
 
   const handleNavClick = (id: string) => {
     setMobileMenuOpen(false)
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -58,30 +66,61 @@ export function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <button
-              onClick={() => handleNavClick('sobre')}
-              className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
-            >
-              Sobre
-            </button>
-            <button
-              onClick={() => handleNavClick('especialidades')}
-              className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
-            >
-              Especialidades
-            </button>
-            <button
-              onClick={() => handleNavClick('depoimentos')}
-              className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
-            >
-              Depoimentos
-            </button>
-            <button
-              onClick={() => handleNavClick('contato')}
-              className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
-            >
-              Contato
-            </button>
+            {NAV_ITEMS.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => handleNavClick(item.id)}
+                className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors"
+              >
+                {item.label}
+              </button>
+            ))}
+
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors flex items-center gap-1.5 focus:outline-none"
+                  aria-label="Redes Sociais"
+                >
+                  <Instagram className="w-4 h-4" />
+                  <ChevronDown className="w-3 h-3 opacity-50" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent
+                align="end"
+                className="bg-slate-950 border-slate-800 text-slate-300 min-w-[180px]"
+              >
+                <DropdownMenuItem
+                  asChild
+                  className="hover:text-amber-500 hover:bg-slate-900 focus:text-amber-500 focus:bg-slate-900 cursor-pointer"
+                >
+                  <a
+                    href="https://www.instagram.com/ultracentermutum"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 w-full"
+                  >
+                    <Instagram className="w-4 h-4" />
+                    @ultracentermutum
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  asChild
+                  className="hover:text-amber-500 hover:bg-slate-900 focus:text-amber-500 focus:bg-slate-900 cursor-pointer"
+                >
+                  <a
+                    href="https://www.instagram.com/drgustavotgomes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 w-full"
+                  >
+                    <Instagram className="w-4 h-4" />
+                    @drgustavotgomes
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             <Button
               onClick={() => handleNavClick('agendamento')}
               className="bg-amber-600 hover:bg-amber-700 text-white gap-2 shadow-lg shadow-amber-900/20"
@@ -111,30 +150,38 @@ export function Header() {
             : 'opacity-0 -translate-y-full pointer-events-none',
         )}
       >
-        <button
-          onClick={() => handleNavClick('sobre')}
-          className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
-        >
-          Sobre
-        </button>
-        <button
-          onClick={() => handleNavClick('especialidades')}
-          className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
-        >
-          Especialidades
-        </button>
-        <button
-          onClick={() => handleNavClick('depoimentos')}
-          className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
-        >
-          Depoimentos
-        </button>
-        <button
-          onClick={() => handleNavClick('contato')}
-          className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
-        >
-          Contato
-        </button>
+        {NAV_ITEMS.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => handleNavClick(item.id)}
+            className="text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors"
+          >
+            {item.label}
+          </button>
+        ))}
+
+        <div className="flex flex-col items-center gap-4 mt-2">
+          <div className="w-12 h-0.5 bg-slate-800 rounded-full mb-2"></div>
+          <a
+            href="https://www.instagram.com/ultracentermutum"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-slate-400 hover:text-amber-500 transition-colors"
+          >
+            <Instagram className="w-5 h-5" />
+            <span className="text-base">@ultracentermutum</span>
+          </a>
+          <a
+            href="https://www.instagram.com/drgustavotgomes"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-slate-400 hover:text-amber-500 transition-colors"
+          >
+            <Instagram className="w-5 h-5" />
+            <span className="text-base">@drgustavotgomes</span>
+          </a>
+        </div>
+
         <Button
           onClick={() => handleNavClick('agendamento')}
           size="lg"

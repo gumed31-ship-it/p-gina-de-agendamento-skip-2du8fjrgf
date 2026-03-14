@@ -1,21 +1,24 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Instagram } from 'lucide-react'
+
+const LINKS_UTEIS = [
+  { id: 'sobre', label: 'Sobre Nós' },
+  { id: 'especialidades', label: 'Especialidades' },
+  { id: 'agendamento', label: 'Agendar Consulta' },
+  { id: 'contato', label: 'Fale Conosco' },
+]
 
 export function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
   return (
     <footer className="bg-slate-950 pt-20 pb-8 border-t border-slate-900 text-slate-300 relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-900/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/3 pointer-events-none" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
-          {/* Brand & Experience Col */}
-          <div className="md:col-span-12 lg:col-span-4 space-y-8">
+          <div className="md:col-span-12 lg:col-span-3 space-y-8">
             <Link to="/" onClick={scrollToTop} className="inline-block group">
               <div className="flex flex-col items-start justify-center transition-transform duration-300 group-hover:scale-105 mb-2">
                 <span className="text-2xl md:text-3xl font-serif font-bold text-ultra-gold tracking-widest uppercase leading-none">
@@ -40,71 +43,60 @@ export function Footer() {
                 dedicação integral à sua saúde, aliando tecnologia, conhecimento e empatia.
               </p>
             </div>
-
-            <div className="flex gap-4">
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-amber-600/25"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-amber-600/25"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
-          {/* Links Col */}
           <div className="md:col-span-4 lg:col-span-2 space-y-6">
             <h3 className="text-white font-semibold text-lg tracking-wide relative inline-block">
               Links Úteis
               <span className="absolute -bottom-2 left-0 w-1/2 h-0.5 bg-amber-600 rounded-full"></span>
             </h3>
             <ul className="space-y-4 mt-8">
-              <li>
-                <a
-                  href="#sobre"
-                  className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
-                >
-                  <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
-                  Sobre Nós
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#especialidades"
-                  className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
-                >
-                  <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
-                  Especialidades
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#agendamento"
-                  className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
-                >
-                  <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
-                  Agendar Consulta
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contato"
-                  className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
-                >
-                  <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
-                  Fale Conosco
-                </a>
-              </li>
+              {LINKS_UTEIS.map((link) => (
+                <li key={link.id}>
+                  <a
+                    href={`#${link.id}`}
+                    className="text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity" />{' '}
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact Col */}
-          <div className="md:col-span-8 lg:col-span-6 space-y-6">
+          <div className="md:col-span-4 lg:col-span-2 space-y-6">
+            <h3 className="text-white font-semibold text-lg tracking-wide relative inline-block">
+              Siga-nos
+              <span className="absolute -bottom-2 left-0 w-1/2 h-0.5 bg-amber-600 rounded-full"></span>
+            </h3>
+            <div className="space-y-4 mt-8">
+              <a
+                href="https://www.instagram.com/ultracentermutum"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-slate-400 hover:text-amber-500 transition-colors group"
+              >
+                <div className="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                  <Instagram className="w-4 h-4" />
+                </div>
+                <span className="text-sm font-medium">@ultracentermutum</span>
+              </a>
+              <a
+                href="https://www.instagram.com/drgustavotgomes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-slate-400 hover:text-amber-500 transition-colors group"
+              >
+                <div className="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                  <Instagram className="w-4 h-4" />
+                </div>
+                <span className="text-sm font-medium">@drgustavotgomes</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="md:col-span-8 lg:col-span-5 space-y-6">
             <h3 className="text-white font-semibold text-lg tracking-wide relative inline-block">
               Informações de Contato
               <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-amber-600 rounded-full"></span>
