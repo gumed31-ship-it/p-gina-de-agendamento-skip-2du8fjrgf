@@ -25059,6 +25059,203 @@ function DifferentialsSection() {
 	});
 }
 //#endregion
+//#region src/components/home/InfrastructureSection.tsx
+var infrastructureImages = [
+	{
+		src: "/assets/usphtop-ed46b-BQTVYuvZ.jfif",
+		alt: "Philips EPIQ Elite - Redefining performance",
+		title: "Philips EPIQ Elite",
+		description: "Tecnologia de ponta para diagnósticos com qualidade excepcional e alta precisão clínica.",
+		className: "md:col-span-2 md:row-span-2 h-[350px] md:h-[600px]"
+	},
+	{
+		src: "/assets/usph3-490a3-DImLDuSK.jfif",
+		alt: "Profissionais e equipamento de ultrassom",
+		title: "Equipe Especializada",
+		description: "Profissionais altamente capacitados operando o que há de melhor em tecnologia a favor da sua saúde.",
+		className: "col-span-1 h-[300px] md:h-auto"
+	},
+	{
+		src: "/assets/usph5-26c1b-D1U_D05r.jfif",
+		alt: "Detalhe da marca Elite no equipamento",
+		title: "Precisão Elite",
+		description: "Foco nos mínimos detalhes para garantir os resultados mais confiáveis em cada exame.",
+		className: "col-span-1 h-[300px] md:h-auto"
+	}
+];
+function InfrastructureSection() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+		"data-uid": "src/components/home/InfrastructureSection.tsx:36:5",
+		"data-prohibitions": "[editContent]",
+		id: "tecnologia",
+		className: "py-24 bg-slate-50",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			"data-uid": "src/components/home/InfrastructureSection.tsx:37:7",
+			"data-prohibitions": "[editContent]",
+			className: "container px-4 md:px-6 mx-auto max-w-6xl",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
+				"data-uid": "src/components/home/InfrastructureSection.tsx:38:9",
+				"data-prohibitions": "[]",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					"data-uid": "src/components/home/InfrastructureSection.tsx:39:11",
+					"data-prohibitions": "[]",
+					className: "text-center max-w-3xl mx-auto mb-16",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+						"data-uid": "src/components/home/InfrastructureSection.tsx:40:13",
+						"data-prohibitions": "[]",
+						className: "text-3xl md:text-4xl font-bold text-blue-950 mb-4",
+						children: ["Tecnologia e ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							"data-uid": "src/components/home/InfrastructureSection.tsx:41:28",
+							"data-prohibitions": "[]",
+							className: "text-amber-500",
+							children: "Equipamentos"
+						})]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						"data-uid": "src/components/home/InfrastructureSection.tsx:43:13",
+						"data-prohibitions": "[]",
+						className: "text-lg text-slate-600",
+						children: "Investimos em tecnologia de ponta, como o Philips EPIQ Elite, para oferecer imagens de altíssima resolução, garantindo diagnósticos precisos e total segurança para nossos pacientes."
+					})]
+				})
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/InfrastructureSection.tsx:51:9",
+				"data-prohibitions": "[editContent]",
+				className: "grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6",
+				children: infrastructureImages.map((image, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
+					"data-uid": "src/components/home/InfrastructureSection.tsx:53:13",
+					"data-prohibitions": "[editContent]",
+					delay: index * 150,
+					className: `group relative overflow-hidden rounded-2xl shadow-lg ${image.className}`,
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							"data-uid": "src/components/home/InfrastructureSection.tsx:58:15",
+							"data-prohibitions": "[editContent]",
+							src: image.src,
+							alt: image.alt,
+							className: "object-cover object-center w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-105"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/home/InfrastructureSection.tsx:63:15",
+							"data-prohibitions": "[editContent]",
+							className: "absolute inset-0 bg-gradient-to-t from-blue-950/95 via-blue-950/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-90"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							"data-uid": "src/components/home/InfrastructureSection.tsx:64:15",
+							"data-prohibitions": "[editContent]",
+							className: "absolute bottom-0 left-0 w-full p-6 sm:p-8 transform transition-transform duration-500 md:translate-y-4 group-hover:translate-y-0",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								"data-uid": "src/components/home/InfrastructureSection.tsx:65:17",
+								"data-prohibitions": "[editContent]",
+								className: "text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3",
+								children: image.title
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								"data-uid": "src/components/home/InfrastructureSection.tsx:68:17",
+								"data-prohibitions": "[editContent]",
+								className: "text-slate-200 text-sm sm:text-base opacity-100 md:opacity-0 transition-opacity duration-500 group-hover:opacity-100",
+								children: image.description
+							})]
+						})
+					]
+				}, index))
+			})]
+		})
+	});
+}
+//#endregion
+//#region src/components/home/TeamSection.tsx
+function TeamSection() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+		"data-uid": "src/components/home/TeamSection.tsx:7:5",
+		"data-prohibitions": "[editContent]",
+		id: "equipe",
+		className: "py-24 bg-slate-50",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			"data-uid": "src/components/home/TeamSection.tsx:8:7",
+			"data-prohibitions": "[editContent]",
+			className: "container mx-auto px-4 md:px-6",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
+				"data-uid": "src/components/home/TeamSection.tsx:9:9",
+				"data-prohibitions": "[]",
+				className: "text-center max-w-3xl mx-auto mb-16",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						"data-uid": "src/components/home/TeamSection.tsx:10:11",
+						"data-prohibitions": "[]",
+						className: "text-ultra-gold font-semibold uppercase tracking-wider mb-2 text-sm",
+						children: "Corpo Clínico"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+						"data-uid": "src/components/home/TeamSection.tsx:13:11",
+						"data-prohibitions": "[]",
+						className: "text-3xl md:text-4xl font-serif font-bold text-ultra-blue mb-4",
+						children: "Especialistas de Referência"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						"data-uid": "src/components/home/TeamSection.tsx:16:11",
+						"data-prohibitions": "[]",
+						className: "text-slate-600 text-lg",
+						children: "Profissionais altamente capacitados e em constante atualização para oferecer a você o melhor diagnóstico e tratamento."
+					})
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/TeamSection.tsx:22:9",
+				"data-prohibitions": "[editContent]",
+				className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8",
+				children: DOCTORS.map((doc, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
+					"data-uid": "src/components/home/TeamSection.tsx:24:13",
+					"data-prohibitions": "[editContent]",
+					delay: idx * 100,
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Card, {
+						"data-uid": "src/components/home/TeamSection.tsx:25:15",
+						"data-prohibitions": "[editContent]",
+						className: "border-none shadow-md overflow-hidden group hover:shadow-xl transition-all duration-300",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							"data-uid": "src/components/home/TeamSection.tsx:26:17",
+							"data-prohibitions": "[]",
+							className: "relative aspect-[3/4] overflow-hidden",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								"data-uid": "src/components/home/TeamSection.tsx:27:19",
+								"data-prohibitions": "[editContent]",
+								src: doc.image,
+								alt: doc.name,
+								className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								"data-uid": "src/components/home/TeamSection.tsx:32:19",
+								"data-prohibitions": "[editContent]",
+								className: "absolute inset-0 bg-ultra-blue/20 group-hover:bg-transparent transition-colors duration-300"
+							})]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
+							"data-uid": "src/components/home/TeamSection.tsx:34:17",
+							"data-prohibitions": "[editContent]",
+							className: "p-6 text-center bg-white",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+									"data-uid": "src/components/home/TeamSection.tsx:35:19",
+									"data-prohibitions": "[editContent]",
+									className: "text-lg font-bold text-ultra-blue mb-1 font-serif",
+									children: doc.name
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									"data-uid": "src/components/home/TeamSection.tsx:36:19",
+									"data-prohibitions": "[editContent]",
+									className: "text-ultra-gold font-medium text-sm mb-2",
+									children: doc.specialty
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									"data-uid": "src/components/home/TeamSection.tsx:37:19",
+									"data-prohibitions": "[editContent]",
+									className: "text-slate-400 text-xs",
+									children: doc.crm
+								})
+							]
+						})]
+					})
+				}, doc.id))
+			})]
+		})
+	});
+}
+//#endregion
 //#region ../../cache/modules/pagina-de-agendamento-skip-14654/node_modules/.pnpm/embla-carousel-reactive-utils@8.6.0_embla-carousel@8.6.0/node_modules/embla-carousel-reactive-utils/esm/embla-carousel-reactive-utils.esm.js
 function isObject$3(subject) {
 	return Object.prototype.toString.call(subject) === "[object Object]";
@@ -26824,224 +27021,6 @@ function Autoplay(userOptions = {}) {
 	};
 }
 Autoplay.globalOptions = void 0;
-//#endregion
-//#region src/components/home/InfrastructureSection.tsx
-function InfrastructureSection() {
-	const plugin = (0, import_react.useRef)(Autoplay({
-		delay: 4e3,
-		stopOnInteraction: true
-	}));
-	const images = [
-		{
-			src: "https://img.usecurling.com/p/800/600?q=modern%20waiting%20room",
-			alt: "Recepção Moderna"
-		},
-		{
-			src: "https://img.usecurling.com/p/800/600?q=mri%20machine",
-			alt: "Sala de Exames Imagem"
-		},
-		{
-			src: "https://img.usecurling.com/p/800/600?q=doctor%20office",
-			alt: "Consultórios Equipados"
-		},
-		{
-			src: "https://img.usecurling.com/p/800/600?q=medical%20laboratory",
-			alt: "Laboratório Integrado"
-		}
-	];
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		"data-uid": "src/components/home/InfrastructureSection.tsx:32:5",
-		"data-prohibitions": "[editContent]",
-		id: "estrutura",
-		className: "py-24 bg-white",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/home/InfrastructureSection.tsx:33:7",
-			"data-prohibitions": "[editContent]",
-			className: "container mx-auto px-4 md:px-6",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
-				"data-uid": "src/components/home/InfrastructureSection.tsx:34:9",
-				"data-prohibitions": "[]",
-				className: "flex flex-col md:flex-row justify-between items-end mb-12 gap-6",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/home/InfrastructureSection.tsx:35:11",
-					"data-prohibitions": "[]",
-					className: "max-w-2xl",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						"data-uid": "src/components/home/InfrastructureSection.tsx:36:13",
-						"data-prohibitions": "[]",
-						className: "text-ultra-gold font-semibold uppercase tracking-wider mb-2 text-sm",
-						children: "Nossa Estrutura"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-						"data-uid": "src/components/home/InfrastructureSection.tsx:39:13",
-						"data-prohibitions": "[]",
-						className: "text-3xl md:text-4xl font-serif font-bold text-ultra-blue",
-						children: "Ambiente planejado para seu bem-estar"
-					})]
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					"data-uid": "src/components/home/InfrastructureSection.tsx:43:11",
-					"data-prohibitions": "[]",
-					className: "text-slate-600 max-w-md",
-					children: "Instalações modernas, acessíveis e confortáveis para tornar sua experiência a mais agradável possível."
-				})]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
-				"data-uid": "src/components/home/InfrastructureSection.tsx:49:9",
-				"data-prohibitions": "[editContent]",
-				delay: 200,
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Carousel, {
-					"data-uid": "src/components/home/InfrastructureSection.tsx:50:11",
-					"data-prohibitions": "[editContent]",
-					opts: {
-						align: "start",
-						loop: true
-					},
-					plugins: [plugin.current],
-					className: "w-full",
-					onMouseEnter: plugin.current.stop,
-					onMouseLeave: plugin.current.reset,
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CarouselContent, {
-						"data-uid": "src/components/home/InfrastructureSection.tsx:57:13",
-						"data-prohibitions": "[editContent]",
-						className: "-ml-4",
-						children: images.map((img, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CarouselItem, {
-							"data-uid": "src/components/home/InfrastructureSection.tsx:59:17",
-							"data-prohibitions": "[editContent]",
-							className: "pl-4 md:basis-1/2 lg:basis-1/3",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/home/InfrastructureSection.tsx:60:19",
-								"data-prohibitions": "[editContent]",
-								className: "overflow-hidden rounded-2xl group relative aspect-[4/3]",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-									"data-uid": "src/components/home/InfrastructureSection.tsx:61:21",
-									"data-prohibitions": "[editContent]",
-									src: img.src,
-									alt: img.alt,
-									className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/home/InfrastructureSection.tsx:66:21",
-									"data-prohibitions": "[editContent]",
-									className: "absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-										"data-uid": "src/components/home/InfrastructureSection.tsx:67:23",
-										"data-prohibitions": "[editContent]",
-										className: "text-white font-semibold text-lg",
-										children: img.alt
-									})
-								})]
-							})
-						}, idx))
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						"data-uid": "src/components/home/InfrastructureSection.tsx:73:13",
-						"data-prohibitions": "[]",
-						className: "flex justify-end gap-2 mt-8",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CarouselPrevious, {
-							"data-uid": "src/components/home/InfrastructureSection.tsx:74:15",
-							"data-prohibitions": "[editContent]",
-							className: "relative inset-auto translate-y-0 h-12 w-12 border-ultra-blue text-ultra-blue hover:bg-ultra-blue hover:text-white"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CarouselNext, {
-							"data-uid": "src/components/home/InfrastructureSection.tsx:75:15",
-							"data-prohibitions": "[editContent]",
-							className: "relative inset-auto translate-y-0 h-12 w-12 border-ultra-blue text-ultra-blue hover:bg-ultra-blue hover:text-white"
-						})]
-					})]
-				})
-			})]
-		})
-	});
-}
-//#endregion
-//#region src/components/home/TeamSection.tsx
-function TeamSection() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		"data-uid": "src/components/home/TeamSection.tsx:7:5",
-		"data-prohibitions": "[editContent]",
-		id: "equipe",
-		className: "py-24 bg-slate-50",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/home/TeamSection.tsx:8:7",
-			"data-prohibitions": "[editContent]",
-			className: "container mx-auto px-4 md:px-6",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
-				"data-uid": "src/components/home/TeamSection.tsx:9:9",
-				"data-prohibitions": "[]",
-				className: "text-center max-w-3xl mx-auto mb-16",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						"data-uid": "src/components/home/TeamSection.tsx:10:11",
-						"data-prohibitions": "[]",
-						className: "text-ultra-gold font-semibold uppercase tracking-wider mb-2 text-sm",
-						children: "Corpo Clínico"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-						"data-uid": "src/components/home/TeamSection.tsx:13:11",
-						"data-prohibitions": "[]",
-						className: "text-3xl md:text-4xl font-serif font-bold text-ultra-blue mb-4",
-						children: "Especialistas de Referência"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						"data-uid": "src/components/home/TeamSection.tsx:16:11",
-						"data-prohibitions": "[]",
-						className: "text-slate-600 text-lg",
-						children: "Profissionais altamente capacitados e em constante atualização para oferecer a você o melhor diagnóstico e tratamento."
-					})
-				]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				"data-uid": "src/components/home/TeamSection.tsx:22:9",
-				"data-prohibitions": "[editContent]",
-				className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8",
-				children: DOCTORS.map((doc, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
-					"data-uid": "src/components/home/TeamSection.tsx:24:13",
-					"data-prohibitions": "[editContent]",
-					delay: idx * 100,
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Card, {
-						"data-uid": "src/components/home/TeamSection.tsx:25:15",
-						"data-prohibitions": "[editContent]",
-						className: "border-none shadow-md overflow-hidden group hover:shadow-xl transition-all duration-300",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							"data-uid": "src/components/home/TeamSection.tsx:26:17",
-							"data-prohibitions": "[]",
-							className: "relative aspect-[3/4] overflow-hidden",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-								"data-uid": "src/components/home/TeamSection.tsx:27:19",
-								"data-prohibitions": "[editContent]",
-								src: doc.image,
-								alt: doc.name,
-								className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								"data-uid": "src/components/home/TeamSection.tsx:32:19",
-								"data-prohibitions": "[editContent]",
-								className: "absolute inset-0 bg-ultra-blue/20 group-hover:bg-transparent transition-colors duration-300"
-							})]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
-							"data-uid": "src/components/home/TeamSection.tsx:34:17",
-							"data-prohibitions": "[editContent]",
-							className: "p-6 text-center bg-white",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-									"data-uid": "src/components/home/TeamSection.tsx:35:19",
-									"data-prohibitions": "[editContent]",
-									className: "text-lg font-bold text-ultra-blue mb-1 font-serif",
-									children: doc.name
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									"data-uid": "src/components/home/TeamSection.tsx:36:19",
-									"data-prohibitions": "[editContent]",
-									className: "text-ultra-gold font-medium text-sm mb-2",
-									children: doc.specialty
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									"data-uid": "src/components/home/TeamSection.tsx:37:19",
-									"data-prohibitions": "[editContent]",
-									className: "text-slate-400 text-xs",
-									children: doc.crm
-								})
-							]
-						})]
-					})
-				}, doc.id))
-			})]
-		})
-	});
-}
 //#endregion
 //#region src/components/home/TestimonialsSection.tsx
 function TestimonialsSection() {
@@ -36999,4 +36978,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-DOoFDPFN.js.map
+//# sourceMappingURL=index-k_PtzucY.js.map
