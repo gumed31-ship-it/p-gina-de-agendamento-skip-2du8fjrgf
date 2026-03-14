@@ -117,11 +117,16 @@ export function Footer() {
                   </div>
                   <div>
                     <p className="text-white text-sm font-medium">Endereço</p>
-                    <p className="text-slate-400 text-sm mt-1 leading-relaxed">
-                      Av. Brasil, 1234 - Centro
+                    <a
+                      href="https://maps.google.com/?q=Rua+Luís+Pascoal+Borges,+219,+Centro,+Mutum,+MG"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-400 hover:text-amber-500 transition-colors text-sm mt-1 leading-relaxed block"
+                    >
+                      Rua Luis Pascoal Borges, 219, Centro
                       <br />
-                      São Paulo - SP
-                    </p>
+                      Mutum, MG, CEP 36955-000
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -131,9 +136,9 @@ export function Footer() {
                   <div>
                     <p className="text-white text-sm font-medium">Atendimento</p>
                     <p className="text-slate-400 text-sm mt-1 leading-relaxed">
-                      Seg - Sex: 08:00 às 18:00
+                      Segunda a sexta-feira
                       <br />
-                      Sáb: 08:00 às 12:00
+                      07:30 às 17:30
                     </p>
                   </div>
                 </div>
@@ -144,12 +149,15 @@ export function Footer() {
                     <Phone className="w-5 h-5 text-amber-500" />
                   </div>
                   <div>
-                    <p className="text-white text-sm font-medium">Telefones</p>
-                    <p className="text-slate-400 text-sm mt-1 leading-relaxed">
-                      (11) 3456-7890
-                      <br />
-                      (11) 98765-4321
-                    </p>
+                    <p className="text-white text-sm font-medium">Telefone / WhatsApp</p>
+                    <a
+                      href="https://wa.me/5533991488020"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-400 hover:text-amber-500 transition-colors text-sm mt-1 leading-relaxed block"
+                    >
+                      (33) 99148-8020
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -158,9 +166,12 @@ export function Footer() {
                   </div>
                   <div>
                     <p className="text-white text-sm font-medium">E-mail</p>
-                    <p className="text-slate-400 text-sm mt-1 leading-relaxed">
-                      contato@ultracenter.com.br
-                    </p>
+                    <a
+                      href="mailto:ultracentermg@gmail.com"
+                      className="text-slate-400 hover:text-amber-500 transition-colors text-sm mt-1 leading-relaxed block"
+                    >
+                      ultracentermg@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>

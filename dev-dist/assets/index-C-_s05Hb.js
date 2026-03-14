@@ -29104,121 +29104,121 @@ function Footer() {
 												"data-prohibitions": "[]",
 												className: "text-white text-sm font-medium",
 												children: "Endereço"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 												"data-uid": "src/components/layout/Footer.tsx:120:21",
 												"data-prohibitions": "[]",
-												className: "text-slate-400 text-sm mt-1 leading-relaxed",
+												href: "https://maps.google.com/?q=Rua+Luís+Pascoal+Borges,+219,+Centro,+Mutum,+MG",
+												target: "_blank",
+												rel: "noopener noreferrer",
+												className: "text-slate-400 hover:text-amber-500 transition-colors text-sm mt-1 leading-relaxed block",
 												children: [
-													"Av. Brasil, 1234 - Centro",
+													"Rua Luis Pascoal Borges, 219, Centro",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-														"data-uid": "src/components/layout/Footer.tsx:122:23",
+														"data-uid": "src/components/layout/Footer.tsx:127:23",
 														"data-prohibitions": "[editContent]"
 													}),
-													"São Paulo - SP"
+													"Mutum, MG, CEP 36955-000"
 												]
 											})]
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/layout/Footer.tsx:127:17",
+										"data-uid": "src/components/layout/Footer.tsx:132:17",
 										"data-prohibitions": "[]",
 										className: "flex items-start gap-4",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:128:19",
+											"data-uid": "src/components/layout/Footer.tsx:133:19",
 											"data-prohibitions": "[]",
 											className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, {
-												"data-uid": "src/components/layout/Footer.tsx:129:21",
+												"data-uid": "src/components/layout/Footer.tsx:134:21",
 												"data-prohibitions": "[editContent]",
 												className: "w-5 h-5 text-amber-500"
 											})
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:131:19",
+											"data-uid": "src/components/layout/Footer.tsx:136:19",
 											"data-prohibitions": "[]",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:132:21",
+												"data-uid": "src/components/layout/Footer.tsx:137:21",
 												"data-prohibitions": "[]",
 												className: "text-white text-sm font-medium",
 												children: "Atendimento"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:133:21",
+												"data-uid": "src/components/layout/Footer.tsx:138:21",
 												"data-prohibitions": "[]",
 												className: "text-slate-400 text-sm mt-1 leading-relaxed",
 												children: [
-													"Seg - Sex: 08:00 às 18:00",
+													"Segunda a sexta-feira",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-														"data-uid": "src/components/layout/Footer.tsx:135:23",
+														"data-uid": "src/components/layout/Footer.tsx:140:23",
 														"data-prohibitions": "[editContent]"
 													}),
-													"Sáb: 08:00 às 12:00"
+													"07:30 às 17:30"
 												]
 											})]
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/layout/Footer.tsx:141:15",
+									"data-uid": "src/components/layout/Footer.tsx:146:15",
 									"data-prohibitions": "[]",
 									className: "space-y-6",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/layout/Footer.tsx:142:17",
+										"data-uid": "src/components/layout/Footer.tsx:147:17",
 										"data-prohibitions": "[]",
 										className: "flex items-start gap-4",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:143:19",
+											"data-uid": "src/components/layout/Footer.tsx:148:19",
 											"data-prohibitions": "[]",
 											className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, {
-												"data-uid": "src/components/layout/Footer.tsx:144:21",
+												"data-uid": "src/components/layout/Footer.tsx:149:21",
 												"data-prohibitions": "[editContent]",
 												className: "w-5 h-5 text-amber-500"
 											})
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:146:19",
+											"data-uid": "src/components/layout/Footer.tsx:151:19",
 											"data-prohibitions": "[]",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:147:21",
+												"data-uid": "src/components/layout/Footer.tsx:152:21",
 												"data-prohibitions": "[]",
 												className: "text-white text-sm font-medium",
-												children: "Telefones"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:148:21",
+												children: "Telefone / WhatsApp"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+												"data-uid": "src/components/layout/Footer.tsx:153:21",
 												"data-prohibitions": "[]",
-												className: "text-slate-400 text-sm mt-1 leading-relaxed",
-												children: [
-													"(11) 3456-7890",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-														"data-uid": "src/components/layout/Footer.tsx:150:23",
-														"data-prohibitions": "[editContent]"
-													}),
-													"(11) 98765-4321"
-												]
+												href: "https://wa.me/5533991488020",
+												target: "_blank",
+												rel: "noopener noreferrer",
+												className: "text-slate-400 hover:text-amber-500 transition-colors text-sm mt-1 leading-relaxed block",
+												children: "(33) 99148-8020"
 											})]
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/layout/Footer.tsx:155:17",
+										"data-uid": "src/components/layout/Footer.tsx:163:17",
 										"data-prohibitions": "[]",
 										className: "flex items-start gap-4",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:156:19",
+											"data-uid": "src/components/layout/Footer.tsx:164:19",
 											"data-prohibitions": "[]",
 											className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, {
-												"data-uid": "src/components/layout/Footer.tsx:157:21",
+												"data-uid": "src/components/layout/Footer.tsx:165:21",
 												"data-prohibitions": "[editContent]",
 												className: "w-5 h-5 text-amber-500"
 											})
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:159:19",
+											"data-uid": "src/components/layout/Footer.tsx:167:19",
 											"data-prohibitions": "[]",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:160:21",
+												"data-uid": "src/components/layout/Footer.tsx:168:21",
 												"data-prohibitions": "[]",
 												className: "text-white text-sm font-medium",
 												children: "E-mail"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:161:21",
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+												"data-uid": "src/components/layout/Footer.tsx:169:21",
 												"data-prohibitions": "[]",
-												className: "text-slate-400 text-sm mt-1 leading-relaxed",
-												children: "contato@ultracenter.com.br"
+												href: "mailto:ultracentermg@gmail.com",
+												className: "text-slate-400 hover:text-amber-500 transition-colors text-sm mt-1 leading-relaxed block",
+												children: "ultracentermg@gmail.com"
 											})]
 										})]
 									})]
@@ -29227,11 +29227,11 @@ function Footer() {
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/layout/Footer.tsx:171:9",
+					"data-uid": "src/components/layout/Footer.tsx:182:9",
 					"data-prohibitions": "[editContent]",
 					className: "mt-16 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-						"data-uid": "src/components/layout/Footer.tsx:172:11",
+						"data-uid": "src/components/layout/Footer.tsx:183:11",
 						"data-prohibitions": "[editContent]",
 						className: "text-slate-500 text-sm text-center md:text-left",
 						children: [
@@ -29240,7 +29240,7 @@ function Footer() {
 							" Ultra Center Especialidades Médicas. Todos os direitos reservados."
 						]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						"data-uid": "src/components/layout/Footer.tsx:176:11",
+						"data-uid": "src/components/layout/Footer.tsx:187:11",
 						"data-prohibitions": "[]",
 						className: "text-slate-500 text-sm text-center md:text-right",
 						children: "Responsável Técnico: Dr. Gustavo Teixeira Gomes - CRM 12345/SP"
@@ -29256,7 +29256,7 @@ function FloatingWhatsApp() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 		"data-uid": "src/components/layout/FloatingWhatsApp.tsx:5:5",
 		"data-prohibitions": "[]",
-		href: "https://wa.me/5511999999999",
+		href: "https://wa.me/5533991488020",
 		target: "_blank",
 		rel: "noopener noreferrer",
 		className: "fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-transform hover:scale-110 hover:bg-green-600 animate-fade-in-up",
@@ -29361,4 +29361,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-D-M2LOJJ.js.map
+//# sourceMappingURL=index-C-_s05Hb.js.map
