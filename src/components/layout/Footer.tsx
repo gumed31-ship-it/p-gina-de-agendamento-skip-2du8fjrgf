@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react'
-import logoImg from '@/assets/editedimage_1773515584704-651da.png'
 
 export function Footer() {
   const scrollToTop = () => {
@@ -18,11 +17,14 @@ export function Footer() {
           {/* Brand & Experience Col */}
           <div className="md:col-span-12 lg:col-span-4 space-y-8">
             <Link to="/" onClick={scrollToTop} className="inline-block group">
-              <img
-                src={logoImg}
-                alt="Ultra Center - Especialidades Médicas - Dr. Gustavo Teixeira Gomes"
-                className="h-16 md:h-20 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
-              />
+              <div className="flex flex-col items-start justify-center transition-transform duration-300 group-hover:scale-105 mb-2">
+                <span className="text-2xl md:text-3xl font-serif font-bold text-ultra-gold tracking-widest uppercase leading-none">
+                  Ultra Center
+                </span>
+                <span className="text-[0.7rem] md:text-xs font-sans text-slate-400 tracking-[0.25em] uppercase mt-2 opacity-90">
+                  Especialidades Médicas
+                </span>
+              </div>
             </Link>
 
             <div className="space-y-4">

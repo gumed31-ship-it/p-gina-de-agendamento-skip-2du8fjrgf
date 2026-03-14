@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Menu, X, Calendar } from 'lucide-react'
-import logoImg from '@/assets/editedimage_1773515584704-651da.png'
 import { cn } from '@/lib/utils'
 
 export function Header() {
@@ -47,11 +46,14 @@ export function Header() {
             className="flex-shrink-0 z-50 group"
             aria-label="Página Inicial - Ultra Center"
           >
-            <img
-              src={logoImg}
-              alt="Ultra Center - Especialidades Médicas - Dr. Gustavo Teixeira Gomes"
-              className="h-10 md:h-14 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
-            />
+            <div className="flex flex-col items-start justify-center transition-transform duration-300 group-hover:scale-105 py-1">
+              <span className="text-xl md:text-2xl font-serif font-bold text-ultra-gold tracking-widest uppercase leading-none">
+                Ultra Center
+              </span>
+              <span className="text-[0.65rem] md:text-[0.7rem] font-sans text-slate-300 tracking-[0.25em] uppercase mt-1.5 opacity-90">
+                Especialidades Médicas
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}

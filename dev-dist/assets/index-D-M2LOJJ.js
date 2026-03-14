@@ -28674,9 +28674,6 @@ var NotFound = () => {
 	});
 };
 //#endregion
-//#region src/assets/editedimage_1773515584704-651da.png
-var editedimage_1773515584704_651da_default = "/assets/editedimage_1773515584704-651da-By8A4N2X.png";
-//#endregion
 //#region src/components/layout/Header.tsx
 function Header() {
 	const [isScrolled, setIsScrolled] = (0, import_react.useState)(false);
@@ -28701,73 +28698,82 @@ function Header() {
 		if (element) element.scrollIntoView({ behavior: "smooth" });
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-		"data-uid": "src/components/layout/Header.tsx:34:5",
+		"data-uid": "src/components/layout/Header.tsx:33:5",
 		"data-prohibitions": "[editContent]",
 		className: cn$1("fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent", isScrolled ? "bg-slate-950/95 backdrop-blur-md border-slate-800 shadow-md py-2" : "bg-slate-950 md:bg-slate-950/80 py-4"),
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			"data-uid": "src/components/layout/Header.tsx:42:7",
+			"data-uid": "src/components/layout/Header.tsx:41:7",
 			"data-prohibitions": "[editContent]",
 			className: "container mx-auto px-4 sm:px-6 lg:px-8",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/layout/Header.tsx:43:9",
+				"data-uid": "src/components/layout/Header.tsx:42:9",
 				"data-prohibitions": "[editContent]",
 				className: "flex items-center justify-between",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						"data-uid": "src/components/layout/Header.tsx:44:11",
+						"data-uid": "src/components/layout/Header.tsx:43:11",
 						"data-prohibitions": "[]",
 						to: "/",
 						onClick: scrollToTop,
 						className: "flex-shrink-0 z-50 group",
 						"aria-label": "Página Inicial - Ultra Center",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							"data-uid": "src/components/layout/Header.tsx:50:13",
-							"data-prohibitions": "[editContent]",
-							src: editedimage_1773515584704_651da_default,
-							alt: "Ultra Center - Especialidades Médicas - Dr. Gustavo Teixeira Gomes",
-							className: "h-10 md:h-14 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							"data-uid": "src/components/layout/Header.tsx:49:13",
+							"data-prohibitions": "[]",
+							className: "flex flex-col items-start justify-center transition-transform duration-300 group-hover:scale-105 py-1",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								"data-uid": "src/components/layout/Header.tsx:50:15",
+								"data-prohibitions": "[]",
+								className: "text-xl md:text-2xl font-serif font-bold text-ultra-gold tracking-widest uppercase leading-none",
+								children: "Ultra Center"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								"data-uid": "src/components/layout/Header.tsx:53:15",
+								"data-prohibitions": "[]",
+								className: "text-[0.65rem] md:text-[0.7rem] font-sans text-slate-300 tracking-[0.25em] uppercase mt-1.5 opacity-90",
+								children: "Especialidades Médicas"
+							})]
 						})
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
-						"data-uid": "src/components/layout/Header.tsx:58:11",
+						"data-uid": "src/components/layout/Header.tsx:60:11",
 						"data-prohibitions": "[]",
 						className: "hidden md:flex items-center gap-8",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-								"data-uid": "src/components/layout/Header.tsx:59:13",
+								"data-uid": "src/components/layout/Header.tsx:61:13",
 								"data-prohibitions": "[]",
 								onClick: () => handleNavClick("sobre"),
 								className: "text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors",
 								children: "Sobre"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-								"data-uid": "src/components/layout/Header.tsx:65:13",
+								"data-uid": "src/components/layout/Header.tsx:67:13",
 								"data-prohibitions": "[]",
 								onClick: () => handleNavClick("especialidades"),
 								className: "text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors",
 								children: "Especialidades"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-								"data-uid": "src/components/layout/Header.tsx:71:13",
+								"data-uid": "src/components/layout/Header.tsx:73:13",
 								"data-prohibitions": "[]",
 								onClick: () => handleNavClick("depoimentos"),
 								className: "text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors",
 								children: "Depoimentos"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-								"data-uid": "src/components/layout/Header.tsx:77:13",
+								"data-uid": "src/components/layout/Header.tsx:79:13",
 								"data-prohibitions": "[]",
 								onClick: () => handleNavClick("contato"),
 								className: "text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors",
 								children: "Contato"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
-								"data-uid": "src/components/layout/Header.tsx:83:13",
+								"data-uid": "src/components/layout/Header.tsx:85:13",
 								"data-prohibitions": "[]",
 								onClick: () => handleNavClick("agendamento"),
 								className: "bg-amber-600 hover:bg-amber-700 text-white gap-2 shadow-lg shadow-amber-900/20",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Calendar, {
-									"data-uid": "src/components/layout/Header.tsx:87:15",
+									"data-uid": "src/components/layout/Header.tsx:89:15",
 									"data-prohibitions": "[editContent]",
 									className: "w-4 h-4"
 								}), "Agendar Consulta"]
@@ -28775,17 +28781,17 @@ function Header() {
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						"data-uid": "src/components/layout/Header.tsx:93:11",
+						"data-uid": "src/components/layout/Header.tsx:95:11",
 						"data-prohibitions": "[editContent]",
 						className: "md:hidden z-50 text-slate-300 hover:text-white p-2",
 						onClick: () => setMobileMenuOpen(!mobileMenuOpen),
 						"aria-label": "Toggle menu",
 						children: mobileMenuOpen ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {
-							"data-uid": "src/components/layout/Header.tsx:98:31",
+							"data-uid": "src/components/layout/Header.tsx:100:31",
 							"data-prohibitions": "[editContent]",
 							className: "h-6 w-6"
 						}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {
-							"data-uid": "src/components/layout/Header.tsx:98:59",
+							"data-uid": "src/components/layout/Header.tsx:100:59",
 							"data-prohibitions": "[editContent]",
 							className: "h-6 w-6"
 						})
@@ -28793,46 +28799,46 @@ function Header() {
 				]
 			})
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/layout/Header.tsx:104:7",
+			"data-uid": "src/components/layout/Header.tsx:106:7",
 			"data-prohibitions": "[editContent]",
 			className: cn$1("fixed inset-0 bg-slate-950 z-40 flex flex-col items-center justify-center gap-8 transition-all duration-300 ease-in-out md:hidden", mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full pointer-events-none"),
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					"data-uid": "src/components/layout/Header.tsx:112:9",
+					"data-uid": "src/components/layout/Header.tsx:114:9",
 					"data-prohibitions": "[]",
 					onClick: () => handleNavClick("sobre"),
 					className: "text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors",
 					children: "Sobre"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					"data-uid": "src/components/layout/Header.tsx:118:9",
+					"data-uid": "src/components/layout/Header.tsx:120:9",
 					"data-prohibitions": "[]",
 					onClick: () => handleNavClick("especialidades"),
 					className: "text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors",
 					children: "Especialidades"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					"data-uid": "src/components/layout/Header.tsx:124:9",
+					"data-uid": "src/components/layout/Header.tsx:126:9",
 					"data-prohibitions": "[]",
 					onClick: () => handleNavClick("depoimentos"),
 					className: "text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors",
 					children: "Depoimentos"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					"data-uid": "src/components/layout/Header.tsx:130:9",
+					"data-uid": "src/components/layout/Header.tsx:132:9",
 					"data-prohibitions": "[]",
 					onClick: () => handleNavClick("contato"),
 					className: "text-xl font-medium text-slate-300 hover:text-amber-500 transition-colors",
 					children: "Contato"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
-					"data-uid": "src/components/layout/Header.tsx:136:9",
+					"data-uid": "src/components/layout/Header.tsx:138:9",
 					"data-prohibitions": "[]",
 					onClick: () => handleNavClick("agendamento"),
 					size: "lg",
 					className: "bg-amber-600 hover:bg-amber-700 text-white mt-4 gap-2",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Calendar, {
-						"data-uid": "src/components/layout/Header.tsx:141:11",
+						"data-uid": "src/components/layout/Header.tsx:143:11",
 						"data-prohibitions": "[editContent]",
 						className: "w-5 h-5"
 					}), "Agendar Consulta"]
@@ -28851,98 +28857,107 @@ function Footer() {
 		});
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", {
-		"data-uid": "src/components/layout/Footer.tsx:11:5",
+		"data-uid": "src/components/layout/Footer.tsx:10:5",
 		"data-prohibitions": "[editContent]",
 		className: "bg-slate-950 pt-20 pb-8 border-t border-slate-900 text-slate-300 relative overflow-hidden",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				"data-uid": "src/components/layout/Footer.tsx:13:7",
+				"data-uid": "src/components/layout/Footer.tsx:12:7",
 				"data-prohibitions": "[editContent]",
 				className: "absolute top-0 right-0 w-[500px] h-[500px] bg-amber-900/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				"data-uid": "src/components/layout/Footer.tsx:14:7",
+				"data-uid": "src/components/layout/Footer.tsx:13:7",
 				"data-prohibitions": "[editContent]",
 				className: "absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/3 pointer-events-none"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/layout/Footer.tsx:16:7",
+				"data-uid": "src/components/layout/Footer.tsx:15:7",
 				"data-prohibitions": "[editContent]",
 				className: "container mx-auto px-4 sm:px-6 lg:px-8 relative z-10",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/layout/Footer.tsx:17:9",
+					"data-uid": "src/components/layout/Footer.tsx:16:9",
 					"data-prohibitions": "[editContent]",
 					className: "grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							"data-uid": "src/components/layout/Footer.tsx:19:11",
+							"data-uid": "src/components/layout/Footer.tsx:18:11",
 							"data-prohibitions": "[]",
 							className: "md:col-span-12 lg:col-span-4 space-y-8",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-									"data-uid": "src/components/layout/Footer.tsx:20:13",
+									"data-uid": "src/components/layout/Footer.tsx:19:13",
 									"data-prohibitions": "[]",
 									to: "/",
 									onClick: scrollToTop,
 									className: "inline-block group",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-										"data-uid": "src/components/layout/Footer.tsx:21:15",
-										"data-prohibitions": "[editContent]",
-										src: editedimage_1773515584704_651da_default,
-										alt: "Ultra Center - Especialidades Médicas - Dr. Gustavo Teixeira Gomes",
-										className: "h-16 md:h-20 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										"data-uid": "src/components/layout/Footer.tsx:20:15",
+										"data-prohibitions": "[]",
+										className: "flex flex-col items-start justify-center transition-transform duration-300 group-hover:scale-105 mb-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											"data-uid": "src/components/layout/Footer.tsx:21:17",
+											"data-prohibitions": "[]",
+											className: "text-2xl md:text-3xl font-serif font-bold text-ultra-gold tracking-widest uppercase leading-none",
+											children: "Ultra Center"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											"data-uid": "src/components/layout/Footer.tsx:24:17",
+											"data-prohibitions": "[]",
+											className: "text-[0.7rem] md:text-xs font-sans text-slate-400 tracking-[0.25em] uppercase mt-2 opacity-90",
+											children: "Especialidades Médicas"
+										})]
 									})
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/layout/Footer.tsx:28:13",
+									"data-uid": "src/components/layout/Footer.tsx:30:13",
 									"data-prohibitions": "[]",
 									className: "space-y-4",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/layout/Footer.tsx:29:15",
+										"data-uid": "src/components/layout/Footer.tsx:31:15",
 										"data-prohibitions": "[]",
 										className: "inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 text-sm font-medium",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-											"data-uid": "src/components/layout/Footer.tsx:30:17",
+											"data-uid": "src/components/layout/Footer.tsx:32:17",
 											"data-prohibitions": "[]",
 											className: "relative flex h-2 w-2",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												"data-uid": "src/components/layout/Footer.tsx:31:19",
+												"data-uid": "src/components/layout/Footer.tsx:33:19",
 												"data-prohibitions": "[]",
 												className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												"data-uid": "src/components/layout/Footer.tsx:32:19",
+												"data-uid": "src/components/layout/Footer.tsx:34:19",
 												"data-prohibitions": "[]",
 												className: "relative inline-flex rounded-full h-2 w-2 bg-amber-500"
 											})]
 										}), "Mais de 25 anos de experiência"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/layout/Footer.tsx:36:15",
+										"data-uid": "src/components/layout/Footer.tsx:38:15",
 										"data-prohibitions": "[]",
 										className: "text-slate-400 text-sm leading-relaxed max-w-sm",
 										children: "Oferecendo atendimento médico humanizado e de excelência. Uma trajetória de dedicação integral à sua saúde, aliando tecnologia, conhecimento e empatia."
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/layout/Footer.tsx:42:13",
+									"data-uid": "src/components/layout/Footer.tsx:44:13",
 									"data-prohibitions": "[]",
 									className: "flex gap-4",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-										"data-uid": "src/components/layout/Footer.tsx:43:15",
+										"data-uid": "src/components/layout/Footer.tsx:45:15",
 										"data-prohibitions": "[]",
 										href: "#",
 										className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-amber-600/25",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Instagram, {
-											"data-uid": "src/components/layout/Footer.tsx:47:17",
+											"data-uid": "src/components/layout/Footer.tsx:49:17",
 											"data-prohibitions": "[editContent]",
 											className: "w-5 h-5"
 										})
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-										"data-uid": "src/components/layout/Footer.tsx:49:15",
+										"data-uid": "src/components/layout/Footer.tsx:51:15",
 										"data-prohibitions": "[]",
 										href: "#",
 										className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-amber-600/25",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Facebook, {
-											"data-uid": "src/components/layout/Footer.tsx:53:17",
+											"data-uid": "src/components/layout/Footer.tsx:55:17",
 											"data-prohibitions": "[editContent]",
 											className: "w-5 h-5"
 										})
@@ -28951,34 +28966,34 @@ function Footer() {
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							"data-uid": "src/components/layout/Footer.tsx:59:11",
+							"data-uid": "src/components/layout/Footer.tsx:61:11",
 							"data-prohibitions": "[]",
 							className: "md:col-span-4 lg:col-span-2 space-y-6",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
-								"data-uid": "src/components/layout/Footer.tsx:60:13",
+								"data-uid": "src/components/layout/Footer.tsx:62:13",
 								"data-prohibitions": "[]",
 								className: "text-white font-semibold text-lg tracking-wide relative inline-block",
 								children: ["Links Úteis", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									"data-uid": "src/components/layout/Footer.tsx:62:15",
+									"data-uid": "src/components/layout/Footer.tsx:64:15",
 									"data-prohibitions": "[]",
 									className: "absolute -bottom-2 left-0 w-1/2 h-0.5 bg-amber-600 rounded-full"
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-								"data-uid": "src/components/layout/Footer.tsx:64:13",
+								"data-uid": "src/components/layout/Footer.tsx:66:13",
 								"data-prohibitions": "[]",
 								className: "space-y-4 mt-8",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
-										"data-uid": "src/components/layout/Footer.tsx:65:15",
+										"data-uid": "src/components/layout/Footer.tsx:67:15",
 										"data-prohibitions": "[]",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-											"data-uid": "src/components/layout/Footer.tsx:66:17",
+											"data-uid": "src/components/layout/Footer.tsx:68:17",
 											"data-prohibitions": "[]",
 											href: "#sobre",
 											className: "text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													"data-uid": "src/components/layout/Footer.tsx:70:19",
+													"data-uid": "src/components/layout/Footer.tsx:72:19",
 													"data-prohibitions": "[editContent]",
 													className: "w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity"
 												}),
@@ -28988,16 +29003,16 @@ function Footer() {
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
-										"data-uid": "src/components/layout/Footer.tsx:74:15",
+										"data-uid": "src/components/layout/Footer.tsx:76:15",
 										"data-prohibitions": "[]",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-											"data-uid": "src/components/layout/Footer.tsx:75:17",
+											"data-uid": "src/components/layout/Footer.tsx:77:17",
 											"data-prohibitions": "[]",
 											href: "#especialidades",
 											className: "text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													"data-uid": "src/components/layout/Footer.tsx:79:19",
+													"data-uid": "src/components/layout/Footer.tsx:81:19",
 													"data-prohibitions": "[editContent]",
 													className: "w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity"
 												}),
@@ -29007,16 +29022,16 @@ function Footer() {
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
-										"data-uid": "src/components/layout/Footer.tsx:83:15",
+										"data-uid": "src/components/layout/Footer.tsx:85:15",
 										"data-prohibitions": "[]",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-											"data-uid": "src/components/layout/Footer.tsx:84:17",
+											"data-uid": "src/components/layout/Footer.tsx:86:17",
 											"data-prohibitions": "[]",
 											href: "#agendamento",
 											className: "text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													"data-uid": "src/components/layout/Footer.tsx:88:19",
+													"data-uid": "src/components/layout/Footer.tsx:90:19",
 													"data-prohibitions": "[editContent]",
 													className: "w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity"
 												}),
@@ -29026,16 +29041,16 @@ function Footer() {
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
-										"data-uid": "src/components/layout/Footer.tsx:92:15",
+										"data-uid": "src/components/layout/Footer.tsx:94:15",
 										"data-prohibitions": "[]",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-											"data-uid": "src/components/layout/Footer.tsx:93:17",
+											"data-uid": "src/components/layout/Footer.tsx:95:17",
 											"data-prohibitions": "[]",
 											href: "#contato",
 											className: "text-slate-400 hover:text-amber-500 transition-colors text-sm flex items-center gap-2",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													"data-uid": "src/components/layout/Footer.tsx:97:19",
+													"data-uid": "src/components/layout/Footer.tsx:99:19",
 													"data-prohibitions": "[editContent]",
 													className: "w-1 h-1 rounded-full bg-amber-600 opacity-0 transition-opacity"
 												}),
@@ -29048,55 +29063,55 @@ function Footer() {
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							"data-uid": "src/components/layout/Footer.tsx:105:11",
+							"data-uid": "src/components/layout/Footer.tsx:107:11",
 							"data-prohibitions": "[]",
 							className: "md:col-span-8 lg:col-span-6 space-y-6",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
-								"data-uid": "src/components/layout/Footer.tsx:106:13",
+								"data-uid": "src/components/layout/Footer.tsx:108:13",
 								"data-prohibitions": "[]",
 								className: "text-white font-semibold text-lg tracking-wide relative inline-block",
 								children: ["Informações de Contato", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									"data-uid": "src/components/layout/Footer.tsx:108:15",
+									"data-uid": "src/components/layout/Footer.tsx:110:15",
 									"data-prohibitions": "[]",
 									className: "absolute -bottom-2 left-0 w-12 h-0.5 bg-amber-600 rounded-full"
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/layout/Footer.tsx:110:13",
+								"data-uid": "src/components/layout/Footer.tsx:112:13",
 								"data-prohibitions": "[]",
 								className: "grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/layout/Footer.tsx:111:15",
+									"data-uid": "src/components/layout/Footer.tsx:113:15",
 									"data-prohibitions": "[]",
 									className: "space-y-6",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/layout/Footer.tsx:112:17",
+										"data-uid": "src/components/layout/Footer.tsx:114:17",
 										"data-prohibitions": "[]",
 										className: "flex items-start gap-4",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:113:19",
+											"data-uid": "src/components/layout/Footer.tsx:115:19",
 											"data-prohibitions": "[]",
 											className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, {
-												"data-uid": "src/components/layout/Footer.tsx:114:21",
+												"data-uid": "src/components/layout/Footer.tsx:116:21",
 												"data-prohibitions": "[editContent]",
 												className: "w-5 h-5 text-amber-500"
 											})
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:116:19",
+											"data-uid": "src/components/layout/Footer.tsx:118:19",
 											"data-prohibitions": "[]",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:117:21",
+												"data-uid": "src/components/layout/Footer.tsx:119:21",
 												"data-prohibitions": "[]",
 												className: "text-white text-sm font-medium",
 												children: "Endereço"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:118:21",
+												"data-uid": "src/components/layout/Footer.tsx:120:21",
 												"data-prohibitions": "[]",
 												className: "text-slate-400 text-sm mt-1 leading-relaxed",
 												children: [
 													"Av. Brasil, 1234 - Centro",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-														"data-uid": "src/components/layout/Footer.tsx:120:23",
+														"data-uid": "src/components/layout/Footer.tsx:122:23",
 														"data-prohibitions": "[editContent]"
 													}),
 													"São Paulo - SP"
@@ -29104,34 +29119,34 @@ function Footer() {
 											})]
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/layout/Footer.tsx:125:17",
+										"data-uid": "src/components/layout/Footer.tsx:127:17",
 										"data-prohibitions": "[]",
 										className: "flex items-start gap-4",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:126:19",
+											"data-uid": "src/components/layout/Footer.tsx:128:19",
 											"data-prohibitions": "[]",
 											className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, {
-												"data-uid": "src/components/layout/Footer.tsx:127:21",
+												"data-uid": "src/components/layout/Footer.tsx:129:21",
 												"data-prohibitions": "[editContent]",
 												className: "w-5 h-5 text-amber-500"
 											})
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:129:19",
+											"data-uid": "src/components/layout/Footer.tsx:131:19",
 											"data-prohibitions": "[]",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:130:21",
+												"data-uid": "src/components/layout/Footer.tsx:132:21",
 												"data-prohibitions": "[]",
 												className: "text-white text-sm font-medium",
 												children: "Atendimento"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:131:21",
+												"data-uid": "src/components/layout/Footer.tsx:133:21",
 												"data-prohibitions": "[]",
 												className: "text-slate-400 text-sm mt-1 leading-relaxed",
 												children: [
 													"Seg - Sex: 08:00 às 18:00",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-														"data-uid": "src/components/layout/Footer.tsx:133:23",
+														"data-uid": "src/components/layout/Footer.tsx:135:23",
 														"data-prohibitions": "[editContent]"
 													}),
 													"Sáb: 08:00 às 12:00"
@@ -29140,38 +29155,38 @@ function Footer() {
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/layout/Footer.tsx:139:15",
+									"data-uid": "src/components/layout/Footer.tsx:141:15",
 									"data-prohibitions": "[]",
 									className: "space-y-6",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/layout/Footer.tsx:140:17",
+										"data-uid": "src/components/layout/Footer.tsx:142:17",
 										"data-prohibitions": "[]",
 										className: "flex items-start gap-4",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:141:19",
+											"data-uid": "src/components/layout/Footer.tsx:143:19",
 											"data-prohibitions": "[]",
 											className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, {
-												"data-uid": "src/components/layout/Footer.tsx:142:21",
+												"data-uid": "src/components/layout/Footer.tsx:144:21",
 												"data-prohibitions": "[editContent]",
 												className: "w-5 h-5 text-amber-500"
 											})
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:144:19",
+											"data-uid": "src/components/layout/Footer.tsx:146:19",
 											"data-prohibitions": "[]",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:145:21",
+												"data-uid": "src/components/layout/Footer.tsx:147:21",
 												"data-prohibitions": "[]",
 												className: "text-white text-sm font-medium",
 												children: "Telefones"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:146:21",
+												"data-uid": "src/components/layout/Footer.tsx:148:21",
 												"data-prohibitions": "[]",
 												className: "text-slate-400 text-sm mt-1 leading-relaxed",
 												children: [
 													"(11) 3456-7890",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
-														"data-uid": "src/components/layout/Footer.tsx:148:23",
+														"data-uid": "src/components/layout/Footer.tsx:150:23",
 														"data-prohibitions": "[editContent]"
 													}),
 													"(11) 98765-4321"
@@ -29179,28 +29194,28 @@ function Footer() {
 											})]
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/layout/Footer.tsx:153:17",
+										"data-uid": "src/components/layout/Footer.tsx:155:17",
 										"data-prohibitions": "[]",
 										className: "flex items-start gap-4",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:154:19",
+											"data-uid": "src/components/layout/Footer.tsx:156:19",
 											"data-prohibitions": "[]",
 											className: "w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, {
-												"data-uid": "src/components/layout/Footer.tsx:155:21",
+												"data-uid": "src/components/layout/Footer.tsx:157:21",
 												"data-prohibitions": "[editContent]",
 												className: "w-5 h-5 text-amber-500"
 											})
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/layout/Footer.tsx:157:19",
+											"data-uid": "src/components/layout/Footer.tsx:159:19",
 											"data-prohibitions": "[]",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:158:21",
+												"data-uid": "src/components/layout/Footer.tsx:160:21",
 												"data-prohibitions": "[]",
 												className: "text-white text-sm font-medium",
 												children: "E-mail"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												"data-uid": "src/components/layout/Footer.tsx:159:21",
+												"data-uid": "src/components/layout/Footer.tsx:161:21",
 												"data-prohibitions": "[]",
 												className: "text-slate-400 text-sm mt-1 leading-relaxed",
 												children: "contato@ultracenter.com.br"
@@ -29212,11 +29227,11 @@ function Footer() {
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/layout/Footer.tsx:169:9",
+					"data-uid": "src/components/layout/Footer.tsx:171:9",
 					"data-prohibitions": "[editContent]",
 					className: "mt-16 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-						"data-uid": "src/components/layout/Footer.tsx:170:11",
+						"data-uid": "src/components/layout/Footer.tsx:172:11",
 						"data-prohibitions": "[editContent]",
 						className: "text-slate-500 text-sm text-center md:text-left",
 						children: [
@@ -29225,7 +29240,7 @@ function Footer() {
 							" Ultra Center Especialidades Médicas. Todos os direitos reservados."
 						]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						"data-uid": "src/components/layout/Footer.tsx:174:11",
+						"data-uid": "src/components/layout/Footer.tsx:176:11",
 						"data-prohibitions": "[]",
 						className: "text-slate-500 text-sm text-center md:text-right",
 						children: "Responsável Técnico: Dr. Gustavo Teixeira Gomes - CRM 12345/SP"
@@ -29346,4 +29361,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-CS2A_duq.js.map
+//# sourceMappingURL=index-D-M2LOJJ.js.map

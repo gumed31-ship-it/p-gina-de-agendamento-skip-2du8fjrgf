@@ -2507,6 +2507,10 @@ section[aria-label='Notifications alt+T'] {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-sans{
+  font-family: Inter, sans-serif;
+}
+
 .font-serif{
   font-family: Playfair Display, serif;
 }
@@ -2524,6 +2528,14 @@ section[aria-label='Notifications alt+T'] {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-\[0\.65rem\]{
+  font-size: 0.65rem;
+}
+
+.text-\[0\.7rem\]{
+  font-size: 0.7rem;
 }
 
 .text-\[0\.8rem\]{
@@ -2598,6 +2610,10 @@ section[aria-label='Notifications alt+T'] {
 
 .leading-tight{
   line-height: 1.25;
+}
+
+.tracking-\[0\.25em\]{
+  letter-spacing: 0.25em;
 }
 
 .tracking-tight{
@@ -2794,10 +2810,6 @@ section[aria-label='Notifications alt+T'] {
 
 .opacity-90{
   opacity: 0.9;
-}
-
-.mix-blend-screen{
-  mix-blend-mode: screen;
 }
 
 .shadow-2xl{
@@ -4379,14 +4391,6 @@ section[aria-label='Notifications alt+T'] {
     aspect-ratio: 4/3;
   }
 
-  .md\:h-14{
-    height: 3.5rem;
-  }
-
-  .md\:h-20{
-    height: 5rem;
-  }
-
   .md\:h-\[600px\]{
     height: 600px;
   }
@@ -4478,6 +4482,16 @@ section[aria-label='Notifications alt+T'] {
     text-align: right;
   }
 
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -4488,6 +4502,10 @@ section[aria-label='Notifications alt+T'] {
     line-height: 1;
   }
 
+  .md\:text-\[0\.7rem\]{
+    font-size: 0.7rem;
+  }
+
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -4496,6 +4514,11 @@ section[aria-label='Notifications alt+T'] {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .md\:opacity-0{
