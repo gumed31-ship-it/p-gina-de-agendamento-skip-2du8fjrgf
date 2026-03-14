@@ -6,6 +6,7 @@ const team = [
   {
     name: 'Dr. Gustavo Teixeira Gomes',
     role: 'Diretor Clínico & Médico Ultrassonografista',
+    specialties: 'Angiologia, Ultrassonografia, Geriatria',
     image: drGustavoImg,
     description:
       'Especialista em diagnóstico por imagem, dedicado a oferecer exames de excelência com precisão e atendimento humanizado.',
@@ -40,11 +41,18 @@ export function MedicalTeamSection() {
                       alt={doctor.name}
                       className="object-cover w-full h-full object-top group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#002855] via-[#002855]/40 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#002855] via-[#002855]/50 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
 
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform sm:translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform sm:translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
                       <h3 className="text-2xl font-bold mb-1 text-white">{doctor.name}</h3>
-                      <p className="text-[#D4AF37] font-semibold mb-3">{doctor.role}</p>
+                      <p className="text-[#D4AF37] font-semibold mb-1">{doctor.role}</p>
+
+                      {doctor.specialties && (
+                        <p className="text-[#D4AF37]/90 text-sm font-medium mb-3">
+                          {doctor.specialties}
+                        </p>
+                      )}
+
                       <p className="text-white/90 text-sm opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-3">
                         {doctor.description}
                       </p>

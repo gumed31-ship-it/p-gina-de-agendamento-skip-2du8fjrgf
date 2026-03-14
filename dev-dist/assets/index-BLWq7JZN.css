@@ -2216,9 +2216,9 @@ section[aria-label='Notifications alt+T'] {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.via-\[\#002855\]\/40{
+.via-\[\#002855\]\/50{
   --tw-gradient-to: rgb(0 40 85 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(0 40 85 / 0.4) var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(0 40 85 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .via-amber-500\/50{
@@ -2616,6 +2616,10 @@ section[aria-label='Notifications alt+T'] {
 .text-\[\#D4AF37\]{
   --tw-text-opacity: 1;
   color: rgb(212 175 55 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#D4AF37\]\/90{
+  color: rgb(212 175 55 / 0.9);
 }
 
 .text-accent-foreground{
@@ -4300,8 +4304,8 @@ section[aria-label='Notifications alt+T'] {
     max-width: 24rem;
   }
 
-  .sm\:translate-y-8{
-    --tw-translate-y: 2rem;
+  .sm\:translate-y-12{
+    --tw-translate-y: 3rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
