@@ -26,15 +26,15 @@ export function SpecialtiesSection() {
             return (
               <ScrollReveal
                 key={spec.id}
-                delay={idx * 100}
-                className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex"
+                delay={(idx % 5) * 100}
+                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-19.2px)] flex"
               >
                 <Card className="w-full group border border-slate-100 hover:border-ultra-gold/30 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden bg-slate-50 hover:bg-white flex flex-col">
                   <CardContent className="p-8 flex flex-col items-start flex-grow">
                     <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-ultra-gold transition-all duration-500 shrink-0">
                       <Icon className="h-7 w-7 text-ultra-blue group-hover:text-white transition-colors duration-500" />
                     </div>
-                    <h4 className="text-xl font-bold text-ultra-blue mb-3 font-serif">
+                    <h4 className="text-xl font-bold text-ultra-blue mb-3 font-serif leading-tight">
                       {spec.name}
                     </h4>
                     <p className="text-slate-600 mb-6 flex-grow">{spec.desc}</p>

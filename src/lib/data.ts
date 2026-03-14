@@ -1,4 +1,15 @@
-import { Activity, Stethoscope, Syringe, HeartPulse, UserCheck } from 'lucide-react'
+import {
+  Activity,
+  Stethoscope,
+  Syringe,
+  HeartPulse,
+  UserCheck,
+  Heart,
+  Brain,
+  Bone,
+  Eye,
+  Droplets,
+} from 'lucide-react'
 
 export const NAVIGATION = [
   { name: 'Especialidades', href: '#especialidades' },
@@ -13,32 +24,62 @@ export const NAVIGATION = [
 export const SPECIALTIES = [
   {
     id: '1',
-    name: 'Angiologia',
-    icon: HeartPulse,
-    desc: 'Prevenção e tratamento especializado das doenças do sistema circulatório.',
-  },
-  {
-    id: '2',
-    name: 'Geriatria',
-    icon: UserCheck,
-    desc: 'Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso.',
-  },
-  {
-    id: '3',
-    name: 'Clínica Médica',
-    icon: Stethoscope,
-    desc: 'Atendimento global e integrativo para diagnóstico e tratamento de pacientes adultos.',
-  },
-  {
-    id: '4',
     name: 'Anestesiologia',
     icon: Syringe,
     desc: 'Excelência em segurança, monitoramento e controle da dor em procedimentos médicos.',
   },
   {
+    id: '2',
+    name: 'Angiologia',
+    icon: HeartPulse,
+    desc: 'Prevenção e tratamento especializado das doenças do sistema circulatório.',
+  },
+  {
+    id: '3',
+    name: 'Cardiologia',
+    icon: Heart,
+    desc: 'Prevenção, diagnóstico e tratamento de doenças do coração e do sistema cardiovascular.',
+  },
+  {
+    id: '4',
+    name: 'Clínica Médica',
+    icon: Stethoscope,
+    desc: 'Atendimento global e integrativo para diagnóstico e tratamento de pacientes adultos.',
+  },
+  {
     id: '5',
-    name: 'Urologia',
+    name: 'Gastroenterologia',
     icon: Activity,
+    desc: 'Diagnóstico e tratamento de doenças do aparelho digestivo com cuidado e precisão.',
+  },
+  {
+    id: '6',
+    name: 'Geriatria',
+    icon: UserCheck,
+    desc: 'Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso.',
+  },
+  {
+    id: '7',
+    name: 'Neurologia adulto e pediátrica',
+    icon: Brain,
+    desc: 'Diagnóstico e tratamento de distúrbios do sistema nervoso para pacientes de todas as idades.',
+  },
+  {
+    id: '8',
+    name: 'Oftalmologia',
+    icon: Eye,
+    desc: 'Prevenção, diagnóstico e tratamento de doenças relacionadas aos olhos e à visão.',
+  },
+  {
+    id: '9',
+    name: 'Ortopedia',
+    icon: Bone,
+    desc: 'Cuidado especializado na prevenção e tratamento de doenças dos ossos, músculos e articulações.',
+  },
+  {
+    id: '10',
+    name: 'Urologia',
+    icon: Droplets,
     desc: 'Cuidado especializado do trato urinário e sistema reprodutor masculino.',
   },
 ]

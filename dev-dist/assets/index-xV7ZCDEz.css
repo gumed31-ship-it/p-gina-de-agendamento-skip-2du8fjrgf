@@ -4290,6 +4290,10 @@ section[aria-label='Notifications alt+T'] {
     display: flex;
   }
 
+  .sm\:w-\[calc\(50\%-12px\)\]{
+    width: calc(50% - 12px);
+  }
+
   .sm\:w-auto{
     width: auto;
   }
@@ -4416,10 +4420,6 @@ section[aria-label='Notifications alt+T'] {
 
   .md\:w-3\/5{
     width: 60%;
-  }
-
-  .md\:w-\[calc\(50\%-12px\)\]{
-    width: calc(50% - 12px);
   }
 
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\]{
@@ -4627,6 +4627,13 @@ section[aria-label='Notifications alt+T'] {
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px){
+
+  .xl\:w-\[calc\(20\%-19\.2px\)\]{
+    width: calc(20% - 19.2px);
   }
 }
 

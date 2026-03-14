@@ -19020,6 +19020,44 @@ var ArrowRight = createLucideIcon("arrow-right", [["path", {
 	d: "m12 5 7 7-7 7",
 	key: "xquz4c"
 }]]);
+var Bone = createLucideIcon("bone", [["path", {
+	d: "M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z",
+	key: "w610uw"
+}]]);
+var Brain = createLucideIcon("brain", [
+	["path", {
+		d: "M12 18V5",
+		key: "adv99a"
+	}],
+	["path", {
+		d: "M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4",
+		key: "1e3is1"
+	}],
+	["path", {
+		d: "M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5",
+		key: "1gqd8o"
+	}],
+	["path", {
+		d: "M17.997 5.125a4 4 0 0 1 2.526 5.77",
+		key: "iwvgf7"
+	}],
+	["path", {
+		d: "M18 18a4 4 0 0 0 2-7.464",
+		key: "efp6ie"
+	}],
+	["path", {
+		d: "M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517",
+		key: "1gq6am"
+	}],
+	["path", {
+		d: "M6 18a4 4 0 0 1-2-7.464",
+		key: "k1g0md"
+	}],
+	["path", {
+		d: "M6.003 5.125a4 4 0 0 0-2.526 5.77",
+		key: "q97ue3"
+	}]
+]);
 var Calendar = createLucideIcon("calendar", [
 	["path", {
 		d: "M8 2v4",
@@ -19078,12 +19116,32 @@ var Clock = createLucideIcon("clock", [["circle", {
 	d: "M12 6v6l4 2",
 	key: "mmk7yg"
 }]]);
+var Droplets = createLucideIcon("droplets", [["path", {
+	d: "M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z",
+	key: "1ptgy4"
+}], ["path", {
+	d: "M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97",
+	key: "1sl1rz"
+}]]);
+var Eye = createLucideIcon("eye", [["path", {
+	d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0",
+	key: "1nclc0"
+}], ["circle", {
+	cx: "12",
+	cy: "12",
+	r: "3",
+	key: "1v7zrd"
+}]]);
 var HeartPulse = createLucideIcon("heart-pulse", [["path", {
 	d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
 	key: "mvr1a0"
 }], ["path", {
 	d: "M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27",
 	key: "auskq0"
+}]]);
+var Heart = createLucideIcon("heart", [["path", {
+	d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
+	key: "mvr1a0"
 }]]);
 var Instagram = createLucideIcon("instagram", [
 	["rect", {
@@ -24768,32 +24826,62 @@ function DifferentialsSection() {
 var SPECIALTIES = [
 	{
 		id: "1",
-		name: "Angiologia",
-		icon: HeartPulse,
-		desc: "Prevenção e tratamento especializado das doenças do sistema circulatório."
-	},
-	{
-		id: "2",
-		name: "Geriatria",
-		icon: UserCheck,
-		desc: "Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso."
-	},
-	{
-		id: "3",
-		name: "Clínica Médica",
-		icon: Stethoscope,
-		desc: "Atendimento global e integrativo para diagnóstico e tratamento de pacientes adultos."
-	},
-	{
-		id: "4",
 		name: "Anestesiologia",
 		icon: Syringe,
 		desc: "Excelência em segurança, monitoramento e controle da dor em procedimentos médicos."
 	},
 	{
+		id: "2",
+		name: "Angiologia",
+		icon: HeartPulse,
+		desc: "Prevenção e tratamento especializado das doenças do sistema circulatório."
+	},
+	{
+		id: "3",
+		name: "Cardiologia",
+		icon: Heart,
+		desc: "Prevenção, diagnóstico e tratamento de doenças do coração e do sistema cardiovascular."
+	},
+	{
+		id: "4",
+		name: "Clínica Médica",
+		icon: Stethoscope,
+		desc: "Atendimento global e integrativo para diagnóstico e tratamento de pacientes adultos."
+	},
+	{
 		id: "5",
-		name: "Urologia",
+		name: "Gastroenterologia",
 		icon: Activity,
+		desc: "Diagnóstico e tratamento de doenças do aparelho digestivo com cuidado e precisão."
+	},
+	{
+		id: "6",
+		name: "Geriatria",
+		icon: UserCheck,
+		desc: "Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso."
+	},
+	{
+		id: "7",
+		name: "Neurologia adulto e pediátrica",
+		icon: Brain,
+		desc: "Diagnóstico e tratamento de distúrbios do sistema nervoso para pacientes de todas as idades."
+	},
+	{
+		id: "8",
+		name: "Oftalmologia",
+		icon: Eye,
+		desc: "Prevenção, diagnóstico e tratamento de doenças relacionadas aos olhos e à visão."
+	},
+	{
+		id: "9",
+		name: "Ortopedia",
+		icon: Bone,
+		desc: "Cuidado especializado na prevenção e tratamento de doenças dos ossos, músculos e articulações."
+	},
+	{
+		id: "10",
+		name: "Urologia",
+		icon: Droplets,
 		desc: "Cuidado especializado do trato urinário e sistema reprodutor masculino."
 	}
 ];
@@ -24929,8 +25017,8 @@ function SpecialtiesSection() {
 					return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
 						"data-uid": "src/components/home/SpecialtiesSection.tsx:27:15",
 						"data-prohibitions": "[editContent]",
-						delay: idx * 100,
-						className: "w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex",
+						delay: idx % 5 * 100,
+						className: "w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-19.2px)] flex",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Card, {
 							"data-uid": "src/components/home/SpecialtiesSection.tsx:32:17",
 							"data-prohibitions": "[editContent]",
@@ -24953,7 +25041,7 @@ function SpecialtiesSection() {
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
 										"data-uid": "src/components/home/SpecialtiesSection.tsx:37:21",
 										"data-prohibitions": "[editContent]",
-										className: "text-xl font-bold text-ultra-blue mb-3 font-serif",
+										className: "text-xl font-bold text-ultra-blue mb-3 font-serif leading-tight",
 										children: spec.name
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -31789,4 +31877,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-CtOp9pvz.js.map
+//# sourceMappingURL=index-lfDSVZSs.js.map
