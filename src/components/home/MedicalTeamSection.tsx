@@ -1,100 +1,95 @@
+import { Card, CardContent } from '@/components/ui/card'
 import { ScrollReveal } from '@/components/ui/scroll-reveal'
-import { Card } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import drGustavoImg from '@/assets/whatsapp-image-2026-01-19-at-08.28.50-3-e13c1.jpeg'
 
-import drJoseImg from '@/assets/dr-jose-guilherme-0608b.jpeg'
-
-const teamMembers = [
+const doctors = [
   {
     name: 'Dr. Gustavo Teixeira Gomes',
-    specialty: 'Angiologia, Ultrassonografia, Geriatria',
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=1',
+    specialties: 'Angiologia, Ultrassonografia, Geriatria',
+    image: drGustavoImg,
   },
   {
     name: 'Dr. José Guilherme Gonçalves',
-    specialty: 'Ortopedia e Traumatologia',
-    image: drJoseImg,
+    specialties: 'Ortopedia e Traumatologia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=42',
   },
   {
     name: 'Dr. Augusto Brinati',
-    specialty: 'Anestesiologia',
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=2',
+    specialties: 'Anestesiologia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=33',
   },
   {
     name: 'Dr. Sérgio Paulo Motta',
-    specialty: 'Oftalmologia',
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=3',
+    specialties: 'Oftalmologia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=45',
   },
   {
     name: 'Dr. Rodrigo Bertani',
-    specialty: 'Urologia',
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=4',
+    specialties: 'Urologia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=55',
   },
   {
     name: 'Dra. Marley Rodrigues',
-    specialty: 'Ginecologia e Obstetrícia',
-    image: 'https://img.usecurling.com/ppl/large?gender=female&seed=5',
+    specialties: 'Ginecologia e Obstetrícia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=12',
   },
   {
     name: 'Dra. Daniela Emerick',
-    specialty: 'Cardiologia',
-    image: 'https://img.usecurling.com/ppl/large?gender=female&seed=6',
+    specialties: 'Cardiologia',
+    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=24',
   },
   {
     name: 'Dr. Edney Gomes',
-    specialty: 'Neurologia adulta e pediátrica',
-    image: 'https://img.usecurling.com/ppl/large?gender=male&seed=7',
+    specialties: 'Neurologia adulta e pediátrica',
+    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=68',
   },
 ]
 
 export function MedicalTeamSection() {
   return (
     <section id="corpo-clinico" className="py-24 bg-slate-50">
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="container px-4 mx-auto max-w-7xl">
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <Badge className="bg-ultra-gold/10 text-ultra-gold hover:bg-ultra-gold/20 mb-4 border-none px-4 py-1.5 text-sm font-medium transition-colors">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#003366] mb-4 tracking-tight">
               Corpo Clínico
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold tracking-tight text-ultra-blue mb-4">
-              Nossa Equipe Médica
             </h2>
-            <p className="text-lg text-slate-600">
-              Profissionais altamente qualificados e dedicados a oferecer o melhor atendimento para
-              você e sua família.
+            <div className="h-1.5 w-24 bg-[#D4AF37] mx-auto mb-6 rounded-full" />
+            <p className="text-slate-600 text-lg">
+              Nossa equipe é formada por especialistas altamente qualificados, comprometidos em
+              oferecer um atendimento de excelência e cuidado humanizado.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {teamMembers.map((doctor, index) => (
-            <ScrollReveal key={doctor.name} delay={(index % 4) * 100}>
-              <Card className="overflow-hidden h-full flex flex-col group border-0 shadow-lg hover:shadow-xl transition-all duration-500 bg-white rounded-xl">
-                <div className="aspect-[3/4] relative overflow-hidden bg-slate-100 flex-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {doctors.map((doctor, index) => (
+            <ScrollReveal key={index} animation="slide-up" delay={index * 100}>
+              <Card className="overflow-hidden border-none shadow-md hover:shadow-2xl transition-all duration-300 bg-white group h-full flex flex-col rounded-xl">
+                <div className="aspect-[3/4] overflow-hidden relative bg-slate-200">
                   <img
                     src={doctor.image}
                     alt={doctor.name}
-                    className="object-cover w-full h-full object-top transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ultra-blue/95 via-ultra-blue/40 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#003366]/90 via-[#003366]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                  <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                    <h3 className="text-xl font-serif font-bold text-white mb-3 drop-shadow-sm leading-tight">
-                      {doctor.name}
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {doctor.specialty.split(', ').map((spec) => (
-                        <Badge
-                          key={spec}
-                          variant="secondary"
-                          className="bg-ultra-gold text-white hover:bg-ultra-goldDark border-none font-medium shadow-sm text-xs"
-                        >
-                          {spec}
-                        </Badge>
-                      ))}
-                    </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
+                    <p className="text-white text-sm font-medium leading-relaxed">
+                      Especialista com ampla experiência no cuidado focado na saúde e bem-estar do
+                      paciente.
+                    </p>
                   </div>
                 </div>
+
+                <CardContent className="p-6 text-center flex-grow flex flex-col justify-center bg-white z-10 relative">
+                  <h3 className="text-lg font-bold text-[#003366] mb-2 group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                    {doctor.name}
+                  </h3>
+                  <p className="text-sm font-semibold text-[#D4AF37] uppercase tracking-wider line-clamp-2">
+                    {doctor.specialties}
+                  </p>
+                </CardContent>
               </Card>
             </ScrollReveal>
           ))}
