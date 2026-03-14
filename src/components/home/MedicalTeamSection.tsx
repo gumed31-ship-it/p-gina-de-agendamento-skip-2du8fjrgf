@@ -1,49 +1,58 @@
 import { ScrollReveal } from '@/components/ui/scroll-reveal'
-import { MEDICAL_TEAM } from '@/lib/data'
-import { Card, CardContent } from '@/components/ui/card'
+import { Card } from '@/components/ui/card'
+import drGustavoImg from '@/assets/whatsapp-image-2026-01-19-at-08.28.50-1-df56a.jpeg'
+
+const team = [
+  {
+    name: 'Dr. Gustavo Teixeira Gomes',
+    role: 'Diretor Clínico & Médico Ultrassonografista',
+    image: drGustavoImg,
+    description:
+      'Especialista em diagnóstico por imagem, dedicado a oferecer exames de excelência com precisão e atendimento humanizado.',
+  },
+]
 
 export function MedicalTeamSection() {
   return (
-    <section id="equipe" className="py-24 bg-white relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-ultra-gold/5 blur-3xl" />
-      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-ultra-blue/5 blur-3xl" />
+    <section id="equipe" className="py-20 md:py-32 bg-slate-50">
+      <div className="container px-4 md:px-6 mx-auto">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <ScrollReveal>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary mb-4">
+              Corpo Clínico
+            </h2>
+            <div className="h-1 w-20 bg-[#D4AF37] mx-auto rounded-full mb-6"></div>
+            <p className="text-lg text-slate-600">
+              Contamos com profissionais altamente capacitados para oferecer o melhor em diagnóstico
+              por imagem, unindo tecnologia de ponta e excelência no atendimento.
+            </p>
+          </ScrollReveal>
+        </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-ultra-gold font-semibold uppercase tracking-wider mb-2 text-sm">
-            Corpo Clínico
-          </h2>
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-ultra-blue mb-4">
-            Nossa Equipe Médica
-          </h3>
-          <p className="text-slate-600 text-lg">
-            Profissionais altamente qualificados e dedicados ao cuidado com a sua saúde.
-          </p>
-        </ScrollReveal>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
-          {MEDICAL_TEAM.map((doctor, idx) => (
-            <ScrollReveal key={doctor.id} delay={idx * 100}>
-              <Card className="border border-slate-100 hover:border-ultra-gold/30 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden bg-slate-50 group h-full">
-                <CardContent className="p-0 flex flex-col h-full">
-                  <div className="aspect-[4/5] sm:aspect-square overflow-hidden relative">
+        <div className="flex flex-wrap justify-center gap-8">
+          {team.map((doctor, index) => (
+            <div key={index} className="w-full sm:max-w-sm">
+              <ScrollReveal>
+                <Card className="overflow-hidden border-none shadow-lg hover:shadow-2xl transition-all duration-500 group bg-white h-full">
+                  <div className="relative aspect-[3/4] overflow-hidden">
                     <img
                       src={doctor.image}
                       alt={doctor.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="object-cover w-full h-full object-top group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-ultra-blue/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#002855] via-[#002855]/40 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500" />
+
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform sm:translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                      <h3 className="text-2xl font-bold mb-1 text-white">{doctor.name}</h3>
+                      <p className="text-[#D4AF37] font-semibold mb-3">{doctor.role}</p>
+                      <p className="text-white/90 text-sm opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-3">
+                        {doctor.description}
+                      </p>
+                    </div>
                   </div>
-                  <div className="p-6 text-center bg-white flex-grow flex flex-col justify-center border-t border-slate-100 group-hover:bg-ultra-blue group-hover:border-ultra-blue transition-colors duration-300">
-                    <h4 className="font-bold text-xl text-ultra-blue mb-1 font-serif group-hover:text-white transition-colors duration-300">
-                      {doctor.name}
-                    </h4>
-                    <p className="text-sm text-ultra-gold font-medium">{doctor.specialty}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </ScrollReveal>
+                </Card>
+              </ScrollReveal>
+            </div>
           ))}
         </div>
       </div>
