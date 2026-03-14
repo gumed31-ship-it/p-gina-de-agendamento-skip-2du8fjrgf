@@ -19343,15 +19343,6 @@ var UserCheck = createLucideIcon("user-check", [
 		key: "nufk8"
 	}]
 ]);
-var User = createLucideIcon("user", [["path", {
-	d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2",
-	key: "975kel"
-}], ["circle", {
-	cx: "12",
-	cy: "7",
-	r: "4",
-	key: "17ys0d"
-}]]);
 var Users = createLucideIcon("users", [
 	["path", {
 		d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",
@@ -25845,144 +25836,126 @@ function InfrastructureSection() {
 }
 //#endregion
 //#region src/components/home/MedicalTeamSection.tsx
-var team = [
+var doctors = [
 	{
 		name: "Dr. Gustavo Teixeira Gomes",
 		specialty: "Angiologia, Ultrassonografia, Geriatria",
-		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=1"
+		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=gustavo"
 	},
 	{
 		name: "Dr. José Guilherme Gonçalves",
 		specialty: "Ortopedia e Traumatologia",
-		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=2"
+		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=jose"
 	},
 	{
 		name: "Dr. Augusto Brinati",
 		specialty: "Anestesiologia",
-		image: "/assets/dr-augusto-66e9e-hCVnbNz_.jpeg"
+		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=augusto"
 	},
 	{
 		name: "Dr. Sérgio Paulo Motta",
 		specialty: "Oftalmologia",
-		image: "/assets/dr-sergio-edc13-1MFp6TN7.jpeg"
+		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=sergio"
 	},
 	{
 		name: "Dr. Rodrigo Bertani",
 		specialty: "Urologia",
-		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=3"
+		image: "/assets/whatsapp-image-2026-03-14-at-17.06.13-155d0-CJ6k8IdJ.jpeg"
 	},
 	{
 		name: "Dra. Marley Rodrigues",
 		specialty: "Ginecologia e Obstetrícia",
-		image: "https://img.usecurling.com/ppl/medium?gender=female&seed=4"
+		image: "/assets/whatsapp-image-2026-03-14-at-17.07.55-270ce-D1cegARW.jpeg"
 	},
 	{
 		name: "Dra. Daniela Emerick",
 		specialty: "Cardiologia",
-		image: "https://img.usecurling.com/ppl/medium?gender=female&seed=5"
+		image: "/assets/whatsapp-image-2026-03-14-at-17.07.33-75023-CuD3q6zB.jpeg"
 	},
 	{
 		name: "Dr. Edney Gomes",
 		specialty: "Neurologia adulta e pediátrica",
-		image: "/assets/de-edionei-67532-2MGI4f58.jpeg"
+		image: "https://img.usecurling.com/ppl/medium?gender=male&seed=edney"
 	}
 ];
 function MedicalTeamSection() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		"data-uid": "src/components/home/MedicalTeamSection.tsx:54:5",
+		"data-uid": "src/components/home/MedicalTeamSection.tsx:51:5",
 		"data-prohibitions": "[editContent]",
+		className: "py-24 bg-slate-50",
 		id: "corpo-clinico",
-		className: "py-20 bg-muted/30",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/home/MedicalTeamSection.tsx:55:7",
+			"data-uid": "src/components/home/MedicalTeamSection.tsx:52:7",
 			"data-prohibitions": "[editContent]",
-			className: "container mx-auto px-4",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
-				"data-uid": "src/components/home/MedicalTeamSection.tsx:56:9",
+			className: "container mx-auto px-4 md:px-6",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				"data-uid": "src/components/home/MedicalTeamSection.tsx:53:9",
 				"data-prohibitions": "[]",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/home/MedicalTeamSection.tsx:57:11",
-					"data-prohibitions": "[]",
-					className: "text-center max-w-3xl mx-auto mb-16",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-							"data-uid": "src/components/home/MedicalTeamSection.tsx:58:13",
-							"data-prohibitions": "[]",
-							className: "text-3xl md:text-4xl font-bold text-primary mb-4",
-							children: "Corpo Clínico"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							"data-uid": "src/components/home/MedicalTeamSection.tsx:59:13",
-							"data-prohibitions": "[]",
-							className: "w-24 h-1 bg-secondary mx-auto mb-6 rounded-full"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							"data-uid": "src/components/home/MedicalTeamSection.tsx:60:13",
-							"data-prohibitions": "[]",
-							className: "text-muted-foreground text-lg",
-							children: "Conheça nossa equipe de especialistas altamente qualificados e dedicados à sua saúde e bem-estar."
-						})
-					]
-				})
+				className: "text-center mb-16 max-w-3xl mx-auto",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						"data-uid": "src/components/home/MedicalTeamSection.tsx:54:11",
+						"data-prohibitions": "[]",
+						className: "text-3xl md:text-4xl font-bold text-blue-900 mb-4 tracking-tight",
+						children: "Nosso Corpo Clínico"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						"data-uid": "src/components/home/MedicalTeamSection.tsx:57:11",
+						"data-prohibitions": "[]",
+						className: "w-20 h-1.5 bg-amber-500 mx-auto rounded-full mb-6"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						"data-uid": "src/components/home/MedicalTeamSection.tsx:58:11",
+						"data-prohibitions": "[]",
+						className: "text-lg text-slate-600",
+						children: "Conheça nossa equipe de especialistas altamente qualificados, dedicados a oferecer o melhor atendimento para sua saúde e bem-estar."
+					})
+				]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				"data-uid": "src/components/home/MedicalTeamSection.tsx:67:9",
+				"data-uid": "src/components/home/MedicalTeamSection.tsx:64:9",
 				"data-prohibitions": "[editContent]",
-				className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6",
-				children: team.map((doctor, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
-					"data-uid": "src/components/home/MedicalTeamSection.tsx:69:13",
+				className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8",
+				children: doctors.map((doctor, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Card, {
+					"data-uid": "src/components/home/MedicalTeamSection.tsx:66:13",
 					"data-prohibitions": "[editContent]",
-					delay: index * 100,
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Card, {
+					className: "overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 bg-white group flex flex-col h-full rounded-2xl",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardHeader, {
 						"data-uid": "src/components/home/MedicalTeamSection.tsx:70:15",
 						"data-prohibitions": "[editContent]",
-						className: "h-full border-primary/10 overflow-hidden hover:shadow-xl transition-all duration-300 group bg-card",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
-							"data-uid": "src/components/home/MedicalTeamSection.tsx:71:17",
+						className: "pt-8 pb-0 px-6 flex items-center justify-center relative border-b-0",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/home/MedicalTeamSection.tsx:72:17",
+							"data-prohibitions": "[]",
+							className: "absolute top-0 left-0 w-full h-28 bg-blue-900/5 rounded-t-2xl z-0 transition-colors duration-300 group-hover:bg-blue-900/10"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/home/MedicalTeamSection.tsx:75:17",
+							"data-prohibitions": "[]",
+							className: "w-40 h-40 relative rounded-full overflow-hidden border-4 border-white shadow-md z-10 bg-slate-100 ring-2 ring-amber-500/20 group-hover:ring-amber-500/50 transition-all duration-300",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								"data-uid": "src/components/home/MedicalTeamSection.tsx:76:19",
+								"data-prohibitions": "[editContent]",
+								src: doctor.image,
+								alt: `Foto de ${doctor.name}`,
+								className: "w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500",
+								loading: "lazy"
+							})
+						})]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CardContent, {
+						"data-uid": "src/components/home/MedicalTeamSection.tsx:85:15",
+						"data-prohibitions": "[editContent]",
+						className: "p-6 pt-6 text-center flex-grow flex flex-col justify-start z-10 bg-white",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+							"data-uid": "src/components/home/MedicalTeamSection.tsx:86:17",
 							"data-prohibitions": "[editContent]",
-							className: "p-0 flex flex-col h-full",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/home/MedicalTeamSection.tsx:72:19",
-								"data-prohibitions": "[editContent]",
-								className: "aspect-square bg-muted relative overflow-hidden",
-								children: [doctor.image ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-									"data-uid": "src/components/home/MedicalTeamSection.tsx:74:23",
-									"data-prohibitions": "[editContent]",
-									src: doctor.image,
-									alt: doctor.name,
-									className: "w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-								}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/home/MedicalTeamSection.tsx:80:23",
-									"data-prohibitions": "[]",
-									className: "w-full h-full flex items-center justify-center text-muted-foreground",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(User, {
-										"data-uid": "src/components/home/MedicalTeamSection.tsx:81:25",
-										"data-prohibitions": "[editContent]",
-										size: 64,
-										className: "opacity-20"
-									})
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/home/MedicalTeamSection.tsx:84:21",
-									"data-prohibitions": "[editContent]",
-									className: "absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-								})]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/home/MedicalTeamSection.tsx:86:19",
-								"data-prohibitions": "[editContent]",
-								className: "p-6 text-center border-t-4 border-secondary flex-1 flex flex-col justify-center bg-card z-10 relative shadow-sm",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-									"data-uid": "src/components/home/MedicalTeamSection.tsx:87:21",
-									"data-prohibitions": "[editContent]",
-									className: "text-lg font-bold text-primary mb-2 leading-tight",
-									children: doctor.name
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									"data-uid": "src/components/home/MedicalTeamSection.tsx:90:21",
-									"data-prohibitions": "[editContent]",
-									className: "text-sm font-semibold text-secondary",
-									children: doctor.specialty
-								})]
-							})]
-						})
-					})
+							className: "text-xl font-bold text-blue-900 mb-2 leading-tight",
+							children: doctor.name
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							"data-uid": "src/components/home/MedicalTeamSection.tsx:89:17",
+							"data-prohibitions": "[editContent]",
+							className: "text-amber-600 font-medium text-sm px-2",
+							children: doctor.specialty
+						})]
+					})]
 				}, index))
 			})]
 		})
@@ -30092,4 +30065,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-S2QlHWIi.js.map
+//# sourceMappingURL=index-K8M-pzoW.js.map
