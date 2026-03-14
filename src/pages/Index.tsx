@@ -4,23 +4,25 @@ import { DifferentialsSection } from '@/components/home/DifferentialsSection'
 import { SpecialtiesSection } from '@/components/home/SpecialtiesSection'
 import { ExamsSection } from '@/components/home/ExamsSection'
 import { Ultrasound4DSection } from '@/components/home/Ultrasound4DSection'
+import { JointUltrasoundSection } from '@/components/home/JointUltrasoundSection'
 import { InfrastructureSection } from '@/components/home/InfrastructureSection'
 import { TeamSection } from '@/components/home/TeamSection'
-import { AppointmentSection } from '@/components/home/AppointmentSection'
 import { TestimonialsSection } from '@/components/home/TestimonialsSection'
 import { FAQSection } from '@/components/home/FAQSection'
 import { LocationSection } from '@/components/home/LocationSection'
+import { AppointmentSection } from '@/components/home/AppointmentSection'
 import { FinalCTASection } from '@/components/home/FinalCTASection'
 
 export default function Index() {
   return (
-    <main className="flex min-h-screen flex-col w-full overflow-hidden bg-background">
+    <main className="flex min-h-screen flex-col bg-background">
       <HeroSection />
-      <AboutSection />
       <DifferentialsSection />
+      <AboutSection />
       <SpecialtiesSection />
       <ExamsSection />
       <Ultrasound4DSection />
+      <JointUltrasoundSection />
       <InfrastructureSection />
       <TeamSection />
       <TestimonialsSection />
