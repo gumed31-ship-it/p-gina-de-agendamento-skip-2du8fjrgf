@@ -1391,6 +1391,10 @@ section[aria-label='Notifications alt+T'] {
   max-width: 72rem;
 }
 
+.max-w-7xl{
+  max-width: 80rem;
+}
+
 .max-w-\[--skeleton-width\]{
   max-width: var(--skeleton-width);
 }
@@ -2206,8 +2210,8 @@ section[aria-label='Notifications alt+T'] {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-ultra-blue\/90{
-  --tw-gradient-from: rgb(0 31 63 / 0.9) var(--tw-gradient-from-position);
+.from-ultra-blue\/95{
+  --tw-gradient-from: rgb(0 31 63 / 0.95) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 31 63 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -2233,9 +2237,9 @@ section[aria-label='Notifications alt+T'] {
   --tw-gradient-stops: var(--tw-gradient-from), rgb(0 31 63 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.via-ultra-blue\/30{
+.via-ultra-blue\/40{
   --tw-gradient-to: rgb(0 31 63 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(0 31 63 / 0.3) var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(0 31 63 / 0.4) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .to-transparent{
@@ -4385,10 +4389,6 @@ section[aria-label='Notifications alt+T'] {
     aspect-ratio: 4/3;
   }
 
-  .md\:aspect-\[4\/5\]{
-    aspect-ratio: 4/5;
-  }
-
   .md\:h-\[600px\]{
     height: 600px;
   }
@@ -4583,6 +4583,10 @@ section[aria-label='Notifications alt+T'] {
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:gap-16{

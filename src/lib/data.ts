@@ -17,8 +17,8 @@ export const NAVIGATION = [
   { name: 'Procedimentos', href: '#procedimentos' },
   { name: 'Exames', href: '#exames' },
   { name: 'Sobre', href: '#sobre' },
-  { name: 'Estrutura', href: '#estrutura' },
-  { name: 'Equipe', href: '#equipe' },
+  { name: 'Estrutura', href: '#tecnologia' },
+  { name: 'Equipe', href: '#corpo-clinico' },
   { name: 'Contato', href: '#contato' },
 ]
 
@@ -88,45 +88,6 @@ export const SPECIALTIES = [
     name: 'Urologia',
     icon: Droplets,
     desc: 'Cuidado especializado do trato urinário e sistema reprodutor masculino.',
-  },
-]
-
-export const MEDICAL_TEAM = [
-  {
-    id: 1,
-    name: 'Dr. Roberto Almeida',
-    specialty: 'Radiologia e Diagnóstico por Imagem',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=101',
-  },
-  {
-    id: 2,
-    name: 'Dra. Camila Vasconcelos',
-    specialty: 'Ginecologia e Obstetrícia',
-    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=102',
-  },
-  {
-    id: 3,
-    name: 'Dr. Fernando Costa',
-    specialty: 'Cardiologia',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=103',
-  },
-  {
-    id: 4,
-    name: 'Dra. Beatriz Santos',
-    specialty: 'Angiologia',
-    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=104',
-  },
-  {
-    id: 5,
-    name: 'Dr. Thiago Moraes',
-    specialty: 'Ortopedia',
-    image: 'https://img.usecurling.com/ppl/medium?gender=male&seed=105',
-  },
-  {
-    id: 6,
-    name: 'Dra. Juliana Mendes',
-    specialty: 'Neurologia',
-    image: 'https://img.usecurling.com/ppl/medium?gender=female&seed=106',
   },
 ]
 
