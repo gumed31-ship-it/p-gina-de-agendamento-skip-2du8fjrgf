@@ -2,6 +2,7 @@ import { Activity, Brain, Eye, Heart, Stethoscope, Baby } from 'lucide-react'
 
 export const NAVIGATION = [
   { name: 'Especialidades', href: '#especialidades' },
+  { name: 'Exames', href: '#exames' },
   { name: 'Sobre', href: '#sobre' },
   { name: 'Estrutura', href: '#estrutura' },
   { name: 'Equipe', href: '#equipe' },
@@ -24,7 +25,7 @@ export const SPECIALTIES = [
     id: '6',
     name: 'Exames de Imagem',
     icon: Stethoscope,
-    desc: 'Ressonância, Tomografia e Ultrassom.',
+    desc: 'Ultrassonografia, Endoscopia, Eletrocardiograma e mais procedimentos diagnósticos.',
   },
 ]
 

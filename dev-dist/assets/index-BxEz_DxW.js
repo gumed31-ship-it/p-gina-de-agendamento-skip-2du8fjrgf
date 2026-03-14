@@ -24571,6 +24571,10 @@ var NAVIGATION = [
 		href: "#especialidades"
 	},
 	{
+		name: "Exames",
+		href: "#exames"
+	},
+	{
 		name: "Sobre",
 		href: "#sobre"
 	},
@@ -24626,7 +24630,7 @@ var SPECIALTIES = [
 		id: "6",
 		name: "Exames de Imagem",
 		icon: Stethoscope,
-		desc: "Ressonância, Tomografia e Ultrassom."
+		desc: "Ultrassonografia, Endoscopia, Eletrocardiograma e mais procedimentos diagnósticos."
 	}
 ];
 var DOCTORS = [
@@ -24841,6 +24845,100 @@ function SpecialtiesSection() {
 				})
 			})]
 		})
+	});
+}
+//#endregion
+//#region src/components/home/ExamsSection.tsx
+var EXAMS_LIST = [
+	"Ultrassonografia Geral e Vascular com Doppler Colorido",
+	"Obstétrico Morfológico com 4D e 8D",
+	"Elastografia Hepática",
+	"Quantificação de Gordura no fígado com IHR",
+	"Eletrocardiograma",
+	"Bioimpedância",
+	"Eletroneuromiografia",
+	"Risco Cirúrgico e Anestésico",
+	"Endoscopia Digestiva",
+	"Colonoscopia"
+];
+function ExamsSection() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		"data-uid": "src/components/home/ExamsSection.tsx:19:5",
+		"data-prohibitions": "[editContent]",
+		id: "exames",
+		className: "py-24 bg-ultra-blue text-white relative overflow-hidden",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			"data-uid": "src/components/home/ExamsSection.tsx:21:7",
+			"data-prohibitions": "[]",
+			className: "absolute inset-0 opacity-10",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/ExamsSection.tsx:22:9",
+				"data-prohibitions": "[editContent]",
+				className: "absolute top-[-10%] right-[-5%] w-96 h-96 rounded-full bg-ultra-gold blur-3xl"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/ExamsSection.tsx:23:9",
+				"data-prohibitions": "[editContent]",
+				className: "absolute bottom-[-10%] left-[-5%] w-96 h-96 rounded-full bg-ultra-gold blur-3xl"
+			})]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			"data-uid": "src/components/home/ExamsSection.tsx:26:7",
+			"data-prohibitions": "[editContent]",
+			className: "container mx-auto px-4 md:px-6 relative z-10",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(ScrollReveal, {
+				"data-uid": "src/components/home/ExamsSection.tsx:27:9",
+				"data-prohibitions": "[]",
+				className: "text-center max-w-3xl mx-auto mb-16",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						"data-uid": "src/components/home/ExamsSection.tsx:28:11",
+						"data-prohibitions": "[]",
+						className: "text-ultra-gold font-semibold uppercase tracking-wider mb-2 text-sm",
+						children: "Diagnóstico Completo"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+						"data-uid": "src/components/home/ExamsSection.tsx:31:11",
+						"data-prohibitions": "[]",
+						className: "text-3xl md:text-4xl font-serif font-bold text-white mb-4",
+						children: "Exames de Imagem e Procedimentos"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						"data-uid": "src/components/home/ExamsSection.tsx:34:11",
+						"data-prohibitions": "[]",
+						className: "text-slate-300 text-lg",
+						children: "Nossa estrutura conta com tecnologia de ponta para oferecer a você um diagnóstico preciso, rápido e seguro em uma ampla variedade de procedimentos médicos."
+					})
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"data-uid": "src/components/home/ExamsSection.tsx:40:9",
+				"data-prohibitions": "[editContent]",
+				className: "grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-5xl mx-auto",
+				children: EXAMS_LIST.map((exam, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollReveal, {
+					"data-uid": "src/components/home/ExamsSection.tsx:42:13",
+					"data-prohibitions": "[editContent]",
+					delay: idx * 50,
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						"data-uid": "src/components/home/ExamsSection.tsx:43:15",
+						"data-prohibitions": "[editContent]",
+						className: "flex items-center gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-ultra-gold/50 hover:bg-white/10 transition-all duration-300 h-full group",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/home/ExamsSection.tsx:44:17",
+							"data-prohibitions": "[]",
+							className: "flex-shrink-0 w-12 h-12 rounded-full bg-ultra-gold/20 flex items-center justify-center group-hover:bg-ultra-gold text-ultra-gold group-hover:text-white transition-colors duration-300",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, {
+								"data-uid": "src/components/home/ExamsSection.tsx:45:19",
+								"data-prohibitions": "[editContent]",
+								className: "h-6 w-6"
+							})
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							"data-uid": "src/components/home/ExamsSection.tsx:47:17",
+							"data-prohibitions": "[editContent]",
+							className: "font-medium text-white text-base leading-snug flex-1",
+							children: exam
+						})]
+					})
+				}, idx))
+			})]
+		})]
 	});
 }
 //#endregion
@@ -35974,52 +36072,56 @@ function FinalCTASection() {
 //#region src/pages/Index.tsx
 var Index = () => {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		"data-uid": "src/pages/Index.tsx:15:5",
+		"data-uid": "src/pages/Index.tsx:16:5",
 		"data-prohibitions": "[]",
 		className: "flex flex-col w-full",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroSection, {
-				"data-uid": "src/pages/Index.tsx:16:7",
-				"data-prohibitions": "[editContent]"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SpecialtiesSection, {
 				"data-uid": "src/pages/Index.tsx:17:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SpecialtiesSection, {
 				"data-uid": "src/pages/Index.tsx:18:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DifferentialsSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExamsSection, {
 				"data-uid": "src/pages/Index.tsx:19:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfrastructureSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutSection, {
 				"data-uid": "src/pages/Index.tsx:20:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TeamSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DifferentialsSection, {
 				"data-uid": "src/pages/Index.tsx:21:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TestimonialsSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfrastructureSection, {
 				"data-uid": "src/pages/Index.tsx:22:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FAQSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TeamSection, {
 				"data-uid": "src/pages/Index.tsx:23:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AppointmentSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TestimonialsSection, {
 				"data-uid": "src/pages/Index.tsx:24:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LocationSection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FAQSection, {
 				"data-uid": "src/pages/Index.tsx:25:7",
 				"data-prohibitions": "[editContent]"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FinalCTASection, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AppointmentSection, {
 				"data-uid": "src/pages/Index.tsx:26:7",
+				"data-prohibitions": "[editContent]"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LocationSection, {
+				"data-uid": "src/pages/Index.tsx:27:7",
+				"data-prohibitions": "[editContent]"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FinalCTASection, {
+				"data-uid": "src/pages/Index.tsx:28:7",
 				"data-prohibitions": "[editContent]"
 			})
 		]
@@ -36978,4 +37080,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-k_PtzucY.js.map
+//# sourceMappingURL=index-BxEz_DxW.js.map
