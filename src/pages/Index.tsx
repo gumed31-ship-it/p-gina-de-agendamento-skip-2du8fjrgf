@@ -1,10 +1,29 @@
-/* Home Page - Replace this page layout, components, content, behavior with what you want and translate to the language of the user */
+import { HeroSection } from '@/components/home/HeroSection'
+import { SpecialtiesSection } from '@/components/home/SpecialtiesSection'
+import { AboutSection } from '@/components/home/AboutSection'
+import { DifferentialsSection } from '@/components/home/DifferentialsSection'
+import { InfrastructureSection } from '@/components/home/InfrastructureSection'
+import { TeamSection } from '@/components/home/TeamSection'
+import { TestimonialsSection } from '@/components/home/TestimonialsSection'
+import { FAQSection } from '@/components/home/FAQSection'
+import { AppointmentSection } from '@/components/home/AppointmentSection'
+import { LocationSection } from '@/components/home/LocationSection'
+import { FinalCTASection } from '@/components/home/FinalCTASection'
+
 const Index = () => {
   return (
-    <div className="container mx-auto py-8 px-4">
-      <h1 className="text-3xl font-bold mb-6">
-        This is a example page ready to be rewritten with your own content
-      </h1>
+    <div className="flex flex-col w-full">
+      <HeroSection />
+      <SpecialtiesSection />
+      <AboutSection />
+      <DifferentialsSection />
+      <InfrastructureSection />
+      <TeamSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <AppointmentSection />
+      <LocationSection />
+      <FinalCTASection />
     </div>
   )
 }
