@@ -25836,7 +25836,7 @@ function InfrastructureSection() {
 var team = [{
 	name: "Dr. Gustavo Teixeira Gomes",
 	role: "Diretor Clínico",
-	specialties: "Angiologia, Geriatria",
+	specialties: "Angiologia, Geriatria, Ultrassonografia",
 	image: "/assets/whatsapp-image-2026-01-19-at-08.28.50-1-df56a-DdKh6KOZ.jpeg",
 	description: "Especialista em diagnóstico por imagem, dedicado a oferecer exames de excelência com precisão e atendimento humanizado."
 }];
@@ -30053,4 +30053,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-J22Py7ZN.js.map
+//# sourceMappingURL=index-BqXOuXtJ.js.map

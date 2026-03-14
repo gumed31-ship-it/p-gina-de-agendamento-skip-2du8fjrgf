@@ -6,7 +6,7 @@ const team = [
   {
     name: 'Dr. Gustavo Teixeira Gomes',
     role: 'Diretor Clínico',
-    specialties: 'Angiologia, Geriatria',
+    specialties: 'Angiologia, Geriatria, Ultrassonografia',
     image: drGustavoImg,
     description:
       'Especialista em diagnóstico por imagem, dedicado a oferecer exames de excelência com precisão e atendimento humanizado.',
