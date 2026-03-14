@@ -9,6 +9,7 @@ import {
   Bone,
   Eye,
   Droplets,
+  Baby,
 } from 'lucide-react'
 
 export const NAVIGATION = [
@@ -57,6 +58,12 @@ export const SPECIALTIES = [
     name: 'Geriatria',
     icon: UserCheck,
     desc: 'Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso.',
+  },
+  {
+    id: '11',
+    name: 'Ginecologia e Obstetrícia',
+    icon: Baby,
+    desc: 'Cuidado integral à saúde da mulher e acompanhamento especializado durante a gestação.',
   },
   {
     id: '7',

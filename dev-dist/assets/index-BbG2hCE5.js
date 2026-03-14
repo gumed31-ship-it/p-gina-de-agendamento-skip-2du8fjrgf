@@ -19020,6 +19020,24 @@ var ArrowRight = createLucideIcon("arrow-right", [["path", {
 	d: "m12 5 7 7-7 7",
 	key: "xquz4c"
 }]]);
+var Baby = createLucideIcon("baby", [
+	["path", {
+		d: "M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5",
+		key: "1u7htd"
+	}],
+	["path", {
+		d: "M15 12h.01",
+		key: "1k8ypt"
+	}],
+	["path", {
+		d: "M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1",
+		key: "11xh7x"
+	}],
+	["path", {
+		d: "M9 12h.01",
+		key: "157uk2"
+	}]
+]);
 var Bone = createLucideIcon("bone", [["path", {
 	d: "M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z",
 	key: "w610uw"
@@ -24859,6 +24877,12 @@ var SPECIALTIES = [
 		name: "Geriatria",
 		icon: UserCheck,
 		desc: "Cuidado integral e humanizado com foco na saúde, bem-estar e qualidade de vida do idoso."
+	},
+	{
+		id: "11",
+		name: "Ginecologia e Obstetrícia",
+		icon: Baby,
+		desc: "Cuidado integral à saúde da mulher e acompanhamento especializado durante a gestação."
 	},
 	{
 		id: "7",
@@ -31877,4 +31901,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-lfDSVZSs.js.map
+//# sourceMappingURL=index-BbG2hCE5.js.map
