@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 
 export function AboutSection() {
   const points = [
-    'Mais de 15 anos de tradição e confiança',
+    '25 anos de experiência',
     'Equipe multidisciplinar qualificada',
     'Equipamentos de última geração',
     'Fácil acesso e estacionamento no local',
@@ -24,7 +24,7 @@ export function AboutSection() {
 
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 animate-float hidden md:flex">
               <div className="bg-ultra-blue text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">
-                15+
+                25
               </div>
               <div>
                 <p className="font-bold text-ultra-blue leading-tight">Anos de</p>

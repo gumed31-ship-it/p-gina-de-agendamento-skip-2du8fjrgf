@@ -24560,7 +24560,7 @@ function ScrollReveal({ children, className, delay = 0, ...props }) {
 //#region src/components/home/AboutSection.tsx
 function AboutSection() {
 	const points = [
-		"Mais de 15 anos de tradição e confiança",
+		"25 anos de experiência",
 		"Equipe multidisciplinar qualificada",
 		"Equipamentos de última geração",
 		"Fácil acesso e estacionamento no local"
@@ -24603,7 +24603,7 @@ function AboutSection() {
 								"data-uid": "src/components/home/AboutSection.tsx:26:15",
 								"data-prohibitions": "[]",
 								className: "bg-ultra-blue text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold",
-								children: "15+"
+								children: "25"
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								"data-uid": "src/components/home/AboutSection.tsx:29:15",
 								"data-prohibitions": "[]",
@@ -30520,4 +30520,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-BenDmgCF.js.map
+//# sourceMappingURL=index-CpoXqOKo.js.map
