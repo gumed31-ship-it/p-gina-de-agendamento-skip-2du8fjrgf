@@ -35812,12 +35812,12 @@ function LocationSection() {
 										"data-prohibitions": "[]",
 										className: "text-slate-600 text-sm",
 										children: [
-											"Av. Afonso Pena, 1500 - Centro",
+											"Rua Luís Pascoal Borges, 219 - Centro",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
 												"data-uid": "src/components/home/LocationSection.tsx:29:21",
 												"data-prohibitions": "[editContent]"
 											}),
-											"Belo Horizonte - MG, 30130-003"
+											"Mutum - MG, 36955-000"
 										]
 									})]
 								})]
@@ -35948,7 +35948,7 @@ function LocationSection() {
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
 						"data-uid": "src/components/home/LocationSection.tsx:83:13",
 						"data-prohibitions": "[editContent]",
-						src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8872688099353!2d-43.93721382582855!3d-19.929112238246342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e159ab95c7%3A0xc3c94f5fb2b3b723!2sAv.%20Afonso%20Pena%2C%201500%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG%2C%2030130-005!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr",
+						src: "https://maps.google.com/maps?q=Rua%20Lu%C3%ADs%20Pascoal%20Borges,%20219,%20Centro,%20Mutum,%20MG&t=&z=15&ie=UTF8&iwloc=&output=embed",
 						width: "100%",
 						height: "100%",
 						style: { border: 0 },
@@ -36793,17 +36793,17 @@ function Footer() {
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, {
 										"data-uid": "src/components/layout/Footer.tsx:70:17",
 										"data-prohibitions": "[editContent]",
-										className: "h-5 w-5 text-ultra-gold shrink-0"
+										className: "h-5 w-5 text-ultra-gold shrink-0 mt-0.5"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										"data-uid": "src/components/layout/Footer.tsx:71:17",
 										"data-prohibitions": "[]",
 										children: [
-											"Av. Afonso Pena, 1500 - Centro",
+											"Rua Luís Pascoal Borges, 219 - Centro",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {
 												"data-uid": "src/components/layout/Footer.tsx:73:19",
 												"data-prohibitions": "[editContent]"
 											}),
-											"Belo Horizonte, MG"
+											"Mutum, MG, 36955-000"
 										]
 									})]
 								}),
@@ -37043,4 +37043,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-B4aIIFlq.js.map
+//# sourceMappingURL=index-DzVK3mDq.js.map

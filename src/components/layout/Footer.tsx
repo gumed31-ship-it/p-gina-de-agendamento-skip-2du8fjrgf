@@ -67,11 +67,11 @@ export function Footer() {
             <h4 className="text-white font-semibold text-lg mb-4 font-serif">Contato</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex gap-3">
-                <MapPin className="h-5 w-5 text-ultra-gold shrink-0" />
+                <MapPin className="h-5 w-5 text-ultra-gold shrink-0 mt-0.5" />
                 <span>
-                  Av. Afonso Pena, 1500 - Centro
+                  Rua Luís Pascoal Borges, 219 - Centro
                   <br />
-                  Belo Horizonte, MG
+                  Mutum, MG, 36955-000
                 </span>
               </li>
               <li className="flex items-center gap-3">
