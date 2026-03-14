@@ -12,7 +12,7 @@ export function FinalCTASection() {
           receber você com toda segurança e conforto.
         </p>
         <Button asChild size="lg" className="btn-gold rounded-full px-10 h-14 text-lg">
-          <a href="#agendamento">Agende sua Visita Agora</a>
+          <a href="#agendamento">Agende seu horário agora</a>
         </Button>
       </div>
     </section>

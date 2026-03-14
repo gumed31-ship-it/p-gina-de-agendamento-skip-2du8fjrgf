@@ -36061,7 +36061,7 @@ function FinalCTASection() {
 						"data-uid": "src/components/home/FinalCTASection.tsx:15:11",
 						"data-prohibitions": "[]",
 						href: "#agendamento",
-						children: "Agende sua Visita Agora"
+						children: "Agende seu horário agora"
 					})
 				})
 			]
@@ -37080,4 +37080,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-BxEz_DxW.js.map
+//# sourceMappingURL=index-BChkAQf4.js.map
