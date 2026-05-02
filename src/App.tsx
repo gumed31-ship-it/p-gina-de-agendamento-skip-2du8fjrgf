@@ -5,9 +5,11 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 import Index from '@/pages/Index'
 import NotFound from '@/pages/NotFound'
 import { Layout } from '@/components/Layout'
+import { AccessTracker } from '@/components/AccessTracker'
 
 const App = () => (
   <BrowserRouter future={{ v7_startTransition: false, v7_relativeSplatPath: false }}>
+    <AccessTracker />
     <TooltipProvider>
       <Toaster />
       <Sonner />
