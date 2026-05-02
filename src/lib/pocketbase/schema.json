@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T12:13:23.315Z",
+  "generatedAt": "2026-05-02T12:16:40.129Z",
   "collections": [
     {
       "name": "users",
@@ -48,8 +48,8 @@
       "name": "access_logs",
       "type": "base",
       "apiRules": {
-        "list": null,
-        "view": null,
+        "list": "@request.auth.id != ''",
+        "view": "@request.auth.id != ''",
         "create": "",
         "update": null,
         "delete": null
